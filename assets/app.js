@@ -135,16 +135,30 @@
     render();
   }
 
+  function ytVideoId(item) {
+    if (item.video_id) return String(item.video_id).replace(/[^a-zA-Z0-9_-]/g, "");
+    const url = String(item.url || "");
+    const m = url.match(/[?&]v=([a-zA-Z0-9_-]{6,})/) || url.match(/youtu\.be\/([a-zA-Z0-9_-]{6,})/);
+    return m ? m[1] : "";
+  }
+
   function ytCard(item, date, opts = {}) {
     const dateSpan = opts.omitDate ? "" : `<span>${esc(formatShortDate(date))}</span>`;
+    const vid = ytVideoId(item);
+    const thumb = vid
+      ? `<img class="card-thumb" src="https://i.ytimg.com/vi/${esc(vid)}/hqdefault.jpg" alt="" loading="lazy" decoding="async" width="160" height="90" />`
+      : "";
     return `
-      <a class="card source-yt" href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">
-        <h3 class="card-title">${esc(item.title)}</h3>
-        <p class="card-summary">${esc(item.summary || "")}</p>
-        <div class="card-meta">
-          <span class="source-chip yt">YT</span>
-          <span class="tag">${esc(item.channel || "YouTube")}</span>
-          ${dateSpan}
+      <a class="card source-yt${vid ? " has-thumb" : ""}" href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">
+        ${thumb}
+        <div class="card-body">
+          <h3 class="card-title">${esc(item.title)}</h3>
+          <p class="card-summary">${esc(item.summary || "")}</p>
+          <div class="card-meta">
+            <span class="source-chip yt">YT</span>
+            <span class="tag">${esc(item.channel || "YouTube")}</span>
+            ${dateSpan}
+          </div>
         </div>
       </a>`;
   }
@@ -332,6 +346,7 @@
           summary: item.summary,
           meta: item.channel,
           url: item.url,
+          video_id: item.video_id,
           hay: `${item.title} ${item.summary} ${item.channel}`.toLowerCase(),
         });
       }
@@ -388,7 +403,7 @@
 
     html += `<div class="card-list">${hits.map((r) => {
       if (r.kind === "youtube") {
-        return ytCard({ title: r.title, summary: r.summary, channel: r.meta, url: r.url }, r.date);
+        return ytCard({ title: r.title, summary: r.summary, channel: r.meta, url: r.url, video_id: r.video_id }, r.date);
       }
       return xCard(
         { short_title: r.title, summary: r.summary, handle: r.meta.replace(/^@/, ""), url: r.url },
