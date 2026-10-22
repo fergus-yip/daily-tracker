@@ -89,6 +89,10 @@ If the site is not live yet:
 
 Expected URL: https://fergus-yip.github.io/daily-tracker/
 
+## Theme
+
+Light-hybrid default (Guides-ish surface: flat white, hairline borders, 8px radius, soft-black active pills). Dark mode is a secondary `prefers-color-scheme: dark` map. Source chroma (YT / X / Launch left rails + chips) and unread sunset dots are preserved. Tracker skim IA is unchanged.
+
 ## Stack
 
 Vanilla HTML / CSS / JS. No build step, no npm.
