@@ -300,9 +300,10 @@ h1 {
 }
 .card-thumb {
   width: 100%;
+  aspect-ratio: 1 / 1;
   height: auto;
-  max-height: none;
-  object-fit: contain;
+  object-fit: cover;
+  object-position: center;
   border-radius: 8px;
   background: #0a0a0a;
   display: block;
