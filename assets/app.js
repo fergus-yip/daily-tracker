@@ -1,19 +1,30 @@
 (() => {
   "use strict";
 
+  const LAST_SEEN_KEY = "dt-last-seen";
+
   const state = {
+    cadence: "daily",
     index: null,
     days: new Map(),
+    weeklyIndex: null,
+    weeks: new Map(),
     view: "today",
     selectedDay: null,
+    selectedWeek: null,
     searchQuery: "",
+    weeklySearchQuery: "",
     ytChannel: "all",
     xSection: "all",
     xHandle: "all",
+    launchChannel: "all",
   };
 
   const main = document.getElementById("main");
   const updatedMeta = document.getElementById("updated-meta");
+  const brandSub = document.getElementById("brand-sub");
+  const tabsDaily = document.getElementById("tabs-daily");
+  const tabsWeekly = document.getElementById("tabs-weekly");
 
   function esc(s) {
     return String(s ?? "")
@@ -58,6 +69,13 @@
     return dt.toLocaleDateString("en-HK", opts);
   }
 
+  function formatWeekRange(start, end) {
+    if (!start) return "";
+    const left = formatShortDate(start, true);
+    if (!end) return left;
+    return `${left} – ${formatShortDate(end)}`;
+  }
+
   /** Format ISO timestamp as "HH:MM HKT" for header meta. */
   function formatUpdatedHkt(iso) {
     if (!iso) return "";
@@ -94,6 +112,69 @@
     return ytItems(day).length > 0 || xAll(day).length > 0;
   }
 
+  function launchVideos(week) {
+    return week?.sources?.launches?.videos || [];
+  }
+
+  function weekHasContent(week) {
+    return launchVideos(week).length > 0;
+  }
+
+  /* —— Unread / last-seen —— */
+  function readLastSeen() {
+    try {
+      const raw = localStorage.getItem(LAST_SEEN_KEY);
+      if (!raw) return { dailyUpdatedAt: null, weeklyUpdatedAt: null };
+      const parsed = JSON.parse(raw);
+      return {
+        dailyUpdatedAt: parsed.dailyUpdatedAt || null,
+        weeklyUpdatedAt: parsed.weeklyUpdatedAt || null,
+      };
+    } catch {
+      return { dailyUpdatedAt: null, weeklyUpdatedAt: null };
+    }
+  }
+
+  function writeLastSeen(patch) {
+    const cur = readLastSeen();
+    const next = { ...cur, ...patch };
+    try {
+      localStorage.setItem(LAST_SEEN_KEY, JSON.stringify(next));
+    } catch {
+      /* ignore quota / private mode */
+    }
+  }
+
+  function isNewer(indexAt, seenAt) {
+    if (!indexAt) return false;
+    if (!seenAt) return true;
+    const a = new Date(indexAt).getTime();
+    const b = new Date(seenAt).getTime();
+    if (Number.isNaN(a)) return false;
+    if (Number.isNaN(b)) return true;
+    return a > b;
+  }
+
+  function updateUnreadDots() {
+    const seen = readLastSeen();
+    const dailyNew = isNewer(state.index?.updated_at, seen.dailyUpdatedAt);
+    const weeklyNew = isNewer(state.weeklyIndex?.updated_at, seen.weeklyUpdatedAt);
+    document.querySelectorAll(".unread-dot").forEach((dot) => {
+      const lane = dot.dataset.dot;
+      const show = lane === "daily" ? dailyNew : weeklyNew;
+      dot.hidden = !show;
+    });
+  }
+
+  function markLaneSeen(cadence) {
+    if (cadence === "daily" && state.index?.updated_at) {
+      writeLastSeen({ dailyUpdatedAt: state.index.updated_at });
+    } else if (cadence === "weekly" && state.weeklyIndex?.updated_at) {
+      writeLastSeen({ weeklyUpdatedAt: state.weeklyIndex.updated_at });
+    }
+    updateUnreadDots();
+  }
+
   async function loadIndex() {
     const res = await fetch("data/index.json", { cache: "no-store" });
     if (!res.ok) throw new Error(`Could not load index (${res.status})`);
@@ -114,24 +195,113 @@
     await Promise.all(dates.map((d) => loadDay(d).catch(() => null)));
   }
 
-  function setView(view) {
-    state.view = view;
-    document.querySelectorAll(".tab").forEach((btn) => {
-      const on = btn.dataset.view === view;
+  async function loadWeeklyIndex() {
+    const res = await fetch("data/weekly/index.json", { cache: "no-store" });
+    if (!res.ok) throw new Error(`Could not load weekly index (${res.status})`);
+    return res.json();
+  }
+
+  async function loadWeek(weekStart) {
+    if (state.weeks.has(weekStart)) return state.weeks.get(weekStart);
+    const res = await fetch(`data/weekly/weeks/${weekStart}.json`, { cache: "no-store" });
+    if (!res.ok) throw new Error(`Could not load week ${weekStart} (${res.status})`);
+    const json = await res.json();
+    state.weeks.set(weekStart, json);
+    return json;
+  }
+
+  async function loadAllWeeks() {
+    const weeks = state.weeklyIndex?.weeks || [];
+    await Promise.all(weeks.map((w) => loadWeek(w).catch(() => null)));
+  }
+
+  function activeTabsEl() {
+    return state.cadence === "weekly" ? tabsWeekly : tabsDaily;
+  }
+
+  function syncCadenceUi() {
+    document.querySelectorAll(".cadence-btn").forEach((btn) => {
+      const on = btn.dataset.cadence === state.cadence;
       btn.classList.toggle("is-active", on);
       btn.setAttribute("aria-selected", on ? "true" : "false");
     });
+    tabsDaily.hidden = state.cadence !== "daily";
+    tabsWeekly.hidden = state.cadence !== "weekly";
+    if (brandSub) {
+      brandSub.textContent =
+        state.cadence === "weekly"
+          ? "Launches · last 26 weeks"
+          : "YouTube + X · last 30 days";
+    }
+    updateHeaderMeta();
+  }
+
+  function updateHeaderMeta() {
+    if (!updatedMeta) return;
+    if (state.cadence === "weekly") {
+      const wi = state.weeklyIndex;
+      if (wi?.updated_at) {
+        updatedMeta.hidden = false;
+        updatedMeta.textContent = `Updated ${formatUpdatedHkt(wi.updated_at)} · keep ${wi.retention_weeks ?? 26} weeks`;
+      } else {
+        updatedMeta.hidden = true;
+      }
+    } else if (state.index?.updated_at) {
+      updatedMeta.hidden = false;
+      updatedMeta.textContent = `Updated ${formatUpdatedHkt(state.index.updated_at)} · keep ${state.index.retention_days} days`;
+    } else {
+      updatedMeta.hidden = true;
+    }
+  }
+
+  function setCadence(cadence) {
+    if (cadence !== "daily" && cadence !== "weekly") return;
+    state.cadence = cadence;
+    state.selectedDay = null;
+    state.selectedWeek = null;
+    if (cadence === "daily") {
+      state.view = "today";
+    } else {
+      state.view = "this-week";
+    }
+    syncTabActive();
+    syncCadenceUi();
+    markLaneSeen(cadence);
+    render();
+  }
+
+  function syncTabActive() {
+    const el = activeTabsEl();
+    el.querySelectorAll(".tab").forEach((btn) => {
+      const on = btn.dataset.view === state.view;
+      btn.classList.toggle("is-active", on);
+      btn.setAttribute("aria-selected", on ? "true" : "false");
+    });
+  }
+
+  function setView(view) {
+    state.view = view;
+    syncTabActive();
     render();
   }
 
   function goToDayDetail(date) {
+    state.cadence = "daily";
     state.view = "by-day";
     state.selectedDay = date;
-    document.querySelectorAll(".tab").forEach((btn) => {
-      const on = btn.dataset.view === "by-day";
-      btn.classList.toggle("is-active", on);
-      btn.setAttribute("aria-selected", on ? "true" : "false");
-    });
+    syncCadenceUi();
+    syncTabActive();
+    markLaneSeen("daily");
+    render();
+  }
+
+  function goToWeekDetail(weekStart) {
+    state.cadence = "weekly";
+    state.view = "by-week";
+    state.selectedWeek = weekStart;
+    syncCadenceUi();
+    syncTabActive();
+    markLaneSeen("weekly");
     render();
   }
 
@@ -157,6 +327,28 @@
           <div class="card-meta">
             <span class="source-chip yt">YT</span>
             <span class="tag">${esc(item.channel || "YouTube")}</span>
+            ${dateSpan}
+          </div>
+        </div>
+      </a>`;
+  }
+
+  function launchCard(item, opts = {}) {
+    const dateIso = item.published_hkt || opts.weekStart || "";
+    const dateSpan = opts.omitDate ? "" : (dateIso ? `<span>${esc(formatShortDate(dateIso))}</span>` : "");
+    const vid = ytVideoId(item);
+    const thumb = vid
+      ? `<img class="card-thumb" src="https://i.ytimg.com/vi/${esc(vid)}/hq720.jpg" alt="" loading="lazy" decoding="async" width="1280" height="720" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/${esc(vid)}/hqdefault.jpg'" />`
+      : "";
+    return `
+      <a class="card source-launch${vid ? " has-thumb" : ""}" href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">
+        ${thumb}
+        <div class="card-body">
+          <h3 class="card-title">${esc(item.title)}</h3>
+          <p class="card-summary">${esc(item.summary || "")}</p>
+          <div class="card-meta">
+            <span class="source-chip launch">Launch</span>
+            <span class="tag">${esc(item.channel || "Launch")}</span>
             ${dateSpan}
           </div>
         </div>
@@ -190,6 +382,27 @@
       if (day && predicate(day)) return { date, day };
     }
     return null;
+  }
+
+  function groupByChannel(videos) {
+    const map = new Map();
+    for (const v of videos) {
+      const ch = v.channel || "Other";
+      if (!map.has(ch)) map.set(ch, []);
+      map.get(ch).push(v);
+    }
+    return map;
+  }
+
+  function renderLaunchGroups(videos, opts = {}) {
+    if (!videos.length) return emptyBlock("No launch videos.");
+    const groups = groupByChannel(videos);
+    let html = "";
+    for (const [channel, items] of groups) {
+      html += `<p class="group-label">${esc(channel)} · ${items.length}</p>
+        <div class="card-list">${items.map((i) => launchCard(i, opts)).join("")}</div>`;
+    }
+    return html;
   }
 
   function renderXGroups(day, date, { omitSection = true, omitDate = false } = {}) {
@@ -230,7 +443,6 @@
     <p class="meta skim-line">Morning digests · yesterday’s updates</p>
     <div class="today-grid">`;
 
-    // YouTube column — calendar today only
     html += `<section class="panel">
       <div class="section-head">
         <h2>YouTube</h2>
@@ -247,7 +459,6 @@
     }
     html += `</section>`;
 
-    // X column — calendar today only
     const watchToday = day ? xWatch(day) : [];
     const trendyToday = day ? xTrendy(day) : [];
     let xPillLabel;
@@ -490,6 +701,157 @@
       ${cards.length ? `<div class="card-list">${cards.join("")}</div>` : emptyBlock("No X picks.")}`;
   }
 
+  /* —— Weekly views —— */
+  function renderThisWeek() {
+    const weeks = state.weeklyIndex?.weeks || [];
+    if (!weeks.length) {
+      return `<div class="section-head"><h2>This week</h2><span class="pill">none</span></div>
+        ${emptyBlock("No weekly digests yet.")}`;
+    }
+    const weekStart = weeks[0];
+    const week = state.weeks.get(weekStart);
+    if (!week) {
+      return `<div class="section-head"><h2>This week</h2></div>
+        ${emptyBlock(`Missing data for week ${weekStart}.`)}`;
+    }
+    const videos = launchVideos(week);
+    return `<div class="section-head">
+        <h2>This week</h2>
+        <span class="pill launch">${videos.length} launches</span>
+      </div>
+      <p class="meta skim-line">${esc(formatWeekRange(week.week_start_hkt, week.week_end_hkt))}</p>
+      <section class="panel">
+        <div class="section-head">
+          <h2>Launches</h2>
+          <span class="pill launch">${videos.length}</span>
+        </div>
+        ${renderLaunchGroups(videos, { weekStart, omitDate: false })}
+      </section>`;
+  }
+
+  function renderByWeekList() {
+    const weeks = state.weeklyIndex?.weeks || [];
+    const rows = weeks.map((weekStart) => {
+      const week = state.weeks.get(weekStart);
+      if (!week || !weekHasContent(week)) {
+        return `<div class="day-row quiet" aria-disabled="true">
+          <span class="date">${esc(formatWeekRange(weekStart, week?.week_end_hkt))}</span>
+          <span class="counts"><span class="pill">quiet</span></span>
+        </div>`;
+      }
+      const n = launchVideos(week).length;
+      return `<button class="day-row" data-week="${esc(weekStart)}" type="button">
+        <span class="date">${esc(formatWeekRange(week.week_start_hkt, week.week_end_hkt))}</span>
+        <span class="counts"><span class="pill launch">${n} launches</span></span>
+      </button>`;
+    }).join("");
+
+    const n = weeks.length;
+    const label = n === 1 ? "1 week" : `${n} weeks`;
+    return `<div class="section-head"><h2>By week</h2><span class="pill">${label}</span></div>
+      <div class="day-list">${rows || emptyBlock("No weeks retained yet.")}</div>`;
+  }
+
+  function renderWeekDetail(weekStart) {
+    const week = state.weeks.get(weekStart);
+    if (!week) return emptyBlock(`Missing data for week ${weekStart}.`);
+    const videos = launchVideos(week);
+
+    let html = `<button class="back-link" type="button" data-action="back-weeks">← All weeks</button>
+      <div class="section-head">
+        <h2>${esc(formatWeekRange(week.week_start_hkt, week.week_end_hkt))}</h2>
+        <span class="pill launch">${videos.length} launches</span>
+      </div>
+      <div class="day-detail">
+        <section class="panel">
+          <div class="section-head"><h2>Launches</h2><span class="pill launch">${videos.length}</span></div>
+          ${renderLaunchGroups(videos, { weekStart })}
+        </section>
+      </div>`;
+    return html;
+  }
+
+  function collectWeeklySearchable() {
+    const rows = [];
+    for (const weekStart of state.weeklyIndex?.weeks || []) {
+      const week = state.weeks.get(weekStart);
+      if (!week) continue;
+      for (const item of launchVideos(week)) {
+        rows.push({
+          weekStart,
+          weekEnd: week.week_end_hkt,
+          title: item.title,
+          summary: item.summary,
+          channel: item.channel,
+          url: item.url,
+          video_id: item.video_id,
+          published_hkt: item.published_hkt,
+          hay: `${item.title} ${item.summary} ${item.channel}`.toLowerCase(),
+        });
+      }
+    }
+    return rows;
+  }
+
+  function renderWeeklySearch() {
+    const q = state.weeklySearchQuery.trim().toLowerCase();
+    const all = collectWeeklySearchable();
+    const hits = q ? all.filter((r) => r.hay.includes(q)) : [];
+
+    let html = `<div class="section-head"><h2>Search</h2><span class="pill">${q ? hits.length + " hits" : "all weeks"}</span></div>
+      <div class="toolbar">
+        <div class="field">
+          <label for="weekly-search-q">Title, summary, or channel</label>
+          <input id="weekly-search-q" type="search" placeholder="e.g. Apple, HomeView, Fitbit" value="${esc(state.weeklySearchQuery)}" autocomplete="off" />
+        </div>
+      </div>`;
+
+    if (!q) {
+      html += emptyBlock("Type to filter across retained weeks.");
+      return html;
+    }
+    if (!hits.length) {
+      html += emptyBlock("No matches.");
+      return html;
+    }
+
+    html += `<div class="card-list">${hits.map((r) =>
+      launchCard(
+        { title: r.title, summary: r.summary, channel: r.channel, url: r.url, video_id: r.video_id, published_hkt: r.published_hkt },
+        { weekStart: r.weekStart }
+      )
+    ).join("")}</div>`;
+    return html;
+  }
+
+  function renderLaunches() {
+    const channels = uniqueSorted(
+      (state.weeklyIndex?.weeks || []).flatMap((w) =>
+        launchVideos(state.weeks.get(w)).map((i) => i.channel)
+      )
+    );
+    const filter = state.launchChannel;
+    const cards = [];
+    for (const weekStart of state.weeklyIndex?.weeks || []) {
+      for (const item of launchVideos(state.weeks.get(weekStart))) {
+        if (filter !== "all" && item.channel !== filter) continue;
+        cards.push(launchCard(item, { weekStart }));
+      }
+    }
+
+    return `<div class="section-head"><h2>Launches</h2><span class="pill launch">${cards.length}</span></div>
+      <div class="toolbar">
+        <div class="field">
+          <label for="launch-channel">Channel</label>
+          <select id="launch-channel">
+            <option value="all"${filter === "all" ? " selected" : ""}>All channels</option>
+            ${channels.map((c) => `<option value="${esc(c)}"${filter === c ? " selected" : ""}>${esc(c)}</option>`).join("")}
+          </select>
+        </div>
+      </div>
+      ${cards.length ? `<div class="card-list">${cards.join("")}</div>` : emptyBlock("No launch videos.")}`;
+  }
+
   function openTrendyOnDesktop() {
     if (!window.matchMedia("(min-width: 641px)").matches) return;
     main.querySelectorAll(".trendy-disclosure").forEach((el) => {
@@ -499,24 +861,45 @@
 
   function render() {
     let html = "";
-    if (state.view === "today") html = renderToday();
-    else if (state.view === "by-day") {
-      html = state.selectedDay ? renderDayDetail(state.selectedDay) : renderByDayList();
-    } else if (state.view === "search") html = renderSearch();
-    else if (state.view === "youtube") html = renderYouTube();
-    else if (state.view === "x") html = renderX();
+    if (state.cadence === "weekly") {
+      if (state.view === "this-week") html = renderThisWeek();
+      else if (state.view === "by-week") {
+        html = state.selectedWeek ? renderWeekDetail(state.selectedWeek) : renderByWeekList();
+      } else if (state.view === "search-weekly") html = renderWeeklySearch();
+      else if (state.view === "launches") html = renderLaunches();
+      else html = renderThisWeek();
+    } else {
+      if (state.view === "today") html = renderToday();
+      else if (state.view === "by-day") {
+        html = state.selectedDay ? renderDayDetail(state.selectedDay) : renderByDayList();
+      } else if (state.view === "search") html = renderSearch();
+      else if (state.view === "youtube") html = renderYouTube();
+      else if (state.view === "x") html = renderX();
+    }
     main.innerHTML = html;
     openTrendyOnDesktop();
   }
 
-  document.querySelector(".tabs").addEventListener("click", (e) => {
-    const btn = e.target.closest(".tab");
+  document.querySelector(".cadence").addEventListener("click", (e) => {
+    const btn = e.target.closest(".cadence-btn");
     if (!btn) return;
-    state.selectedDay = null;
-    setView(btn.dataset.view);
-    // Keep focus on the activated tab after re-render of main
+    setCadence(btn.dataset.cadence);
     requestAnimationFrame(() => btn.focus({ preventScroll: true }));
   });
+
+  function onTabsClick(e) {
+    const btn = e.target.closest(".tab");
+    if (!btn) return;
+    if (state.cadence === "daily") {
+      state.selectedDay = null;
+    } else {
+      state.selectedWeek = null;
+    }
+    setView(btn.dataset.view);
+    requestAnimationFrame(() => btn.focus({ preventScroll: true }));
+  }
+  tabsDaily.addEventListener("click", onTabsClick);
+  tabsWeekly.addEventListener("click", onTabsClick);
 
   main.addEventListener("click", (e) => {
     const goto = e.target.closest("[data-goto-day]");
@@ -524,15 +907,27 @@
       goToDayDetail(goto.dataset.gotoDay);
       return;
     }
-    const back = e.target.closest("[data-action='back-days']");
-    if (back) {
+    const backDays = e.target.closest("[data-action='back-days']");
+    if (backDays) {
       state.selectedDay = null;
       render();
       return;
     }
-    const row = e.target.closest("[data-day]");
-    if (row) {
-      state.selectedDay = row.dataset.day;
+    const backWeeks = e.target.closest("[data-action='back-weeks']");
+    if (backWeeks) {
+      state.selectedWeek = null;
+      render();
+      return;
+    }
+    const dayRow = e.target.closest("[data-day]");
+    if (dayRow) {
+      state.selectedDay = dayRow.dataset.day;
+      render();
+      return;
+    }
+    const weekRow = e.target.closest("[data-week]");
+    if (weekRow) {
+      state.selectedWeek = weekRow.dataset.week;
       render();
     }
   });
@@ -542,6 +937,15 @@
       state.searchQuery = e.target.value;
       render();
       const input = document.getElementById("search-q");
+      if (input) {
+        input.focus();
+        const len = input.value.length;
+        input.setSelectionRange(len, len);
+      }
+    } else if (e.target.id === "weekly-search-q") {
+      state.weeklySearchQuery = e.target.value;
+      render();
+      const input = document.getElementById("weekly-search-q");
       if (input) {
         input.focus();
         const len = input.value.length;
@@ -560,18 +964,29 @@
     } else if (e.target.id === "x-handle") {
       state.xHandle = e.target.value;
       render();
+    } else if (e.target.id === "launch-channel") {
+      state.launchChannel = e.target.value;
+      render();
     }
   });
 
   async function boot() {
     try {
       state.index = await loadIndex();
-      if (state.index.updated_at) {
-        updatedMeta.hidden = false;
-        const when = formatUpdatedHkt(state.index.updated_at);
-        updatedMeta.textContent = `Updated ${when} · keep ${state.index.retention_days} days`;
-      }
       await loadAllDays();
+
+      try {
+        state.weeklyIndex = await loadWeeklyIndex();
+        await loadAllWeeks();
+      } catch (weeklyErr) {
+        console.warn("Weekly index unavailable:", weeklyErr);
+        state.weeklyIndex = { updated_at: null, retention_weeks: 26, weeks: [] };
+      }
+
+      // Mark daily as seen on first paint (user lands on Daily); weekly stays unread until opened
+      markLaneSeen("daily");
+      syncCadenceUi();
+      updateUnreadDots();
       render();
     } catch (err) {
       main.innerHTML = `<p class="error">${esc(err.message || String(err))}</p>`;

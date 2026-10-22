@@ -1,0 +1,9 @@
+{
+  "daily": [
+    {"id": "youtube", "label": "YouTube"},
+    {"id": "x", "label": "X"}
+  ],
+  "weekly": [
+    {"id": "launches", "label": "Launches", "bot": "launch-video-tracker"}
+  ]
+}

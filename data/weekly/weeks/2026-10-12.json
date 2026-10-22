@@ -1,0 +1,52 @@
+{
+  "week_start_hkt": "2026-10-12",
+  "week_end_hkt": "2026-10-19",
+  "scanned_at_hkt": "2026-10-19T08:14:00+08:00",
+  "sources": {
+    "launches": {
+      "source": "launch-video-tracker",
+      "videos": [
+        {
+          "channel": "Made by Google",
+          "title": "Meet Google Fitbit Edge | Coaching, right when you need it",
+          "summary": "Introduces Google Fitbit Edge, a health and fitness wearable with Gemini-powered personal coaching, AFib-oriented heart monitoring, up to one-week battery, and pre-orders from $179.99.",
+          "url": "https://www.youtube.com/watch?v=LZvXW6NFaJQ",
+          "published_hkt": "2026-10-13",
+          "video_id": "LZvXW6NFaJQ"
+        },
+        {
+          "channel": "Apple",
+          "title": "The new Apple HomeView: Keep the whole home connected, entertained, and in the know.",
+          "summary": "Launches Apple HomeView, a 7-inch smart display with multi-user recognition, Siri AI, Spatial Audio speakers, FaceTime, and HomeKit/Matter smart-home control.",
+          "url": "https://www.youtube.com/watch?v=QeQAXuQpGEA",
+          "published_hkt": "2026-10-13",
+          "video_id": "QeQAXuQpGEA"
+        },
+        {
+          "channel": "Apple",
+          "title": "Welcome Apple HomeView: Designed for life at home.",
+          "summary": "Official campaign film for Apple HomeView, highlighting Spatial Audio, smart-home control, FaceTime, Siri AI, and personalized multi-user experiences at home.",
+          "url": "https://www.youtube.com/watch?v=hkrYiZ_g9tw",
+          "published_hkt": "2026-10-13",
+          "video_id": "hkrYiZ_g9tw"
+        },
+        {
+          "channel": "Apple",
+          "title": "The new Apple TV 4K: The ultimate cinematic experience.",
+          "summary": "Unveils the new Apple TV 4K with Dolby Vision/HDR10+, Siri AI with far-field mics, Find My for the Siri Remote, and HomePod surround-sound home-theater pairing.",
+          "url": "https://www.youtube.com/watch?v=bNdmGYamiWM",
+          "published_hkt": "2026-10-13",
+          "video_id": "bNdmGYamiWM"
+        },
+        {
+          "channel": "Apple",
+          "title": "The new HomePod mini 2: Rich, room-filling sound in a compact design.",
+          "summary": "Introduces HomePod mini 2 with richer room-filling sound, Siri AI for hands-free smart-home help, multiroom audio, and five color options.",
+          "url": "https://www.youtube.com/watch?v=xLL4UnrLNWs",
+          "published_hkt": "2026-10-13",
+          "video_id": "xLL4UnrLNWs"
+        }
+      ]
+    }
+  }
+}

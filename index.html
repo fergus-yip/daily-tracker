@@ -4,9 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="color-scheme" content="dark light" />
-  <meta name="description" content="Fergus’s daily YouTube + X digest tracker" />
+  <meta name="description" content="Fergus’s daily YouTube + X and weekly launches digest tracker" />
   <title>Daily Tracker</title>
-  <link rel="stylesheet" href="assets/styles.css?v=ytsq" />
+  <link rel="stylesheet" href="assets/styles.css?v=weekly1" />
 </head>
 <body>
   <div class="app">
@@ -14,12 +14,23 @@
       <div class="brand">
         <p class="eyebrow">Fergus · team</p>
         <h1>Daily Tracker</h1>
-        <p class="sub">YouTube + X · last 30 days</p>
+        <p class="sub" id="brand-sub">YouTube + X · last 30 days</p>
       </div>
       <p id="updated-meta" class="meta" hidden></p>
     </header>
 
-    <nav class="tabs" role="tablist" aria-label="Views">
+    <nav class="cadence" role="tablist" aria-label="Cadence">
+      <button class="cadence-btn is-active" data-cadence="daily" role="tab" aria-selected="true" type="button">
+        <span class="cadence-label">Daily</span>
+        <span class="unread-dot" data-dot="daily" hidden aria-hidden="true"></span>
+      </button>
+      <button class="cadence-btn" data-cadence="weekly" role="tab" aria-selected="false" type="button">
+        <span class="cadence-label">Weekly</span>
+        <span class="unread-dot" data-dot="weekly" hidden aria-hidden="true"></span>
+      </button>
+    </nav>
+
+    <nav class="tabs" id="tabs-daily" role="tablist" aria-label="Daily views">
       <button class="tab is-active" data-view="today" role="tab" aria-selected="true" aria-label="Today">
         <span class="tab-full">Today</span><span class="tab-short" aria-hidden="true">Today</span>
       </button>
@@ -37,6 +48,21 @@
       </button>
     </nav>
 
+    <nav class="tabs" id="tabs-weekly" role="tablist" aria-label="Weekly views" hidden>
+      <button class="tab is-active" data-view="this-week" role="tab" aria-selected="true" aria-label="This week">
+        <span class="tab-full">This week</span><span class="tab-short" aria-hidden="true">This week</span>
+      </button>
+      <button class="tab" data-view="by-week" role="tab" aria-selected="false" aria-label="By week">
+        <span class="tab-full">By week</span><span class="tab-short" aria-hidden="true">By week</span>
+      </button>
+      <button class="tab" data-view="search-weekly" role="tab" aria-selected="false" aria-label="Search">
+        <span class="tab-full">Search</span><span class="tab-short" aria-hidden="true">Search</span>
+      </button>
+      <button class="tab" data-view="launches" role="tab" aria-selected="false" aria-label="Launches">
+        <span class="tab-full">Launches</span><span class="tab-short" aria-hidden="true">Launches</span>
+      </button>
+    </nav>
+
     <main id="main" class="main" aria-live="polite">
       <p class="loading">Loading digests…</p>
     </main>
@@ -45,6 +71,6 @@
       <p>Public skim board · no bookmarks · data under <code>/data</code></p>
     </footer>
   </div>
-  <script src="assets/app.js?v=ytsq" defer></script>
+  <script src="assets/app.js?v=weekly1" defer></script>
 </body>
 </html>

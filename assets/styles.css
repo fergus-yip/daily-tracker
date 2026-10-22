@@ -503,3 +503,86 @@ h1 {
   .card:hover { transform: none; }
   .tab { transition: none; }
 }
+
+/* —— Cadence switch (Daily | Weekly) —— */
+.cadence {
+  display: inline-flex;
+  gap: 0.25rem;
+  padding: 0.2rem;
+  margin: 0 0 0.65rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg-elev);
+  max-width: 100%;
+}
+.cadence-btn {
+  position: relative;
+  flex: 1 1 auto;
+  min-height: 40px;
+  min-width: 5.5rem;
+  border: 0;
+  background: transparent;
+  border-radius: 999px;
+  padding: 0.45rem 1.15rem;
+  cursor: pointer;
+  color: var(--muted);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  transition: background 0.15s ease, color 0.15s ease;
+  white-space: nowrap;
+}
+.cadence-btn:hover { color: var(--text); }
+.cadence-btn.is-active {
+  color: var(--text);
+  background: var(--accent-soft);
+}
+.cadence-btn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+.cadence-label { display: inline-block; }
+
+.unread-dot {
+  position: absolute;
+  top: 0.45rem;
+  right: 0.55rem;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--highlight);
+  box-shadow: 0 0 0 2px var(--bg-elev);
+  pointer-events: none;
+}
+.cadence-btn.is-active .unread-dot {
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent-soft) 100%, var(--bg-elev));
+}
+@media (max-width: 479px) {
+  .cadence {
+    display: flex;
+    width: 100%;
+  }
+  .cadence-btn {
+    flex: 1 1 0;
+    padding: 0.45rem 0.75rem;
+    min-width: 0;
+  }
+}
+
+.pill.launch { background: var(--highlight-soft); color: var(--highlight); }
+.source-chip.launch {
+  background: var(--highlight-soft);
+  color: var(--highlight);
+}
+.card.source-launch {
+  border-left: 3px solid var(--highlight);
+}
+.card.source-launch.has-thumb {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+  padding: 0.65rem 0.65rem 0.9rem;
+}
+.card.source-launch.has-thumb .card-body {
+  padding: 0 0.25rem;
+  min-width: 0;
+}
