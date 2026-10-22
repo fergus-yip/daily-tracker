@@ -156,6 +156,12 @@ h1 {
 }
 .error { color: #ff8f8f; border-style: solid; }
 
+/* Today: don't let a missing source dominate the grid beside a full column */
+.today-grid .empty {
+  padding: 0.7rem 0.85rem;
+  font-size: 0.92rem;
+}
+
 .empty-link {
   margin: 0.65rem 0 0;
 }

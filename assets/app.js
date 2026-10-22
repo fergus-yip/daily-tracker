@@ -47,7 +47,7 @@
     });
   }
 
-  /** Short skim label like "21 Oct" or "Wed 21 Oct". */
+  /** Short skim label like "21 Oct" or "Wed 21 Oct" (no year unless needed). */
   function formatShortDate(iso, withWeekday = false) {
     if (!iso) return "";
     const [y, m, d] = iso.split("-").map(Number);
@@ -55,7 +55,7 @@
     const opts = withWeekday
       ? { weekday: "short", day: "numeric", month: "short", timeZone: "UTC" }
       : { day: "numeric", month: "short", timeZone: "UTC" };
-    return dt.toLocaleDateString("en-GB", opts);
+    return dt.toLocaleDateString("en-HK", opts);
   }
 
   function ytItems(day) {
@@ -127,7 +127,7 @@
         <div class="card-meta">
           <span class="source-chip yt">YT</span>
           <span class="tag">${esc(item.channel || "YouTube")}</span>
-          <span>${esc(date)}</span>
+          <span>${esc(formatShortDate(date))}</span>
         </div>
       </a>`;
   }
@@ -143,7 +143,7 @@
           <span class="source-chip x">X</span>
           <span class="tag">${esc(handle)}</span>
           ${section ? `<span>${esc(section)}</span>` : ""}
-          <span>${esc(date)}</span>
+          <span>${esc(formatShortDate(date))}</span>
         </div>
       </a>`;
   }
@@ -215,11 +215,19 @@
     html += `</section>`;
 
     // X column — calendar today only
-    const xCount = day?.x?.pick_count_total ?? xToday.length;
+    const watchToday = day ? xWatch(day) : [];
+    const trendyToday = day ? xTrendy(day) : [];
+    let xPillLabel;
+    if (watchToday.length && trendyToday.length) {
+      xPillLabel = `${watchToday.length} watch · ${trendyToday.length} trendy`;
+    } else {
+      const xCount = day?.x?.pick_count_total ?? xToday.length;
+      xPillLabel = `${xCount} picks`;
+    }
     html += `<section class="panel">
       <div class="section-head">
         <h2>X</h2>
-        <span class="pill x">${xCount} picks</span>
+        <span class="pill x">${esc(xPillLabel)}</span>
       </div>
       <p class="meta skim-date">${esc(shortToday)}</p>`;
     if (xToday.length) {
