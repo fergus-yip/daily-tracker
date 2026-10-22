@@ -106,6 +106,11 @@ h1 {
   font-size: 0.95rem;
 }
 
+.skim-date {
+  margin: -0.35rem 0 0.75rem;
+  font-size: 0.88rem;
+}
+
 .tabs {
   display: flex;
   gap: 0.4rem;
@@ -119,6 +124,7 @@ h1 {
 
 .tab {
   flex: 0 0 auto;
+  min-height: 44px;
   border: 1px solid var(--border);
   background: var(--bg-elev);
   border-radius: 999px;
@@ -133,6 +139,11 @@ h1 {
   background: var(--accent-soft);
   border-color: rgba(124, 156, 255, 0.45);
 }
+.tab:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--accent-soft);
+  border-color: rgba(124, 156, 255, 0.65);
+}
 
 .main { min-height: 40vh; }
 
@@ -144,6 +155,26 @@ h1 {
   background: color-mix(in srgb, var(--bg-elev) 80%, transparent);
 }
 .error { color: #ff8f8f; border-style: solid; }
+
+.empty-link {
+  margin: 0.65rem 0 0;
+}
+.text-link {
+  border: 0;
+  background: transparent;
+  color: var(--accent);
+  cursor: pointer;
+  padding: 0;
+  font-size: 0.92rem;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.text-link:hover { color: var(--text); }
+.text-link:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--accent-soft);
+  border-radius: 4px;
+}
 
 .toolbar {
   display: flex;
@@ -222,24 +253,6 @@ h1 {
   box-shadow: var(--shadow);
 }
 
-.spotlight {
-  margin-bottom: 1rem;
-  padding: 0.9rem 1rem;
-  border-radius: var(--radius-sm);
-  background: var(--highlight-soft);
-  border: 1px solid color-mix(in srgb, var(--highlight) 35%, transparent);
-}
-.spotlight .label {
-  margin: 0 0 0.25rem;
-  font-size: 0.75rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--highlight);
-  font-weight: 700;
-}
-.spotlight p { margin: 0.2rem 0 0; color: var(--muted); }
-.spotlight a { font-weight: 600; }
-
 .card-list {
   display: grid;
   gap: 0.75rem;
@@ -259,6 +272,50 @@ h1 {
   transform: translateY(-1px);
   text-decoration: none;
 }
+
+.card.source-yt {
+  border-left: 3px solid var(--yt);
+  box-shadow: inset 3px 0 0 0 transparent;
+}
+.card.source-x {
+  border-left: 3px solid var(--x);
+}
+
+.card.trendy,
+.card-list.trendy .card {
+  padding: 0.7rem 0.85rem;
+}
+.card.trendy .card-title,
+.card-list.trendy .card-title {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: color-mix(in srgb, var(--text) 88%, var(--muted));
+}
+.card.trendy .card-summary,
+.card-list.trendy .card-summary {
+  color: var(--faint);
+  font-size: 0.88rem;
+}
+
+.source-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.08rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.3;
+}
+.source-chip.yt {
+  background: var(--yt-soft);
+  color: var(--yt);
+}
+.source-chip.x {
+  background: var(--x-soft);
+  color: var(--x);
+}
+
 .card-title {
   margin: 0;
   font-size: 1.05rem;
@@ -317,7 +374,13 @@ h1 {
   flex-wrap: wrap;
   gap: 0.4rem;
 }
+.day-row.quiet {
+  cursor: default;
+  pointer-events: none;
+  opacity: 0.72;
+}
 .day-row.quiet .date { color: var(--faint); font-weight: 500; }
+.day-row.quiet:hover { border-color: var(--border); }
 
 .back-link {
   display: inline-flex;
@@ -338,11 +401,42 @@ h1 {
 }
 
 .group-label {
-  margin: 0.35rem 0 0.55rem;
-  color: var(--faint);
-  font-size: 0.8rem;
-  letter-spacing: 0.05em;
+  margin: 0.5rem 0 0.65rem;
+  color: var(--text);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
+  opacity: 0.92;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.35rem;
+}
+
+.trendy-disclosure {
+  margin-top: 1rem;
+}
+.trendy-disclosure > summary {
+  list-style: none;
+  cursor: pointer;
+  user-select: none;
+}
+.trendy-disclosure > summary::-webkit-details-marker { display: none; }
+.trendy-disclosure > summary::before {
+  content: "▸ ";
+  color: var(--faint);
+}
+.trendy-disclosure[open] > summary::before {
+  content: "▾ ";
+}
+.trendy-disclosure .card-list {
+  margin-top: 0.55rem;
+}
+
+/* Mobile: Trendy default-collapsed; desktop opened via JS after render */
+@media (max-width: 640px) {
+  .trendy-disclosure:not([open]) .card-list {
+    display: none;
+  }
 }
 
 .site-footer {
@@ -367,4 +461,10 @@ h1 {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card { transition: none; }
+  .card:hover { transform: none; }
+  .tab { transition: none; }
 }

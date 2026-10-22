@@ -24,6 +24,16 @@
       .replace(/'/g, "&#39;");
   }
 
+  /** Calendar today as YYYY-MM-DD in Asia/Hong_Kong. */
+  function getTodayHkt() {
+    return new Intl.DateTimeFormat("en-CA", {
+      timeZone: "Asia/Hong_Kong",
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+    }).format(new Date());
+  }
+
   function formatDateLabel(iso) {
     if (!iso) return "";
     const [y, m, d] = iso.split("-").map(Number);
@@ -35,6 +45,17 @@
       day: "numeric",
       timeZone: "UTC",
     });
+  }
+
+  /** Short skim label like "21 Oct" or "Wed 21 Oct". */
+  function formatShortDate(iso, withWeekday = false) {
+    if (!iso) return "";
+    const [y, m, d] = iso.split("-").map(Number);
+    const dt = new Date(Date.UTC(y, m - 1, d));
+    const opts = withWeekday
+      ? { weekday: "short", day: "numeric", month: "short", timeZone: "UTC" }
+      : { day: "numeric", month: "short", timeZone: "UTC" };
+    return dt.toLocaleDateString("en-GB", opts);
   }
 
   function ytItems(day) {
@@ -87,25 +108,39 @@
     render();
   }
 
+  function goToDayDetail(date) {
+    state.view = "by-day";
+    state.selectedDay = date;
+    document.querySelectorAll(".tab").forEach((btn) => {
+      const on = btn.dataset.view === "by-day";
+      btn.classList.toggle("is-active", on);
+      btn.setAttribute("aria-selected", on ? "true" : "false");
+    });
+    render();
+  }
+
   function ytCard(item, date) {
     return `
-      <a class="card" href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">
+      <a class="card source-yt" href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">
         <h3 class="card-title">${esc(item.title)}</h3>
         <p class="card-summary">${esc(item.summary || "")}</p>
         <div class="card-meta">
+          <span class="source-chip yt">YT</span>
           <span class="tag">${esc(item.channel || "YouTube")}</span>
           <span>${esc(date)}</span>
         </div>
       </a>`;
   }
 
-  function xCard(item, date, section) {
+  function xCard(item, date, section, opts = {}) {
     const handle = item.handle ? `@${item.handle.replace(/^@/, "")}` : "X";
+    const trendyClass = opts.trendy ? " trendy" : "";
     return `
-      <a class="card" href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">
+      <a class="card source-x${trendyClass}" href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">
         <h3 class="card-title">${esc(item.short_title || item.title || "")}</h3>
         <p class="card-summary">${esc(item.summary || "")}</p>
         <div class="card-meta">
+          <span class="source-chip x">X</span>
           <span class="tag">${esc(handle)}</span>
           ${section ? `<span>${esc(section)}</span>` : ""}
           <span>${esc(date)}</span>
@@ -125,52 +160,75 @@
     return null;
   }
 
+  function renderXGroups(day, date, { omitSection = true } = {}) {
+    const watch = xWatch(day);
+    const trendy = xTrendy(day);
+    let html = "";
+    if (watch.length) {
+      const section = omitSection ? null : "Watch list";
+      html += `<p class="group-label">Watch list · ${watch.length}</p>
+        <div class="card-list">${watch.map((i) => xCard(i, date, section)).join("")}</div>`;
+    }
+    if (trendy.length) {
+      const section = omitSection ? null : "Trendy";
+      const cards = trendy.map((i) => xCard(i, date, section, { trendy: true })).join("");
+      html += `<details class="trendy-disclosure">
+        <summary class="group-label trendy-summary">Trendy (${trendy.length})</summary>
+        <div class="card-list trendy">${cards}</div>
+      </details>`;
+    }
+    return html;
+  }
+
   function renderToday() {
-    const yt = findLatestWith((d) => ytItems(d).length > 0);
-    const x = findLatestWith((d) => xAll(d).length > 0);
-    const headline = state.index.days[0] || null;
+    const today = getTodayHkt();
+    const hasIndex = (state.index?.days || []).length > 0;
+    const day = state.days.get(today) || null;
+    const ytToday = day ? ytItems(day) : [];
+    const xToday = day ? xAll(day) : [];
+    const shortToday = formatShortDate(today);
+
+    const lastYt = findLatestWith((d) => ytItems(d).length > 0);
+    const lastX = findLatestWith((d) => xAll(d).length > 0);
 
     let html = `<div class="section-head">
       <h2>Today</h2>
-      <span class="pill">${esc(headline ? formatDateLabel(headline) : "No days yet")}</span>
+      <span class="pill">${esc(hasIndex ? formatDateLabel(today) : "No digests yet")}</span>
     </div>
-    <p class="meta" style="margin:-0.35rem 0 1rem">Latest available picks from each source (quiet sources stay empty).</p>
     <div class="today-grid">`;
 
-    // YouTube column
+    // YouTube column — calendar today only
     html += `<section class="panel">
       <div class="section-head">
         <h2>YouTube</h2>
-        <span class="pill yt">${yt ? yt.day.youtube.pick_count : 0} picks</span>
-      </div>`;
-    if (yt) {
-      html += `<p class="meta" style="margin:0 0 0.75rem">Content day · ${esc(yt.date)}</p>`;
-      html += `<div class="card-list">${ytItems(yt.day).map((i) => ytCard(i, yt.date)).join("")}</div>`;
+        <span class="pill yt">${ytToday.length} picks</span>
+      </div>
+      <p class="meta skim-date">${esc(shortToday)}</p>`;
+    if (ytToday.length) {
+      html += `<div class="card-list">${ytToday.map((i) => ytCard(i, today)).join("")}</div>`;
     } else {
-      html += emptyBlock("No YouTube picks in retained days.");
+      html += emptyBlock("No YouTube picks for today.");
+      if (lastYt && lastYt.date !== today) {
+        html += `<p class="empty-link"><button type="button" class="text-link" data-goto-day="${esc(lastYt.date)}">Last YT: ${esc(formatShortDate(lastYt.date, true))}</button></p>`;
+      }
     }
     html += `</section>`;
 
-    // X column
+    // X column — calendar today only
+    const xCount = day?.x?.pick_count_total ?? xToday.length;
     html += `<section class="panel">
       <div class="section-head">
         <h2>X</h2>
-        <span class="pill x">${x ? x.day.x.pick_count_total : 0} picks</span>
-      </div>`;
-    if (x) {
-      html += `<p class="meta" style="margin:0 0 0.75rem">Digest day · ${esc(x.date)}</p>`;
-      const watch = xWatch(x.day);
-      const trendy = xTrendy(x.day);
-      if (watch.length) {
-        html += `<p class="group-label">Watch list · ${watch.length}</p>
-          <div class="card-list">${watch.map((i) => xCard(i, x.date, "Watch list")).join("")}</div>`;
-      }
-      if (trendy.length) {
-        html += `<p class="group-label" style="margin-top:1rem">Trendy · ${trendy.length}</p>
-          <div class="card-list">${trendy.map((i) => xCard(i, x.date, "Trendy")).join("")}</div>`;
-      }
+        <span class="pill x">${xCount} picks</span>
+      </div>
+      <p class="meta skim-date">${esc(shortToday)}</p>`;
+    if (xToday.length) {
+      html += renderXGroups(day, today, { omitSection: true });
     } else {
-      html += emptyBlock("No X picks in retained days.");
+      html += emptyBlock("No X picks for today.");
+      if (lastX && lastX.date !== today) {
+        html += `<p class="empty-link"><button type="button" class="text-link" data-goto-day="${esc(lastX.date)}">Last X: ${esc(formatShortDate(lastX.date, true))}</button></p>`;
+      }
     }
     html += `</section></div>`;
     return html;
@@ -180,10 +238,10 @@
     const rows = state.index.days.map((date) => {
       const day = state.days.get(date);
       if (!day || !dayHasContent(day)) {
-        return `<button class="day-row quiet" data-day="${esc(date)}" type="button">
+        return `<div class="day-row quiet" aria-disabled="true">
           <span class="date">${esc(formatDateLabel(date))}</span>
           <span class="counts"><span class="pill">quiet</span></span>
-        </button>`;
+        </div>`;
       }
       const yCount = day.youtube?.pick_count ?? ytItems(day).length;
       const xCount = day.x?.pick_count_total ?? xAll(day).length;
@@ -219,16 +277,7 @@
     if (xAll(day).length) {
       html += `<section class="panel">
         <div class="section-head"><h2>X</h2><span class="pill x">${day.x.pick_count_total} picks</span></div>`;
-      const watch = xWatch(day);
-      const trendy = xTrendy(day);
-      if (watch.length) {
-        html += `<p class="group-label">Watch list · ${watch.length}</p>
-          <div class="card-list">${watch.map((i) => xCard(i, date, "Watch list")).join("")}</div>`;
-      }
-      if (trendy.length) {
-        html += `<p class="group-label" style="margin-top:1rem">Trendy · ${trendy.length}</p>
-          <div class="card-list">${trendy.map((i) => xCard(i, date, "Trendy")).join("")}</div>`;
-      }
+      html += renderXGroups(day, date, { omitSection: true });
       html += `</section>`;
     }
 
@@ -272,6 +321,7 @@
         rows.push({
           kind: "x",
           section: "Trendy",
+          trendy: true,
           date,
           title: item.short_title,
           summary: item.summary,
@@ -310,7 +360,12 @@
       if (r.kind === "youtube") {
         return ytCard({ title: r.title, summary: r.summary, channel: r.meta, url: r.url }, r.date);
       }
-      return xCard({ short_title: r.title, summary: r.summary, handle: r.meta.replace(/^@/, ""), url: r.url }, r.date, r.section);
+      return xCard(
+        { short_title: r.title, summary: r.summary, handle: r.meta.replace(/^@/, ""), url: r.url },
+        r.date,
+        r.section,
+        { trendy: !!r.trendy }
+      );
     }).join("")}</div>`;
     return html;
   }
@@ -358,15 +413,15 @@
 
     for (const date of state.index.days) {
       const day = state.days.get(date);
-      const push = (items, label) => {
+      const push = (items, label, trendy) => {
         for (const item of items) {
           const h = (item.handle || "").replace(/^@/, "");
           if (handle !== "all" && h !== handle) continue;
-          cards.push(xCard(item, date, label));
+          cards.push(xCard(item, date, label, { trendy }));
         }
       };
-      if (section === "all" || section === "watch_list") push(xWatch(day), "Watch list");
-      if (section === "all" || section === "trendy") push(xTrendy(day), "Trendy");
+      if (section === "all" || section === "watch_list") push(xWatch(day), "Watch list", false);
+      if (section === "all" || section === "trendy") push(xTrendy(day), "Trendy", true);
     }
 
     return `<div class="section-head"><h2>X</h2><span class="pill x">${cards.length}</span></div>
@@ -390,6 +445,13 @@
       ${cards.length ? `<div class="card-list">${cards.join("")}</div>` : emptyBlock("No X picks.")}`;
   }
 
+  function openTrendyOnDesktop() {
+    if (!window.matchMedia("(min-width: 641px)").matches) return;
+    main.querySelectorAll(".trendy-disclosure").forEach((el) => {
+      el.open = true;
+    });
+  }
+
   function render() {
     let html = "";
     if (state.view === "today") html = renderToday();
@@ -399,6 +461,7 @@
     else if (state.view === "youtube") html = renderYouTube();
     else if (state.view === "x") html = renderX();
     main.innerHTML = html;
+    openTrendyOnDesktop();
   }
 
   document.querySelector(".tabs").addEventListener("click", (e) => {
@@ -406,9 +469,16 @@
     if (!btn) return;
     state.selectedDay = null;
     setView(btn.dataset.view);
+    // Keep focus on the activated tab after re-render of main
+    requestAnimationFrame(() => btn.focus({ preventScroll: true }));
   });
 
   main.addEventListener("click", (e) => {
+    const goto = e.target.closest("[data-goto-day]");
+    if (goto) {
+      goToDayDetail(goto.dataset.gotoDay);
+      return;
+    }
     const back = e.target.closest("[data-action='back-days']");
     if (back) {
       state.selectedDay = null;
