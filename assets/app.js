@@ -400,7 +400,7 @@
     let html = "";
     for (const [channel, items] of groups) {
       html += `<p class="group-label">${esc(channel)} · ${items.length}</p>
-        <div class="card-list launch-grid">${items.map((i) => launchCard(i, opts)).join("")}</div>`;
+        <div class="card-list dense-grid">${items.map((i) => launchCard(i, opts)).join("")}</div>`;
     }
     return html;
   }
@@ -653,7 +653,7 @@
           </select>
         </div>
       </div>
-      ${cards.length ? `<div class="card-list">${cards.join("")}</div>` : emptyBlock("No YouTube picks.")}`;
+      ${cards.length ? `<div class="card-list dense-grid">${cards.join("")}</div>` : emptyBlock("No YouTube picks.")}`;
   }
 
   function renderX() {
@@ -698,7 +698,7 @@
           </select>
         </div>
       </div>
-      ${cards.length ? `<div class="card-list">${cards.join("")}</div>` : emptyBlock("No X picks.")}`;
+      ${cards.length ? `<div class="card-list dense-grid">${cards.join("")}</div>` : emptyBlock("No X picks.")}`;
   }
 
   /* —— Weekly views —— */
@@ -815,7 +815,7 @@
       return html;
     }
 
-    html += `<div class="card-list launch-grid">${hits.map((r) =>
+    html += `<div class="card-list dense-grid">${hits.map((r) =>
       launchCard(
         { title: r.title, summary: r.summary, channel: r.channel, url: r.url, video_id: r.video_id, published_hkt: r.published_hkt },
         { weekStart: r.weekStart }
@@ -849,7 +849,7 @@
           </select>
         </div>
       </div>
-      ${cards.length ? `<div class="card-list launch-grid">${cards.join("")}</div>` : emptyBlock("No launch videos.")}`;
+      ${cards.length ? `<div class="card-list dense-grid">${cards.join("")}</div>` : emptyBlock("No launch videos.")}`;
   }
 
   function openTrendyOnDesktop() {
