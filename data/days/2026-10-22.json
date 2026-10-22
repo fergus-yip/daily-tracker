@@ -1,0 +1,76 @@
+{
+  "date_hkt": "2026-10-22",
+  "x": {
+    "pick_count_total": 10,
+    "watch_count": 5,
+    "trendy_count": 5,
+    "window_since": "2026-10-21 08:00 HKT",
+    "sections": {
+      "watch_list": [
+        {
+          "handle": "bot",
+          "short_title": "Pages: reports, memos, dashboards",
+          "url": "https://x.com/bot/status/2112992872857252082",
+          "summary": "Ask Bot for a page, edit it together, or have it keep the page up to date."
+        },
+        {
+          "handle": "ericzakariasson",
+          "short_title": "Useful Pages patterns",
+          "url": "https://x.com/ericzakariasson/status/2112995956090454238",
+          "summary": "Copy-ready ideas: launch burn-down lists, design docs you iterate with Bot, morning briefs, and weekly what-did-I-get-done."
+        },
+        {
+          "handle": "kiaraplds",
+          "short_title": "IncidentWatch + IncidentSweep",
+          "url": "https://x.com/kiaraplds/status/2112932258546151805",
+          "summary": "Three bots split roles and cleared ~204 support tickets in ~10 minutes after an incident, with a person approving before anything sends."
+        },
+        {
+          "handle": "vincentzhu",
+          "short_title": "Report-to-Bot debt Page",
+          "url": "https://x.com/vincentzhu/status/2112996287146504669",
+          "summary": "Keep a living page of everything you owe Bot (with sources and diagrams) so it tracks accountability over time."
+        },
+        {
+          "handle": "romanugarte_",
+          "short_title": "Living knowledge-base Pages",
+          "url": "https://x.com/romanugarte_/status/2112998685927756007",
+          "summary": "Let bots keep Pages current and build on them so each one becomes a shareable knowledge base."
+        }
+      ],
+      "trendy": [
+        {
+          "handle": "BrianRoemmele",
+          "short_title": "X Money → weekly Bot report",
+          "url": "https://x.com/BrianRoemmele/status/2112763030648062096",
+          "summary": "Monday routine: Bot reads your X Money account and writes a deep weekly finance report."
+        },
+        {
+          "handle": "fleyta88",
+          "short_title": "Routine cost / clock selector",
+          "url": "https://x.com/fleyta88/status/2112839784389308689",
+          "summary": "Playbook for webhook vs hourly vs daily vs 5-minute wakes, plus pasteable prompt to rebuild schedules by cost."
+        },
+        {
+          "handle": "Texas_Twins_Dad",
+          "short_title": "Dedicated Bot email inbox",
+          "url": "https://x.com/Texas_Twins_Dad/status/2112926907549323538",
+          "summary": "Give Bot its own address, forward site contact mail there, summarize (not auto-reply)."
+        },
+        {
+          "handle": "ashnichrist",
+          "short_title": "Agent / growth Pages dashboards",
+          "url": "https://x.com/ashnichrist/status/2112998428456194373",
+          "summary": "Concrete builds: agent status dashboard, live X vs median, content growth by platform."
+        },
+        {
+          "handle": "its_brill_",
+          "short_title": "Claude Code ↔ Grok Bot bridge",
+          "url": "https://x.com/its_brill_/status/2112991511986266123",
+          "summary": "Bot→CLI easy; Claude→Bot via MCP + webhook routine + Tailscale Funnel."
+        }
+      ]
+    },
+    "try_one": "Ask Bot for a living Page (ops board, debt list, or morning brief) and tell it to keep that page current."
+  }
+}
