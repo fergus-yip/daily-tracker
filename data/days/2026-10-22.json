@@ -1,5 +1,32 @@
 {
   "date_hkt": "2026-10-22",
+  "youtube": {
+    "content_date_hkt": "2026-10-21",
+    "pick_count": 3,
+    "items": [
+      {
+        "channel": "Higgsfield AI",
+        "title": "One Edit, Three Platforms, Any Language",
+        "url": "https://www.youtube.com/watch?v=2kHxQ8Lda_E",
+        "video_id": "2kHxQ8Lda_E",
+        "summary": "Short demo of Aura edits landing on Reels, TikTok, and Shorts, plus Opus translating the same clip into other languages."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "We Gave Higgsfield to a Monkey | Higgsfield Academy",
+        "url": "https://www.youtube.com/watch?v=1E96lnbXnds",
+        "video_id": "1E96lnbXnds",
+        "summary": "Higgsfield Academy promo where they hand the tools to a monkey and show what comes out."
+      },
+      {
+        "channel": "Kelly Tsai",
+        "title": "為什麼我的AI永遠好像比別人笨、都給出爛答案？該怎麼解決？｜Kelly Tsai",
+        "url": "https://www.youtube.com/watch?v=B49qedRD8W0",
+        "video_id": "B49qedRD8W0",
+        "summary": "Short on why your AI often feels dumber than everyone else’s and how to get better answers (tied to her Notion×AI knowledge-hub course)."
+      }
+    ]
+  },
   "x": {
     "pick_count_total": 10,
     "watch_count": 5,

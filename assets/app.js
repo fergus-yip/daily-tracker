@@ -195,6 +195,7 @@
       <h2>Today</h2>
       <span class="pill">${esc(hasIndex ? formatDateLabel(today) : "No digests yet")}</span>
     </div>
+    <p class="meta skim-line">Morning digests · yesterday’s updates</p>
     <div class="today-grid">`;
 
     // YouTube column — calendar today only
