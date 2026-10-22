@@ -58,6 +58,22 @@
     return dt.toLocaleDateString("en-HK", opts);
   }
 
+  /** Format ISO timestamp as "HH:MM HKT" for header meta. */
+  function formatUpdatedHkt(iso) {
+    if (!iso) return "";
+    const dt = new Date(iso);
+    if (Number.isNaN(dt.getTime())) return String(iso);
+    const parts = new Intl.DateTimeFormat("en-GB", {
+      timeZone: "Asia/Hong_Kong",
+      hour: "2-digit",
+      minute: "2-digit",
+      hour12: false,
+    }).formatToParts(dt);
+    const hour = parts.find((p) => p.type === "hour")?.value ?? "";
+    const minute = parts.find((p) => p.type === "minute")?.value ?? "";
+    return `${hour}:${minute} HKT`;
+  }
+
   function ytItems(day) {
     return day?.youtube?.items || [];
   }
@@ -119,7 +135,8 @@
     render();
   }
 
-  function ytCard(item, date) {
+  function ytCard(item, date, opts = {}) {
+    const dateSpan = opts.omitDate ? "" : `<span>${esc(formatShortDate(date))}</span>`;
     return `
       <a class="card source-yt" href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">
         <h3 class="card-title">${esc(item.title)}</h3>
@@ -127,7 +144,7 @@
         <div class="card-meta">
           <span class="source-chip yt">YT</span>
           <span class="tag">${esc(item.channel || "YouTube")}</span>
-          <span>${esc(formatShortDate(date))}</span>
+          ${dateSpan}
         </div>
       </a>`;
   }
@@ -135,6 +152,7 @@
   function xCard(item, date, section, opts = {}) {
     const handle = item.handle ? `@${item.handle.replace(/^@/, "")}` : "X";
     const trendyClass = opts.trendy ? " trendy" : "";
+    const dateSpan = opts.omitDate ? "" : `<span>${esc(formatShortDate(date))}</span>`;
     return `
       <a class="card source-x${trendyClass}" href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">
         <h3 class="card-title">${esc(item.short_title || item.title || "")}</h3>
@@ -143,7 +161,7 @@
           <span class="source-chip x">X</span>
           <span class="tag">${esc(handle)}</span>
           ${section ? `<span>${esc(section)}</span>` : ""}
-          <span>${esc(formatShortDate(date))}</span>
+          ${dateSpan}
         </div>
       </a>`;
   }
@@ -160,18 +178,18 @@
     return null;
   }
 
-  function renderXGroups(day, date, { omitSection = true } = {}) {
+  function renderXGroups(day, date, { omitSection = true, omitDate = false } = {}) {
     const watch = xWatch(day);
     const trendy = xTrendy(day);
     let html = "";
     if (watch.length) {
       const section = omitSection ? null : "Watch list";
       html += `<p class="group-label">Watch list · ${watch.length}</p>
-        <div class="card-list">${watch.map((i) => xCard(i, date, section)).join("")}</div>`;
+        <div class="card-list">${watch.map((i) => xCard(i, date, section, { omitDate })).join("")}</div>`;
     }
     if (trendy.length) {
       const section = omitSection ? null : "Trendy";
-      const cards = trendy.map((i) => xCard(i, date, section, { trendy: true })).join("");
+      const cards = trendy.map((i) => xCard(i, date, section, { trendy: true, omitDate })).join("");
       html += `<details class="trendy-disclosure">
         <summary class="group-label trendy-summary">Trendy (${trendy.length})</summary>
         <div class="card-list trendy">${cards}</div>
@@ -206,7 +224,7 @@
       </div>
       <p class="meta skim-date">${esc(shortToday)}</p>`;
     if (ytToday.length) {
-      html += `<div class="card-list">${ytToday.map((i) => ytCard(i, today)).join("")}</div>`;
+      html += `<div class="card-list">${ytToday.map((i) => ytCard(i, today, { omitDate: true })).join("")}</div>`;
     } else {
       html += emptyBlock("No YouTube picks for today.");
       if (lastYt && lastYt.date !== today) {
@@ -232,7 +250,7 @@
       </div>
       <p class="meta skim-date">${esc(shortToday)}</p>`;
     if (xToday.length) {
-      html += renderXGroups(day, today, { omitSection: true });
+      html += renderXGroups(day, today, { omitSection: true, omitDate: true });
     } else {
       html += emptyBlock("No X picks for today.");
       if (lastX && lastX.date !== today) {
@@ -263,13 +281,16 @@
       </button>`;
     }).join("");
 
-    return `<div class="section-head"><h2>By day</h2><span class="pill">${state.index.days.length} days</span></div>
+    const n = state.index.days.length;
+    const dayLabel = n === 1 ? "1 day" : `${n} days`;
+    return `<div class="section-head"><h2>By day</h2><span class="pill">${dayLabel}</span></div>
       <div class="day-list">${rows || emptyBlock("No days retained yet.")}</div>`;
   }
 
   function renderDayDetail(date) {
     const day = state.days.get(date);
     if (!day) return emptyBlock(`Missing data for ${date}.`);
+    const omitDate = date === getTodayHkt();
 
     let html = `<button class="back-link" type="button" data-action="back-days">← All days</button>
       <div class="section-head">
@@ -280,13 +301,13 @@
     if (ytItems(day).length) {
       html += `<section class="panel">
         <div class="section-head"><h2>YouTube</h2><span class="pill yt">${day.youtube.pick_count} picks</span></div>`;
-      html += `<div class="card-list">${ytItems(day).map((i) => ytCard(i, date)).join("")}</div></section>`;
+      html += `<div class="card-list">${ytItems(day).map((i) => ytCard(i, date, { omitDate })).join("")}</div></section>`;
     }
 
     if (xAll(day).length) {
       html += `<section class="panel">
         <div class="section-head"><h2>X</h2><span class="pill x">${day.x.pick_count_total} picks</span></div>`;
-      html += renderXGroups(day, date, { omitSection: true });
+      html += renderXGroups(day, date, { omitSection: true, omitDate });
       html += `</section>`;
     }
 
@@ -532,7 +553,8 @@
       state.index = await loadIndex();
       if (state.index.updated_at) {
         updatedMeta.hidden = false;
-        updatedMeta.textContent = `Updated ${state.index.updated_at} · keep ${state.index.retention_days} days`;
+        const when = formatUpdatedHkt(state.index.updated_at);
+        updatedMeta.textContent = `Updated ${when} · keep ${state.index.retention_days} days`;
       }
       await loadAllDays();
       render();

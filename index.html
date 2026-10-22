@@ -14,17 +14,27 @@
       <div class="brand">
         <p class="eyebrow">Fergus · team</p>
         <h1>Daily Tracker</h1>
-        <p class="sub">YouTube + X · morning digests of yesterday’s updates · last 30 days</p>
+        <p class="sub">YouTube + X · last 30 days</p>
       </div>
       <p id="updated-meta" class="meta" hidden></p>
     </header>
 
     <nav class="tabs" role="tablist" aria-label="Views">
-      <button class="tab is-active" data-view="today" role="tab" aria-selected="true">Today</button>
-      <button class="tab" data-view="by-day" role="tab" aria-selected="false">By day</button>
-      <button class="tab" data-view="search" role="tab" aria-selected="false">Search</button>
-      <button class="tab" data-view="youtube" role="tab" aria-selected="false">YouTube</button>
-      <button class="tab" data-view="x" role="tab" aria-selected="false">X</button>
+      <button class="tab is-active" data-view="today" role="tab" aria-selected="true" aria-label="Today">
+        <span class="tab-full">Today</span><span class="tab-short" aria-hidden="true">Today</span>
+      </button>
+      <button class="tab" data-view="by-day" role="tab" aria-selected="false" aria-label="By day">
+        <span class="tab-full">By day</span><span class="tab-short" aria-hidden="true">By day</span>
+      </button>
+      <button class="tab" data-view="search" role="tab" aria-selected="false" aria-label="Search">
+        <span class="tab-full">Search</span><span class="tab-short" aria-hidden="true">Search</span>
+      </button>
+      <button class="tab" data-view="youtube" role="tab" aria-selected="false" aria-label="YouTube">
+        <span class="tab-full">YouTube</span><span class="tab-short" aria-hidden="true">YT</span>
+      </button>
+      <button class="tab" data-view="x" role="tab" aria-selected="false" aria-label="X">
+        <span class="tab-full">X</span><span class="tab-short" aria-hidden="true">X</span>
+      </button>
     </nav>
 
     <main id="main" class="main" aria-live="polite">
