@@ -720,13 +720,7 @@
         <span class="pill launch">${videos.length} launches</span>
       </div>
       <p class="meta skim-line">${esc(formatWeekRange(week.week_start_hkt, week.week_end_hkt))}</p>
-      <section class="panel">
-        <div class="section-head">
-          <h2>Launches</h2>
-          <span class="pill launch">${videos.length}</span>
-        </div>
-        ${renderLaunchGroups(videos, { weekStart, omitDate: false })}
-      </section>`;
+      ${renderLaunchGroups(videos, { weekStart, omitDate: false })}`;
   }
 
   function renderByWeekList() {
@@ -762,12 +756,7 @@
         <h2>${esc(formatWeekRange(week.week_start_hkt, week.week_end_hkt))}</h2>
         <span class="pill launch">${videos.length} launches</span>
       </div>
-      <div class="day-detail">
-        <section class="panel">
-          <div class="section-head"><h2>Launches</h2><span class="pill launch">${videos.length}</span></div>
-          ${renderLaunchGroups(videos, { weekStart })}
-        </section>
-      </div>`;
+      ${renderLaunchGroups(videos, { weekStart })}`;
     return html;
   }
 
