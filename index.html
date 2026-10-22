@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="dark light" />
+  <meta name="description" content="Fergus’s daily YouTube + X digest tracker" />
+  <title>Daily Tracker</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="site-header">
+      <div class="brand">
+        <p class="eyebrow">Fergus · team</p>
+        <h1>Daily Tracker</h1>
+        <p class="sub">YouTube + X digests · last 30 days</p>
+      </div>
+      <p id="updated-meta" class="meta" hidden></p>
+    </header>
+
+    <nav class="tabs" role="tablist" aria-label="Views">
+      <button class="tab is-active" data-view="today" role="tab" aria-selected="true">Today</button>
+      <button class="tab" data-view="by-day" role="tab" aria-selected="false">By day</button>
+      <button class="tab" data-view="search" role="tab" aria-selected="false">Search</button>
+      <button class="tab" data-view="youtube" role="tab" aria-selected="false">YouTube</button>
+      <button class="tab" data-view="x" role="tab" aria-selected="false">X</button>
+    </nav>
+
+    <main id="main" class="main" aria-live="polite">
+      <p class="loading">Loading digests…</p>
+    </main>
+
+    <footer class="site-footer">
+      <p>Public skim board · no bookmarks · data under <code>/data</code></p>
+    </footer>
+  </div>
+  <script src="assets/app.js" defer></script>
+</body>
+</html>
