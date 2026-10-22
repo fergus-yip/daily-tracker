@@ -146,7 +146,7 @@
     const dateSpan = opts.omitDate ? "" : `<span>${esc(formatShortDate(date))}</span>`;
     const vid = ytVideoId(item);
     const thumb = vid
-      ? `<img class="card-thumb" src="https://i.ytimg.com/vi/${esc(vid)}/hqdefault.jpg" alt="" loading="lazy" decoding="async" width="160" height="90" />`
+      ? `<img class="card-thumb" src="https://i.ytimg.com/vi/${esc(vid)}/hq720.jpg" alt="" loading="lazy" decoding="async" width="1280" height="720" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/${esc(vid)}/hqdefault.jpg'" />`
       : "";
     return `
       <a class="card source-yt${vid ? " has-thumb" : ""}" href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">

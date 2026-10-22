@@ -300,10 +300,11 @@ h1 {
 }
 .card-thumb {
   width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
   border-radius: 8px;
-  background: var(--border);
+  background: #0a0a0a;
   display: block;
 }
 .card.source-yt.has-thumb .card-body {
