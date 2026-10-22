@@ -145,14 +145,6 @@
       </div>`;
     if (yt) {
       html += `<p class="meta" style="margin:0 0 0.75rem">Content day · ${esc(yt.date)}</p>`;
-      if (yt.day.youtube.watch_one) {
-        const w = yt.day.youtube.watch_one;
-        html += `<div class="spotlight">
-          <p class="label">Watch one</p>
-          <a href="${esc(w.url)}" target="_blank" rel="noopener noreferrer">${esc(w.title)}</a>
-          ${w.note ? `<p>${esc(w.note)}</p>` : ""}
-        </div>`;
-      }
       html += `<div class="card-list">${ytItems(yt.day).map((i) => ytCard(i, yt.date)).join("")}</div>`;
     } else {
       html += emptyBlock("No YouTube picks in retained days.");
@@ -167,12 +159,6 @@
       </div>`;
     if (x) {
       html += `<p class="meta" style="margin:0 0 0.75rem">Digest day · ${esc(x.date)}</p>`;
-      if (x.day.x.try_one) {
-        html += `<div class="spotlight">
-          <p class="label">Try one</p>
-          <p>${esc(x.day.x.try_one)}</p>
-        </div>`;
-      }
       const watch = xWatch(x.day);
       const trendy = xTrendy(x.day);
       if (watch.length) {
@@ -227,23 +213,12 @@
     if (ytItems(day).length) {
       html += `<section class="panel">
         <div class="section-head"><h2>YouTube</h2><span class="pill yt">${day.youtube.pick_count} picks</span></div>`;
-      if (day.youtube.watch_one) {
-        const w = day.youtube.watch_one;
-        html += `<div class="spotlight">
-          <p class="label">Watch one</p>
-          <a href="${esc(w.url)}" target="_blank" rel="noopener noreferrer">${esc(w.title)}</a>
-          ${w.note ? `<p>${esc(w.note)}</p>` : ""}
-        </div>`;
-      }
       html += `<div class="card-list">${ytItems(day).map((i) => ytCard(i, date)).join("")}</div></section>`;
     }
 
     if (xAll(day).length) {
       html += `<section class="panel">
         <div class="section-head"><h2>X</h2><span class="pill x">${day.x.pick_count_total} picks</span></div>`;
-      if (day.x.try_one) {
-        html += `<div class="spotlight"><p class="label">Try one</p><p>${esc(day.x.try_one)}</p></div>`;
-      }
       const watch = xWatch(day);
       const trendy = xTrendy(day);
       if (watch.length) {

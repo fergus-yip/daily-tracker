@@ -70,7 +70,6 @@
           "summary": "Bot→CLI easy; Claude→Bot via MCP + webhook routine + Tailscale Funnel."
         }
       ]
-    },
-    "try_one": "Ask Bot for a living Page (ops board, debt list, or morning brief) and tell it to keep that page current."
+    }
   }
 }
