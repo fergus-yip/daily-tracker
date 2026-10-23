@@ -1,0 +1,44 @@
+{
+  "date_hkt": "2026-10-23",
+  "youtube": {
+    "content_date_hkt": "2026-10-22",
+    "pick_count": 5,
+    "items": [
+      {
+        "channel": "Grok",
+        "title": "Grok Bot 201",
+        "url": "https://www.youtube.com/watch?v=rOVomdnWhjQ",
+        "video_id": "rOVomdnWhjQ",
+        "summary": "Workshop on going from one bot to a team with skills and routines that run on their own."
+      },
+      {
+        "channel": "Grok",
+        "title": "Grok Bot for Marketing: Go from idea to launch with a team of Bots",
+        "url": "https://www.youtube.com/watch?v=VSaeKaC2Tck",
+        "video_id": "VSaeKaC2Tck",
+        "summary": "Marketing workshop: take a field event from idea to an approved guest list using a team of Bots."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "THE DISTANCE | An Eyewear Campaign on the Moon",
+        "url": "https://www.youtube.com/watch?v=OHawD92HnN8",
+        "video_id": "OHawD92HnN8",
+        "summary": "Fashion eyewear campaign film set on the Moon, made with Higgsfield."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "5-Step Workflow: How to Make Viral AI Short Dramas (60M Views)",
+        "url": "https://www.youtube.com/watch?v=cBxKZcalwkM",
+        "video_id": "cBxKZcalwkM",
+        "summary": "Full five-step workflow for viral AI short dramas, including prompts, skills, and contest links."
+      },
+      {
+        "channel": "Kelly Tsai",
+        "title": "找到CP值超高的首爾化妝室！推薦的拍照店家📸變身韓系大姐姐！25歲後的夜生活注定宿醉🫩｜Kelly Tsai",
+        "url": "https://www.youtube.com/watch?v=BXJYHfrklYs",
+        "video_id": "BXJYHfrklYs",
+        "summary": "Seoul trip vlog covering a high-value makeup studio, photo spots for a Korean look, and night-life hangover notes."
+      }
+    ]
+  }
+}
