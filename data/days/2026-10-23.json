@@ -40,5 +40,77 @@
         "summary": "Seoul trip vlog covering a high-value makeup studio, photo spots for a Korean look, and night-life hangover notes."
       }
     ]
+  },
+  "x": {
+    "pick_count_total": 10,
+    "watch_count": 5,
+    "trendy_count": 5,
+    "window_since": "2026-10-22 08:00 HKT",
+    "sections": {
+      "watch_list": [
+        {
+          "handle": "bot",
+          "short_title": "1Password logins",
+          "url": "https://x.com/bot/status/2113332983226831339",
+          "summary": "Approve selected 1Password logins so Grok Bot can sign into sites for you as the integration rolls out."
+        },
+        {
+          "handle": "bot",
+          "short_title": "Native phone apps",
+          "url": "https://x.com/bot/status/2113393684209176718",
+          "summary": "On iOS and Android, grant Bot access to Calendar, Reminders, Contacts and more so it can handle everyday phone tasks."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "Statechart companion skill",
+          "url": "https://x.com/poteto/status/2113398433977659654",
+          "summary": "Pair a new Pele-powered companion skill with /create-formal-verification-skill so agents draw statecharts and check them against your specs."
+        },
+        {
+          "handle": "benln",
+          "short_title": "Recent ship roundup",
+          "url": "https://x.com/benln/status/2113258261977928050",
+          "summary": "Try the last few days’ ships in one pass: Pages dashboards, iPhone Action Button voice, email aliases, and Robinhood/Coinbase/Runway connectors."
+        },
+        {
+          "handle": "mattyp",
+          "short_title": "Daily changelog Bot",
+          "url": "https://x.com/mattyp/status/2113383169240277286",
+          "summary": "Ask Bot to check a product changelog and related videos each day and drop the highlights into your Grok Bot chat."
+        }
+      ],
+      "trendy": [
+        {
+          "handle": "BrianRoemmele",
+          "short_title": "App Replicator Bot",
+          "url": "https://x.com/BrianRoemmele/status/2113140131813356006",
+          "summary": "Use his free App Replicator Bot to reverse one feature of a paid app you own, write a clean-room SPEC.md, and rebuild only what you need."
+        },
+        {
+          "handle": "Yumzlef",
+          "short_title": "Overnight agent swarm",
+          "url": "https://x.com/Yumzlef/status/2113253367736676390",
+          "summary": "Spin up a large parallel Grok Bot swarm overnight so tickets close and PRs merge while you sleep, then review in the morning."
+        },
+        {
+          "handle": "Serantych",
+          "short_title": "REA reverse-engineer guide",
+          "url": "https://x.com/Serantych/status/2113332023431405772",
+          "summary": "Connect REA as a custom MCP on Bot, inspect how a feature actually works, then build your own version from evidence instead of screenshots."
+        },
+        {
+          "handle": "MichaelGannotti",
+          "short_title": "Fire-tablet agent board",
+          "url": "https://x.com/MichaelGannotti/status/2113281155709518094",
+          "summary": "Ask Bot to root an old Fire tablet and turn it into a wireless dashboard so you can see what agents across Hermes, OpenClaw, and Grok Bot are doing."
+        },
+        {
+          "handle": "free_ai_guides",
+          "short_title": "Shopping Bot walkthrough",
+          "url": "https://x.com/free_ai_guides/status/2113309273744617696",
+          "summary": "Follow the copy-paste guide to build a Cart Bot with wishlist rules and an 8am price-watch routine that never presses Buy for you."
+        }
+      ]
+    }
   }
 }
