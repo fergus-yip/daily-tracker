@@ -1,0 +1,37 @@
+{
+  "date_hkt": "2026-10-24",
+  "youtube": {
+    "content_date_hkt": "2026-10-23",
+    "pick_count": 4,
+    "items": [
+      {
+        "channel": "Grok",
+        "title": "SpaceXSI x Bain: What boardrooms are asking about the SI SDLC",
+        "url": "https://www.youtube.com/watch?v=rcwwIEmfcjk",
+        "video_id": "rcwwIEmfcjk",
+        "summary": "Bain and SpaceXSI unpack what boards now ask about software SI spend, cost attribution, and metrics finance will buy."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "You don't have to quit your job to start with AI",
+        "url": "https://www.youtube.com/watch?v=MWQSBjaCvwM",
+        "video_id": "MWQSBjaCvwM",
+        "summary": "Tip short from the Iman Gadzhi side-hustles series: keep the day job and learn AI tools on the side at your own pace."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "100 hooks, 100 AI actors, one afternoon",
+        "url": "https://www.youtube.com/watch?v=5FdPO33_7aw",
+        "video_id": "5FdPO33_7aw",
+        "summary": "Tip short on spinning up many AI-actor ad variants in hours instead of one expensive shoot."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "Three AI content ideas for e-commerce brands",
+        "url": "https://www.youtube.com/watch?v=TcYhTHMxZvw",
+        "video_id": "TcYhTHMxZvw",
+        "summary": "Quick ideas for UGC-style videos, AI product shoots, and 3D motion ads to build an AI content portfolio."
+      }
+    ]
+  }
+}
