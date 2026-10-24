@@ -33,5 +33,77 @@
         "summary": "Quick ideas for UGC-style videos, AI product shoots, and 3D motion ads to build an AI content portfolio."
       }
     ]
+  },
+  "x": {
+    "pick_count_total": 10,
+    "watch_count": 5,
+    "trendy_count": 5,
+    "window_since": "2026-10-23 08:00 HKT",
+    "sections": {
+      "watch_list": [
+        {
+          "handle": "mattyp",
+          "short_title": "Team Bots video walkthrough",
+          "url": "https://x.com/mattyp/status/2113636230885720101",
+          "summary": "Watch the ~8-minute Team Bots guide covering how to connect tools, build a shared team bot, and when Teams/Enterprise setups beat solo bots."
+        },
+        {
+          "handle": "bot",
+          "short_title": "Vault saves logins cards contacts",
+          "url": "https://x.com/bot/status/2113717946019397910",
+          "summary": "Add logins, cards, and contact info once in Vault so Bot can autofill sign-in and checkout without stopping to ask each time."
+        },
+        {
+          "handle": "ericzakariasson",
+          "short_title": "0.75.5 email forward and fewer approvals",
+          "url": "https://x.com/ericzakariasson/status/2113743401975963908",
+          "summary": "Update to 0.75.5 for bots that forward inbox email with original formatting and attachments, plus fewer approval cards for actions you already asked for."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "Ask Bot to scan tip threads",
+          "url": "https://x.com/poteto/status/2113697042577137741",
+          "summary": "Point your Bot at high-signal tip threads and ask it to mine concrete workflows instead of guessing what to try next."
+        },
+        {
+          "handle": "ericzakariasson",
+          "short_title": "Bot makes videos from text or image",
+          "url": "https://x.com/ericzakariasson/status/2113423577408278903",
+          "summary": "In 0.75.2, ask Bot to generate a video from a plain description or a still image, then iterate from the changelog examples."
+        }
+      ],
+      "trendy": [
+        {
+          "handle": "ScottyBeamIO",
+          "short_title": "Content CoS fleet plus travel booking",
+          "url": "https://x.com/ScottyBeamIO/status/2113598932311830814",
+          "summary": "Clone the Content setup (Chief of Staff routing to research/write/visuals/numbers/schedule/publish agents) or the Travel setup that plans, compares, and books a trip into one itinerary."
+        },
+        {
+          "handle": "AlexFinn",
+          "short_title": "iPhone Duo to manage Bots",
+          "url": "https://x.com/AlexFinn/status/2113701510735663170",
+          "summary": "Use a dual-iPhone layout as a dedicated control surface for running and supervising multiple Grok Bots side by side."
+        },
+        {
+          "handle": "Texas_Twins_Dad",
+          "short_title": "Snail-mail club subscriber Bot",
+          "url": "https://x.com/Texas_Twins_Dad/status/2113628013573108160",
+          "summary": "Spin up a dedicated Bot to track snail-mail club subscribers, resubs, cancels, addresses, and dates so membership admin stays organized."
+        },
+        {
+          "handle": "sector_sol",
+          "short_title": "20 GitHub Grok Bot starter projects",
+          "url": "https://x.com/sector_sol/status/2113613922054082875",
+          "summary": "Browse the linked public GitHub collection of ready bot profiles and specialist teams (reviewers, research desks, sales with approvals) instead of writing prompts from scratch."
+        },
+        {
+          "handle": "Phil_Holland",
+          "short_title": "Security Audit Bot template",
+          "url": "https://x.com/Phil_Holland/status/2113717196136546403",
+          "summary": "Tell your Bot to add the Security Audit Bot template and point it at a codebase you own for a scanner-backed security pass."
+        }
+      ]
+    }
   }
 }
