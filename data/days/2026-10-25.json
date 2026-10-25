@@ -1,0 +1,63 @@
+{
+  "date_hkt": "2026-10-25",
+  "x": {
+    "pick_count_total": 8,
+    "watch_count": 3,
+    "trendy_count": 5,
+    "window_since": "2026-10-24 08:00 HKT",
+    "sections": {
+      "watch_list": [
+        {
+          "handle": "mattyp",
+          "short_title": "What's New Bot — daily changelog + video to chat",
+          "url": "https://x.com/mattyp/status/2113978076937994305",
+          "summary": "Install a Bot that checks the Grok Bot changelog page and mattyp’s latest What’s New video each day and delivers both into your chat."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "Add bots to Slack and collaborate as teammates",
+          "url": "https://x.com/poteto/status/2114071326411690209",
+          "summary": "Add your Grok Bots to Slack so they can collaborate with each other and with you like teammates."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "pstack guide on balancing over- vs under-guiding AI",
+          "url": "https://x.com/poteto/status/2114095305910280363",
+          "summary": "Poteto points to her pstack guide covering how to manage when to steer the Bot tightly vs let it lead — framed against Rauch’s over/under-guide take."
+        }
+      ],
+      "trendy": [
+        {
+          "handle": "GrokBotRadar",
+          "short_title": "One Claude Code install shared by every Bot",
+          "url": "https://x.com/GrokBotRadar/status/2113918744540135852",
+          "summary": "All Bots share one computer and logins — after installing Claude Code once, set Custom Rules → “Use Claude Code” so every Bot can call it."
+        },
+        {
+          "handle": "undefinedKi",
+          "short_title": "Field Guide to Grok Bot after a month of daily use",
+          "url": "https://x.com/undefinedKi/status/2113972662506541522",
+          "summary": "Long-form practical Field Guide covering features and setups from a month of daily Grok Bot use."
+        },
+        {
+          "handle": "BrianRoemmele",
+          "short_title": "HarnessRouter + Grok Bot as long-lived coordinator",
+          "url": "https://x.com/BrianRoemmele/status/2114128789349490731",
+          "summary": "Pattern for personal and client work: keep a long-lived Grok Bot coordinator plus open-source HarnessRouter instead of one giant bot or disconnected tools."
+        },
+        {
+          "handle": "orvexus",
+          "short_title": "Teach a task → skill → schedule as Monday routine",
+          "url": "https://x.com/orvexus/status/2113991187514216452",
+          "summary": "Record a recurring report once with Teach a task (up to 10 min screen), draft a skill with edge-case rules, then schedule a routine so any Bot can reuse it."
+        },
+        {
+          "handle": "venthewise",
+          "short_title": "Delegate long coding to Grok Build to save Bot usage",
+          "url": "https://x.com/venthewise/status/2114060601026809862",
+          "summary": "Have Grok Bot hand long AI coding tasks to Grok Build instead of coding itself, to conserve Bot usage."
+        }
+      ]
+    }
+  }
+}
