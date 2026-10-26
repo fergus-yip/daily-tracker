@@ -1,0 +1,57 @@
+{
+  "date_hkt": "2026-10-26",
+  "x": {
+    "pick_count_total": 7,
+    "watch_count": 2,
+    "trendy_count": 5,
+    "window_since": "2026-10-25 08:00 HKT",
+    "sections": {
+      "watch_list": [
+        {
+          "handle": "kiaraplds",
+          "short_title": "Voice chat to learn and rehearse",
+          "url": "https://x.com/kiaraplds/status/2114318919456461114",
+          "summary": "Start a voice chat and ask your Bot to quiz you, recite material back, or pitch your deck so you hear what’s stuck."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "Tag @bot to repro and fix",
+          "url": "https://x.com/poteto/status/2114402021461860430",
+          "summary": "Point @bot at a bug thread and tell it to reproduce and fix it inside a named project."
+        }
+      ],
+      "trendy": [
+        {
+          "handle": "Texas_Twins_Dad",
+          "short_title": "Hey Grok wake word on iPhone",
+          "url": "https://x.com/Texas_Twins_Dad/status/2114217410823688573",
+          "summary": "Use Shortcuts + Vocal Shortcuts so saying Hey Grok opens Grok Bot voice chat with no extra apps."
+        },
+        {
+          "handle": "Yarilo7brigada",
+          "short_title": "Shared memory across bots",
+          "url": "https://x.com/Yarilo7brigada/status/2114347205058515267",
+          "summary": "Stop three bots from redoing the same research by wiring a shared knowledge store from GitHub instead of per-chat memory alone."
+        },
+        {
+          "handle": "madebydia",
+          "short_title": "CoS + Codex butler stack",
+          "url": "https://x.com/madebydia/status/2114168742166819074",
+          "summary": "Run Grok Bot as chief of staff for admin and research, then delegate builds to Codex with a Dot-style EA bot."
+        },
+        {
+          "handle": "Brankotrcek",
+          "short_title": "Claude Code hands jobs to Grok Bot",
+          "url": "https://x.com/Brankotrcek/status/2114433784838082857",
+          "summary": "Use a template so Claude Code or another agent prepares an assignment and sends it straight to Grok Bot."
+        },
+        {
+          "handle": "Michael_Fenech_",
+          "short_title": "Voice interview before the job",
+          "url": "https://x.com/Michael_Fenech_/status/2114419721479266788",
+          "summary": "Open a voice chat and let your CoS interview you until a rough idea becomes a clear brief."
+        }
+      ]
+    }
+  }
+}
