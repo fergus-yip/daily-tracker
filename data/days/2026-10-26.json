@@ -53,5 +53,46 @@
         }
       ]
     }
+  },
+  "youtube": {
+    "content_date_hkt": "2026-10-25",
+    "pick_count": 5,
+    "items": [
+      {
+        "channel": "Higgsfield AI",
+        "title": "This is why your AI locations never match",
+        "url": "https://www.youtube.com/watch?v=Lts9yNZKUv4",
+        "video_id": "Lts9yNZKUv4",
+        "summary": "Tip Short: generate the whole set in one 3/4 image so AI locations stay consistent shot-to-shot instead of guessing from a straight-on frame."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "One AI Take, Four New Camera Angles",
+        "url": "https://www.youtube.com/watch?v=X3E5kBfs5TI",
+        "video_id": "X3E5kBfs5TI",
+        "summary": "Tip Short on spinning one AI take into four new camera angles (points to ~16:02 in the full short-drama workflow tutorial)."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "Stop Using Photos as AI Actor References",
+        "url": "https://www.youtube.com/watch?v=M3IQc3gzyr0",
+        "video_id": "M3IQc3gzyr0",
+        "summary": "Tip Short arguing video references beat still photos for AI actors (full tutorial callout at ~03:31)."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "The twist that makes people binge short dramas",
+        "url": "https://www.youtube.com/watch?v=P019icaneAI",
+        "video_id": "P019icaneAI",
+        "summary": "Short-drama tip: start the twist from a feeling everyone recognizes so viewers chase the next episode."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "Stop Rendering Every AI Test in HD",
+        "url": "https://www.youtube.com/watch?v=6FvGgxZ8QGg",
+        "video_id": "6FvGgxZ8QGg",
+        "summary": "Tip Short to draft AI tests at 480p instead of burning time on HD renders for every try (full tutorial at ~07:02)."
+      }
+    ]
   }
 }
