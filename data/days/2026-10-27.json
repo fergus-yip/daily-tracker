@@ -1,5 +1,46 @@
 {
   "date_hkt": "2026-10-27",
+  "youtube": {
+    "content_date_hkt": "2026-10-26",
+    "pick_count": 5,
+    "items": [
+      {
+        "channel": "Higgsfield AI",
+        "title": "Don't show the answer, end your AI drama like this",
+        "url": "https://www.youtube.com/watch?v=qpKFVd_339s",
+        "video_id": "qpKFVd_339s",
+        "summary": "Cut the AI short-drama episode one beat before the reveal so viewers chase episode two (from the 5-step viral drama workflow)."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "How I Make AI Fight Scenes Actually Hit",
+        "url": "https://www.youtube.com/watch?v=jofpFg6W9ow",
+        "video_id": "jofpFg6W9ow",
+        "summary": "Quick tip on making AI fight scenes land harder, with a pointer to the related full tutorial (~10:11)."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "Every viral AI short drama starts from one of these 3 stories",
+        "url": "https://www.youtube.com/watch?v=G7HgQCZAUmo",
+        "video_id": "G7HgQCZAUmo",
+        "summary": "Most viral AI short dramas start from Cinderella, love-against-odds, or rivalry — pick a situation people get in seconds."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "How to get the same AI face in every shot",
+        "url": "https://www.youtube.com/watch?v=MsxIRbuYmyU",
+        "video_id": "MsxIRbuYmyU",
+        "summary": "Keep one AI face across shots with a plain grey character sheet (three views; erase the face from the full-body front)."
+      },
+      {
+        "channel": "Kelly Tsai",
+        "title": "不必再花大錢用Claude？用開源的Step 5 Preview實測三種類型工作！｜Kelly Tsai",
+        "url": "https://www.youtube.com/watch?v=U3oia5o0bs0",
+        "video_id": "U3oia5o0bs0",
+        "summary": "Hands-on test of open-source Step 5 Preview across three work types as a possible Claude alternative."
+      }
+    ]
+  },
   "x": {
     "pick_count_total": 8,
     "watch_count": 3,
