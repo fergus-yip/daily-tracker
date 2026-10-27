@@ -1,0 +1,63 @@
+{
+  "date_hkt": "2026-10-27",
+  "x": {
+    "pick_count_total": 8,
+    "watch_count": 3,
+    "trendy_count": 5,
+    "window_since": "2026-10-26 08:00 HKT",
+    "sections": {
+      "watch_list": [
+        {
+          "handle": "ericzakariasson",
+          "short_title": "Auto-review rules in chat (0.75.8)",
+          "url": "https://x.com/ericzakariasson/status/2114833082956321095",
+          "summary": "Stable roll-out lets you add auto-review rules from chat, gets clearer Slack approval cards, and picks up plugin skills right after install."
+        },
+        {
+          "handle": "kiaraplds",
+          "short_title": "Programmatic agents as automations",
+          "url": "https://x.com/kiaraplds/status/2114811523197792525",
+          "summary": "Points to Cursor’s Agent SDK so you can define agents as code and wire them up as scheduled automations."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "Codebase tips for agents",
+          "url": "https://x.com/poteto/status/2114626630429913383",
+          "summary": "Agents thrive on feedback loops; make illegal states unrepresentable with types so rules hold across the codebase."
+        }
+      ],
+      "trendy": [
+        {
+          "handle": "de1lymoon",
+          "short_title": "10-step Grok Bot engineering team",
+          "url": "https://x.com/de1lymoon/status/2114703708458033178",
+          "summary": "Paste-ready prompts for specialist bots, a PM, cloud-agent briefs, a merge line, phone calls, and Shopify ops."
+        },
+        {
+          "handle": "profstonge",
+          "short_title": "Hourly inbox secretary Bot",
+          "url": "https://x.com/profstonge/status/2114760720466292743",
+          "summary": "Routines that scan email, DMs, mentions, and LinkedIn every hour, flag what matters, draft replies, and drop the rest."
+        },
+        {
+          "handle": "Texas_Twins_Dad",
+          "short_title": "Unclaimed-money hunt via Vault",
+          "url": "https://x.com/Texas_Twins_Dad/status/2114750969971925103",
+          "summary": "Ask Bot to search states you’ve lived in for forgotten refunds and balances, then fill claims from Vault profile data."
+        },
+        {
+          "handle": "MichaelGannotti",
+          "short_title": "Remote fix via Grok Build",
+          "url": "https://x.com/MichaelGannotti/status/2114729567592103977",
+          "summary": "Bot drove Grok Build on a home-office machine to repair a remote gateway without you at the desk."
+        },
+        {
+          "handle": "Kevin_Logan",
+          "short_title": "Four free templates on grokbotshelf",
+          "url": "https://x.com/Kevin_Logan/status/2114842758858850550",
+          "summary": "Grab Mac tools, Clip & Credit, Junk Mail Stopper, and Script This Routine templates ready to copy."
+        }
+      ]
+    }
+  }
+}
