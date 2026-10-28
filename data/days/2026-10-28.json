@@ -1,0 +1,63 @@
+{
+  "date_hkt": "2026-10-28",
+  "x": {
+    "pick_count_total": 8,
+    "watch_count": 3,
+    "trendy_count": 5,
+    "window_since": "2026-10-27 08:00 HKT",
+    "sections": {
+      "watch_list": [
+        {
+          "handle": "poteto",
+          "short_title": "tibot: mention watcher + daily digest",
+          "url": "https://x.com/poteto/status/2115205951649423585",
+          "summary": "Clone her open tibot setup so a Bot watches your mentions/keywords and delivers one short sorted digest daily or hourly."
+        },
+        {
+          "handle": "mattyp",
+          "short_title": "What's New video: Pages, Vault, 1Password, Apple, videos, Spaces",
+          "url": "https://x.com/mattyp/status/2115111897397628974",
+          "summary": "Six-minute tour of the latest ship: Pages, Vault, 1Password, Apple Calendar/Reminders/Contacts, bot-made videos, and X Spaces."
+        },
+        {
+          "handle": "bot",
+          "short_title": "Shared Bots for sales ops",
+          "url": "https://x.com/bot/status/2115130760009273501",
+          "summary": "Pattern to steal: Shared Bots that update CRM after calls, draft quotes, and route non-standard deal terms for approval."
+        }
+      ],
+      "trendy": [
+        {
+          "handle": "alpha_founders",
+          "short_title": "Complete Grok Bot Guide (nateliason)",
+          "url": "https://x.com/alpha_founders/status/2115160193763778775",
+          "summary": "Dense beginner-to-power-user walkthrough from @nateliason if you want one guide that covers the stack."
+        },
+        {
+          "handle": "iiiichigo_chan",
+          "short_title": "Hire Bot as chief of staff",
+          "url": "https://x.com/iiiichigo_chan/status/2115144605704544616",
+          "summary": "Turn your Bot into a CoS with 7am briefs, meeting prep, phone calls, and follow-ups instead of raw email flags."
+        },
+        {
+          "handle": "Solomonrojie",
+          "short_title": "32 skills from GitHub playbooks",
+          "url": "https://x.com/Solomonrojie/status/2115183261336928566",
+          "summary": "Stop teaching jobs from scratch: adapt these 32 process skills (memory, handoffs, sales, routines) onto the bots that own each job."
+        },
+        {
+          "handle": "teedubya",
+          "short_title": "Master Grok Bot in 15 minutes",
+          "url": "https://x.com/teedubya/status/2115174209001558428",
+          "summary": "How he runs 30 AI employees on @bot, with a short path to get proficient yourself."
+        },
+        {
+          "handle": "Av1dlive",
+          "short_title": "Rebuild your bot desk in 3 hours",
+          "url": "https://x.com/Av1dlive/status/2115177028236574884",
+          "summary": "From-zero rebuild: start with one brand-DNA brain, then layer inbox, calendar, news, content, and code routines."
+        }
+      ]
+    }
+  }
+}
