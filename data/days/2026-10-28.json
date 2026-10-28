@@ -59,5 +59,46 @@
         }
       ]
     }
+  },
+  "youtube": {
+    "content_date_hkt": "2026-10-27",
+    "pick_count": 5,
+    "items": [
+      {
+        "channel": "Higgsfield AI",
+        "title": "Did We Have a Choice? | An AI Commercial Made With Claude + Higgsfield",
+        "url": "https://www.youtube.com/watch?v=8-PM8Q4Z39M",
+        "video_id": "8-PM8Q4Z39M",
+        "summary": "Claude-scripted AI commercial in Higgsfield: a bear, chimp, and deer keep trying to fit in with people and keep being told they don’t belong."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "Turn One Idea Into a Full Explainer Reel | Higgsfield Content Factory",
+        "url": "https://www.youtube.com/watch?v=Z-UFzX4lsjA",
+        "video_id": "Z-UFzX4lsjA",
+        "summary": "Content Factory demo: one prompt becomes a full explainer reel, with viral-format presets and animated “what if” hooks."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "The soft R that made my AI actor sound French",
+        "url": "https://www.youtube.com/watch?v=5PlgLhR9tsc",
+        "video_id": "5PlgLhR9tsc",
+        "summary": "Tip Short: Raphael still sounded American until the prompt named a soft uvular R; clip from the 5-step short-drama workflow."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "My AI character's entrance felt dead, so I fixed it",
+        "url": "https://www.youtube.com/watch?v=9KQm4_NLZto",
+        "video_id": "9KQm4_NLZto",
+        "summary": "Tip Short: Luca’s entrance felt flat until anticipation before the face, a slower beat, and talk-while-moving sold the reaction."
+      },
+      {
+        "channel": "Kelly Tsai",
+        "title": "AI時代必學！開啟Docker才能保護好電腦？一次搞懂Container該怎麼用！｜Kelly Tsai",
+        "url": "https://www.youtube.com/watch?v=t9faOdcw1a4",
+        "video_id": "t9faOdcw1a4",
+        "summary": "Docker/containers tutorial for safer AI-era workflows: why containers help protect the machine and how to use them."
+      }
+    ]
   }
 }
