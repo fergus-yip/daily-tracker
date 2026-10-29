@@ -26,5 +26,71 @@
         "summary": "Higgsfield pairs with Wan 3.0 Prime so you can switch animation styles with faster, better-value generation."
       }
     ]
+  },
+  "x": {
+    "pick_count_total": 9,
+    "watch_count": 4,
+    "trendy_count": 5,
+    "window_since": "2026-10-28 08:00 HKT",
+    "sections": {
+      "watch_list": [
+        {
+          "handle": "ericzakariasson",
+          "short_title": "0.78.1 shopping cards + Shop Pay in Vault",
+          "url": "https://x.com/ericzakariasson/status/2115586309096083730",
+          "summary": "Stable ship adds product cards, subscription templates, and Shop Pay saved in Vault."
+        },
+        {
+          "handle": "ericzakariasson",
+          "short_title": "0.77.0 auto-review permissions + multi-question cards",
+          "url": "https://x.com/ericzakariasson/status/2115238537792815303",
+          "summary": "Auto-review rules for permissions, Vault payment-method order, and multi-question cards."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "Slack multi-bot teammates",
+          "url": "https://x.com/poteto/status/2115492618931151002",
+          "summary": "You still need a dedicated Slack team bot for now; soon you can add any Bot to Slack and have them collaborate."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "Skills easier to compose",
+          "url": "https://x.com/poteto/status/2115500996659122327",
+          "summary": "Skills are getting easier to distribute and stack together across bots."
+        }
+      ],
+      "trendy": [
+        {
+          "handle": "monetization_x",
+          "short_title": "Burn leftover CoS usage on a wish-list",
+          "url": "https://x.com/monetization_x/status/2115263184361623889",
+          "summary": "Ask your Chief of Staff to spend remaining weekly usage on a backlog of wish-list tasks before the window resets."
+        },
+        {
+          "handle": "maestrooth",
+          "short_title": "Visual office UI for your bots",
+          "url": "https://x.com/maestrooth/status/2115449438571315234",
+          "summary": "Built a desk-style UI where you can see bots and approve or decline their work visually."
+        },
+        {
+          "handle": "kyronis_talks",
+          "short_title": "Run a Grok Bot team like a company",
+          "url": "https://x.com/kyronis_talks/status/2115480554728739108",
+          "summary": "SpaceXAI eng walkthrough for staffing a whole company of Grok Bots with roles and handoffs."
+        },
+        {
+          "handle": "Michael_Fenech_",
+          "short_title": "Six-part CoS email-writing upgrade",
+          "url": "https://x.com/Michael_Fenech_/status/2115529534296801429",
+          "summary": "Copyable process that teaches your Chief of Staff a sharper multi-step email drafting workflow."
+        },
+        {
+          "handle": "0xMorlex",
+          "short_title": "Lauren-style GTM bot team",
+          "url": "https://x.com/0xMorlex/status/2115451838476529728",
+          "summary": "CoS plus worker bots patterned after Lauren Tan’s GTM org running on Opus 5.5."
+        }
+      ]
+    }
   }
 }
