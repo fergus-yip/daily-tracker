@@ -1,0 +1,30 @@
+{
+  "date_hkt": "2026-10-29",
+  "youtube": {
+    "content_date_hkt": "2026-10-28",
+    "pick_count": 3,
+    "items": [
+      {
+        "channel": "Higgsfield AI",
+        "title": "Inside AI | How to Ask a Girl Out (Make No Mistakes)",
+        "url": "https://www.youtube.com/watch?v=qXkyH0fYcQE",
+        "video_id": "qXkyH0fYcQE",
+        "summary": "Open-source AI short film that dramatizes asking a girl out, with prompts and assets released publicly."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "Genjutsu Lite | Put Yourself in Any Trending Video",
+        "url": "https://www.youtube.com/watch?v=iuKsTgZPm0c",
+        "video_id": "iuKsTgZPm0c",
+        "summary": "New Genjutsu Lite lets you drop your photo into any trending video, with cheaper 720p/1080p gens on Higgsfield and the API."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "Higgsfield x Wan 3.0 Prime | Switch Between Animation Styles",
+        "url": "https://www.youtube.com/watch?v=9iytKvKluso",
+        "video_id": "9iytKvKluso",
+        "summary": "Higgsfield pairs with Wan 3.0 Prime so you can switch animation styles with faster, better-value generation."
+      }
+    ]
+  }
+}
