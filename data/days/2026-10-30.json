@@ -1,5 +1,46 @@
 {
   "date_hkt": "2026-10-30",
+  "youtube": {
+    "content_date_hkt": "2026-10-29",
+    "pick_count": 5,
+    "items": [
+      {
+        "channel": "Grok",
+        "title": "SpaceXSI for Higher Education: How SI is saving time across campus",
+        "url": "https://www.youtube.com/watch?v=_apu1u-RuI8",
+        "video_id": "_apu1u-RuI8",
+        "summary": "SpaceXSI workshop on campus teams handing student support, ADA website audits, and grant reporting to Bots across departments."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "Higgsfield Selected Is Here - MADSEASON",
+        "url": "https://www.youtube.com/watch?v=-s9-pJeyAA8",
+        "video_id": "-s9-pJeyAA8",
+        "summary": "Launch of Higgsfield Selected, showcasing open-source creator project MADSEASON with all prompts and assets public."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "Kling 4.0 makes AI video look like a real film shoot",
+        "url": "https://www.youtube.com/watch?v=5fuQnUuu1BM",
+        "video_id": "5fuQnUuu1BM",
+        "summary": "Kling 4.0 is live on Higgsfield with Omni Reference, 30-second single-pass scenes, and start/middle/end frame control."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "The 4 parts every viral short drama is built on",
+        "url": "https://www.youtube.com/watch?v=JBLg9UsbaMA",
+        "video_id": "JBLg9UsbaMA",
+        "summary": "Tip Short: hook, context, escalation, cliffhanger — open on the peak and cut before the answer, from their short-drama workflow series."
+      },
+      {
+        "channel": "Kelly Tsai",
+        "title": "Meta和OpenAI爭相推出的個人AI agent哪家更強？Muse完全免費、dots卻要每月三千！真的什麼事都難不倒它？｜Kelly Tsai",
+        "url": "https://www.youtube.com/watch?v=0NiZD7T9SMI",
+        "video_id": "0NiZD7T9SMI",
+        "summary": "Compares Meta’s free Muse personal AI agent with OpenAI’s pricier dots (~NT$3,000/mo) and what each can actually handle day to day."
+      }
+    ]
+  },
   "x": {
     "pick_count_total": 9,
     "watch_count": 5,
