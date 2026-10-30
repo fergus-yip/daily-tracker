@@ -1,0 +1,69 @@
+{
+  "date_hkt": "2026-10-30",
+  "x": {
+    "pick_count_total": 9,
+    "watch_count": 5,
+    "trendy_count": 4,
+    "window_since": "2026-10-29 08:00 HKT",
+    "sections": {
+      "watch_list": [
+        {
+          "handle": "poteto",
+          "short_title": "/statechart skill stable in pstack 0.15.36",
+          "url": "https://x.com/poteto/status/2115880102601101414",
+          "summary": "Ships a stable /statechart skill with a mini TLC compiler to model state machines and catch distributed-system bugs."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "Tag @bot to monitor a feedback thread hourly",
+          "url": "https://x.com/poteto/status/2115882883999232229",
+          "summary": "Shows telling @bot to watch Eric’s improve-Grok-Bot feedback thread as part of its hourly loop."
+        },
+        {
+          "handle": "kiaraplds",
+          "short_title": "Weekly ship tips incl. Starlink wifi flights",
+          "url": "https://x.com/kiaraplds/status/2115834860904292811",
+          "summary": "Swipe card of what shipped this week plus tips, including how to find a flight with Starlink wifi."
+        },
+        {
+          "handle": "ericzakariasson",
+          "short_title": "Weekly calendar page of all bot routines",
+          "url": "https://x.com/ericzakariasson/status/2115876516944904542",
+          "summary": "Paste-ready prompt that builds a page of every scheduled routine across bots and refreshes it each morning."
+        },
+        {
+          "handle": "ericzakariasson",
+          "short_title": "Sync private skills from a GitHub repo",
+          "url": "https://x.com/ericzakariasson/status/2115874682175889483",
+          "summary": "Have a bot clone a private skills repo via the GitHub connector and a daily pull so every bot picks up changes."
+        }
+      ],
+      "trendy": [
+        {
+          "handle": "free_ai_guides",
+          "short_title": "18 free Grok Bot playbooks from SpaceXAI teams",
+          "url": "https://x.com/free_ai_guides/status/2115760815374774429",
+          "summary": "Free playbooks with real bot setups, instructions, and what a human still does—no signup."
+        },
+        {
+          "handle": "designwkarthick",
+          "short_title": "Claude Code via Grok Bot non-interactive mode",
+          "url": "https://x.com/designwkarthick/status/2115788993610874987",
+          "summary": "Ask Grok Bot to run Claude Code in non-interactive mode for code changes for a strong combo."
+        },
+        {
+          "handle": "JustRuss03_",
+          "short_title": "Grok Bot vs Muse vs Claude Duet",
+          "url": "https://x.com/JustRuss03_/status/2115598230842966444",
+          "summary": "Side-by-side comparison of three AI agents on capabilities, workflows, integrations, and limits."
+        },
+        {
+          "handle": "BIGMayrr",
+          "short_title": "Trigger bots instead of hourly polling",
+          "url": "https://x.com/BIGMayrr/status/2115953180190077092",
+          "summary": "Lessons from a 7-bot launch workflow: wake on real work, share a ledger, and cap X-read spend."
+        }
+      ]
+    }
+  }
+}
