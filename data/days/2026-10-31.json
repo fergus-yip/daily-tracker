@@ -40,5 +40,59 @@
         "summary": "Tip Short: client dramas, in-story brand integrations, and paid next-episode access after a few free ones."
       }
     ]
+  },
+  "x": {
+    "pick_count_total": 7,
+    "watch_count": 2,
+    "trendy_count": 5,
+    "window_since": "2026-10-30 08:00 HKT",
+    "sections": {
+      "watch_list": [
+        {
+          "handle": "ericzakariasson",
+          "short_title": "Repeated-work scanner prompt",
+          "url": "https://x.com/ericzakariasson/status/2116282740802998627",
+          "summary": "Paste his prompt so Grok Bot scans your last two weeks of email, meetings, Slack, and docs and lists tasks you did more than once as automation candidates."
+        },
+        {
+          "handle": "kiaraplds",
+          "short_title": "Delegate via Apple CarPlay",
+          "url": "https://x.com/kiaraplds/status/2116237053902127561",
+          "summary": "Before you drive, open your agent on CarPlay and talk through work so it can hand tasks to your other bots while you commute."
+        }
+      ],
+      "trendy": [
+        {
+          "handle": "EXM7777",
+          "short_title": "Build a multi-model agent team",
+          "url": "https://x.com/EXM7777/status/2116182409075114211",
+          "summary": "Guide to run a business on autopilot with Grok Bot on X research/UGC plus Claude Code and shared memory, with copy-paste job prompts."
+        },
+        {
+          "handle": "0xMortyx",
+          "short_title": "Lauren Tan specialist-bot workflow",
+          "url": "https://x.com/0xMortyx/status/2116220802970288295",
+          "summary": "Copy the goal→delegate→specialists→merge pattern instead of one mega-bot: CoS plans, specialists work, then merge into one answer."
+        },
+        {
+          "handle": "alpha_founders",
+          "short_title": "Interview prompt for first two bots",
+          "url": "https://x.com/alpha_founders/status/2116179614997295444",
+          "summary": "New users: paste the “interview me for my first two bots” prompt so Grok Bot asks ≤5 questions and sets up your starter team."
+        },
+        {
+          "handle": "s4yonnara",
+          "short_title": "20 free GitHub Grok Bot repos",
+          "url": "https://x.com/s4yonnara/status/2116286728872792488",
+          "summary": "Skip building agents from scratch—browse his list of ready-made GitHub repos for Grok Bot teams, configs, and connectors."
+        },
+        {
+          "handle": "Michael_Fenech_",
+          "short_title": "CoS routine simplification audit",
+          "url": "https://x.com/Michael_Fenech_/status/2116054998555689092",
+          "summary": "Send his Chief of Staff prompt to find duplicate research/handoffs in your routines, test a shorter path, then change only if it wins."
+        }
+      ]
+    }
   }
 }
