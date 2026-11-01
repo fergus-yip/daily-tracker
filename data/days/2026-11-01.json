@@ -1,5 +1,32 @@
 {
   "date_hkt": "2026-11-01",
+  "youtube": {
+    "content_date_hkt": "2026-10-31",
+    "pick_count": 3,
+    "items": [
+      {
+        "channel": "Higgsfield AI",
+        "title": "Change Everything in Your Video | Seedance 2.5 + Genjutsu",
+        "url": "https://www.youtube.com/watch?v=b6wVWdnN97M",
+        "video_id": "b6wVWdnN97M",
+        "summary": "Seedance 2.5 plus Genjutsu restyle an existing clip—camera, lighting, props, outfits, even location—without a reshoot."
+      },
+      {
+        "channel": "Higgsfield Animation",
+        "title": "One More Minute | Animated Horror Short Film For Halloween | Higgsfield Originals (2026)",
+        "url": "https://www.youtube.com/watch?v=8icJ67IsXnc",
+        "video_id": "8icJ67IsXnc",
+        "summary": "A ~6-minute AI stop-motion Halloween horror short, with prompts and assets open-sourced so you can recreate the look."
+      },
+      {
+        "channel": "Kelly Tsai",
+        "title": "\u5f35\u4fee\u4fee\u505c\u66f4\u4e94\u500b\u6708\u53bb\u54ea\u4e86\uff1f\u66fe\u7d93\u88f8\u8fad\u806f\u767c\u79d1\u53bb\u74b0\u904a\u4e16\u754c\u3001\u53c8\u7d93\u6b77\u5275\u696d\u5931\u6557\u6b78\u96f6\uff0c\u73fe\u5728\u6c7a\u5b9aall in AI\uff1f\uff5cWhat's Next? EP18 ft. \u5f35\u4fee\u4fee\uff5cKelly Tsai",
+        "url": "https://www.youtube.com/watch?v=vi_sgjpQ5fg",
+        "video_id": "vi_sgjpQ5fg",
+        "summary": "What's Next EP18 with \u5f35\u4fee\u4fee on leaving MediaTek, travel and a failed startup, then going all-in on AI agents."
+      }
+    ]
+  },
   "x": {
     "pick_count_total": 7,
     "watch_count": 4,
@@ -37,13 +64,13 @@
           "handle": "0x_kaize",
           "short_title": "Free Ultimate Grok Bot prompt collection",
           "url": "https://x.com/0x_kaize/status/2116563190712856662",
-          "summary": "One free article packs xAI’s 5-part prompt formula, field prompts, 791 one-tap bots, SpaceXAI playbooks, and a Notion table."
+          "summary": "One free article packs xAI\u2019s 5-part prompt formula, field prompts, 791 one-tap bots, SpaceXAI playbooks, and a Notion table."
         },
         {
           "handle": "0xg4tsby",
-          "short_title": "Nick Miller CoS→PM→QA team demo",
+          "short_title": "Nick Miller CoS\u2192PM\u2192QA team demo",
           "url": "https://x.com/0xg4tsby/status/2116515678563766315",
-          "summary": "30-minute walkthrough of turning one bot into a Chief of Staff → PM → QA → worker handoff team with short per-bot context to cut cost."
+          "summary": "30-minute walkthrough of turning one bot into a Chief of Staff \u2192 PM \u2192 QA \u2192 worker handoff team with short per-bot context to cut cost."
         },
         {
           "handle": "thegreatest_sv",
