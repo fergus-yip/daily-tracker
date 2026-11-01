@@ -1,0 +1,57 @@
+{
+  "date_hkt": "2026-11-01",
+  "x": {
+    "pick_count_total": 7,
+    "watch_count": 4,
+    "trendy_count": 3,
+    "window_since": "2026-10-31 08:00 HKT",
+    "sections": {
+      "watch_list": [
+        {
+          "handle": "poteto",
+          "short_title": "High-quality bots team guide",
+          "url": "https://x.com/poteto/status/2116576229319233596",
+          "summary": "Short guide: use Dr Eggbot, few strong bots, teach skills into a private GitHub repo, connect tools/Vault, voice-dump then restate in your own words."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "Routines for proactive bots",
+          "url": "https://x.com/poteto/status/2116580481236115933",
+          "summary": "Add scheduled or event routines (hourly max), prefer scripts/skills over token-heavy bot loops, and share good bots in Slack on a team plan."
+        },
+        {
+          "handle": "mattyp",
+          "short_title": "Reservation cancellation watcher",
+          "url": "https://x.com/mattyp/status/2116516547007308125",
+          "summary": "Have a bot check hourly for openings at hard-to-book spots and ping you so you can lock cancellations before they refill."
+        },
+        {
+          "handle": "kiaraplds",
+          "short_title": "Trip museum and transport booking",
+          "url": "https://x.com/kiaraplds/status/2116478547204223074",
+          "summary": "Ask a bot to plan a trip, book museum tickets with discount accounts, and arrange transport—confirmations land in your inbox."
+        }
+      ],
+      "trendy": [
+        {
+          "handle": "0x_kaize",
+          "short_title": "Free Ultimate Grok Bot prompt collection",
+          "url": "https://x.com/0x_kaize/status/2116563190712856662",
+          "summary": "One free article packs xAI’s 5-part prompt formula, field prompts, 791 one-tap bots, SpaceXAI playbooks, and a Notion table."
+        },
+        {
+          "handle": "0xg4tsby",
+          "short_title": "Nick Miller CoS→PM→QA team demo",
+          "url": "https://x.com/0xg4tsby/status/2116515678563766315",
+          "summary": "30-minute walkthrough of turning one bot into a Chief of Staff → PM → QA → worker handoff team with short per-bot context to cut cost."
+        },
+        {
+          "handle": "thegreatest_sv",
+          "short_title": "Four-agent crypto security monitor",
+          "url": "https://x.com/thegreatest_sv/status/2116492630984901090",
+          "summary": "Scout/Watchdog/Guardian/Skeptic agents watch wallets and Binance with a read-only key and filter address-poisoning false alarms."
+        }
+      ]
+    }
+  }
+}
