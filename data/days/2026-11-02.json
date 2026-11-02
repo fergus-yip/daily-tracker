@@ -19,5 +19,65 @@
         "summary": "Short asking whether outsourcing work to AI dulls human skill, framed around smarter agent collaboration."
       }
     ]
+  },
+  "x": {
+    "pick_count_total": 8,
+    "watch_count": 3,
+    "trendy_count": 5,
+    "window_since": "2026-11-01 08:00 HKT",
+    "sections": {
+      "watch_list": [
+        {
+          "handle": "poteto",
+          "short_title": "Playable Day-28 game built with Grok Bot + Cursor",
+          "url": "https://x.com/poteto/status/2117004709198475365",
+          "summary": "Shipped a browser game (playable inside X) in ~4 days with Grok Bot and Cursor after ~1,150 PRs."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "Ask bot for a lint rule on every code issue",
+          "url": "https://x.com/poteto/status/2117043478140276847",
+          "summary": "While building, every time she found a code issue she asked the bot to add a lint rule against it, plus used TLA+ on state machines."
+        },
+        {
+          "handle": "mattyp",
+          "short_title": "Fire Cursor cloud agents with any model from Grok Bot",
+          "url": "https://x.com/mattyp/status/2116685766273413157",
+          "summary": "Grok Bot can launch Cursor cloud agents on your repos using whichever model you choose."
+        }
+      ],
+      "trendy": [
+        {
+          "handle": "xiaomovps",
+          "short_title": "5 official China MCP/Skills for coffee, rides, delivery",
+          "url": "https://x.com/xiaomovps/status/2116690552188260496",
+          "summary": "Lists five official MCP/Skills that let Grok Bot order coffee, grab takeout coupons, call rides, and more in the China ecosystem."
+        },
+        {
+          "handle": "tetumemo",
+          "short_title": "Install Grok Build in Muse for cheap X research",
+          "url": "https://x.com/tetumemo/status/2116855293959405906",
+          "summary": "Put Grok Build on Muse\u2019s cloud Linux so x_search-powered research works on the cheaper X-integrated plan instead of full Grok Bot."
+        },
+        {
+          "handle": "fleyta88",
+          "short_title": "1000+ skills and 4000+ MCP repos that plug into Grok Bot",
+          "url": "https://x.com/fleyta88/status/2116936777495679034",
+          "summary": "Points at open-source skill and MCP catalogs that speak the same format Grok Bot already uses, so you can plug them in free."
+        },
+        {
+          "handle": "A_Pirate_I",
+          "short_title": "12-step Grok Bot trading-desk roadmap",
+          "url": "https://x.com/A_Pirate_I/status/2116889572982284516",
+          "summary": "Gives Grok Bot a trading bot to manage via a read-only bridge, Jev decision layer, and autonomy levels so money never moves without you."
+        },
+        {
+          "handle": "noahvisualsx",
+          "short_title": "Practical high-quality bot team system from poteto\u2019s guide",
+          "url": "https://x.com/noahvisualsx/status/2116831256197689533",
+          "summary": "Turns poteto\u2019s team guide into a concrete system for roles, Skills, Routines, permissions, scripts, and weekly review."
+        }
+      ]
+    }
   }
 }
