@@ -1,5 +1,18 @@
 {
   "date_hkt": "2026-11-03",
+  "youtube": {
+    "content_date_hkt": "2026-11-02",
+    "pick_count": 1,
+    "items": [
+      {
+        "channel": "Higgsfield AI",
+        "title": "Who Won $1,000,000? Higgsfield Global Film Festival Winners",
+        "url": "https://www.youtube.com/watch?v=VaNWoD7JORo",
+        "video_id": "VaNWoD7JORo",
+        "summary": "Recap of the Global Film Festival: 60k entries from 176 countries, $1M in prizes (1st: Argentina’s Listen to Meh), plus a new Higgsfield Talent program with another $1M+ for creators."
+      }
+    ]
+  },
   "x": {
     "pick_count_total": 8,
     "watch_count": 3,
