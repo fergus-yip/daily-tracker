@@ -1,0 +1,63 @@
+{
+  "date_hkt": "2026-11-03",
+  "x": {
+    "pick_count_total": 8,
+    "watch_count": 3,
+    "trendy_count": 5,
+    "window_since": "2026-11-02 08:00 HKT",
+    "sections": {
+      "watch_list": [
+        {
+          "handle": "mattyp",
+          "short_title": "What's New: shopping, Team Bots, Slack connectors",
+          "url": "https://x.com/mattyp/status/2117302664799396177",
+          "summary": "Short walkthrough of new shopping cards, order tracking, payments, custom modes, Team Bot share/find, Slack connector asks, and Vault contacts."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "Tag @bot to stand up a company Data Bot",
+          "url": "https://x.com/poteto/status/2117366076342460440",
+          "summary": "Quote of the official Team Bot data-scientist demo: tag @bot and ask it to read the post and guide you through the same setup."
+        },
+        {
+          "handle": "kiaraplds",
+          "short_title": "43 one-job work bots + CFO token watch",
+          "url": "https://x.com/kiaraplds/status/2117306965869441101",
+          "summary": "Treat bots like hires (one job each, onboard/train/maintain); adds a CFO routine for spend and routes heavy eng work to Cursor cloud agents inside Grok Bot."
+        }
+      ],
+      "trendy": [
+        {
+          "handle": "wadefoster",
+          "short_title": "Zapier MCP: automations over agents",
+          "url": "https://x.com/wadefoster/status/2117363878266904620",
+          "summary": "Install Zapier MCP and have Grok build judgment-only automations instead of full agents; their modeling cut workflow run costs ~71%."
+        },
+        {
+          "handle": "miguelrodrov",
+          "short_title": "Grok Bot A-Z Alicante deck",
+          "url": "https://x.com/miguelrodrov/status/2117285718477128105",
+          "summary": "38-slide talk write-up covering every feature, setup step, use case, and hack most people skip."
+        },
+        {
+          "handle": "Michael_Fenech_",
+          "short_title": "8 tips that cut usage ~76%",
+          "url": "https://x.com/Michael_Fenech_/status/2117324613000818878",
+          "summary": "Six weeks of efficiency experiments distilled into eight concrete ways to stop burning Grok Bot tokens."
+        },
+        {
+          "handle": "ahboyash",
+          "short_title": "Non-tech day-to-day with specialist bots",
+          "url": "https://x.com/ahboyash/status/2117148857763242023",
+          "summary": "Plain-language overview of what Grok Bot is and how a non-CS user runs an army of specialised bots for real work."
+        },
+        {
+          "handle": "virgilxbt",
+          "short_title": "Free 1-hour workshop: company of bots in 72h",
+          "url": "https://x.com/virgilxbt/status/2117337796398526692",
+          "summary": "SpaceXAI session from empty GitHub org to a Grok Bot team that runs the company in three days."
+        }
+      ]
+    }
+  }
+}
