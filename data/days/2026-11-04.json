@@ -1,5 +1,46 @@
 {
   "date_hkt": "2026-11-04",
+  "youtube": {
+    "content_date_hkt": "2026-11-03",
+    "pick_count": 5,
+    "items": [
+      {
+        "channel": "Grok",
+        "title": "Grok Bot for Financial Services: Build your own team of SI analysts",
+        "url": "https://www.youtube.com/watch?v=AdxoMFFmTE0",
+        "video_id": "AdxoMFFmTE0",
+        "summary": "SpaceXSI workshop on standing up Grok Bot SI analyst teammates for financial services, from banking and hedge-fund use cases through front- and back-office workflows."
+      },
+      {
+        "channel": "Grok",
+        "title": "What's New in Grok Bot #2",
+        "url": "https://www.youtube.com/watch?v=lQB3kZZZYss",
+        "video_id": "lQB3kZZZYss",
+        "summary": "Product and engineering walkthrough of the latest Grok Bot features, with live demos from the SpaceXSI team."
+      },
+      {
+        "channel": "Grok",
+        "title": "Grok Bot X Clay: Describe the outcome, skip the busywork",
+        "url": "https://www.youtube.com/watch?v=FFOZAl7wihE",
+        "video_id": "FFOZAl7wihE",
+        "summary": "Workshop with Clay’s Creator in Residence and SpaceXSI on describing the outcome you want so Grok Bot handles the busywork in Clay."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "Pixar Co-Founder x Higgsfield: Edwin Catmull about AI and Creativity",
+        "url": "https://www.youtube.com/watch?v=OAIZFE03A_k",
+        "video_id": "OAIZFE03A_k",
+        "summary": "Pixar co-founder Edwin Catmull talks with Higgsfield’s CEO about how AI can make creators more creative, and how technology and art strengthen each other."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "Turn Any Image Into a Clean SVG | Ideogram Vector & Precise Edit",
+        "url": "https://www.youtube.com/watch?v=mjY5QEZFaps",
+        "video_id": "mjY5QEZFaps",
+        "summary": "Short on Ideogram Vector and Precise Edit now on Higgsfield: turn an image into a clean editable SVG, and tweak one detail in a huge image without touching the rest."
+      }
+    ]
+  },
   "x": {
     "pick_count_total": 9,
     "watch_count": 4,
