@@ -1,0 +1,69 @@
+{
+  "date_hkt": "2026-11-05",
+  "x": {
+    "pick_count_total": 9,
+    "watch_count": 4,
+    "trendy_count": 5,
+    "window_since": "2026-11-04 08:00 HKT",
+    "sections": {
+      "watch_list": [
+        {
+          "handle": "bot",
+          "short_title": "Phone calls launch",
+          "url": "https://x.com/bot/status/2118043939592942052",
+          "summary": "Grok Bot can now place phone calls for you; ask it to handle a live call like rebooking or checking hours."
+        },
+        {
+          "handle": "ericzakariasson",
+          "short_title": "Airline rebooking by phone",
+          "url": "https://x.com/ericzakariasson/status/2118097345829052427",
+          "summary": "Try having your Bot call an airline and rebook a flight when plans change."
+        },
+        {
+          "handle": "mattyp",
+          "short_title": "Pages in Grok Bot walkthrough",
+          "url": "https://x.com/mattyp/status/2118021605544833173",
+          "summary": "Watch the short guide on building, sharing, and feeding Pages with your own data and X posts."
+        },
+        {
+          "handle": "kiaraplds",
+          "short_title": "Hire bots as employees",
+          "url": "https://x.com/kiaraplds/status/2118022500244172902",
+          "summary": "Give each Bot one job, a clear brief, and ongoing training instead of treating it like a one-shot assistant."
+        }
+      ],
+      "trendy": [
+        {
+          "handle": "LoganTGott",
+          "short_title": "Winner Repurposer content bot",
+          "url": "https://x.com/LoganTGott/status/2117999589823303686",
+          "summary": "Spin up a Bot that watches for posts beating your average, then rewrites winners for LinkedIn, Instagram, and Shorts."
+        },
+        {
+          "handle": "ashnichrist",
+          "short_title": "Shortform AI editing team",
+          "url": "https://x.com/ashnichrist/status/2118079578786681002",
+          "summary": "Drop footage in Drive, let the Bot storyboard and first-edit, revise on low-res, then render full-res once at the end."
+        },
+        {
+          "handle": "BrianRoemmele",
+          "short_title": "App privacy deletion requests",
+          "url": "https://x.com/BrianRoemmele/status/2117775975052386630",
+          "summary": "Have a Bot read every app privacy policy on your phone, flag ones that sell data, and email deletion requests."
+        },
+        {
+          "handle": "free_ai_guides",
+          "short_title": "Hey Grok iPhone wake shortcut",
+          "url": "https://x.com/free_ai_guides/status/2118085913733677424",
+          "summary": "Wire iOS Shortcuts + Vocal Shortcuts so saying “Hey Grok” opens voice chat even when the phone is locked."
+        },
+        {
+          "handle": "slash1sol",
+          "short_title": "CoS nine formulas before scaling",
+          "url": "https://x.com/slash1sol/status/2117970647615750221",
+          "summary": "Paste the one-page Chief of Staff template (shared history, no self-grading, timed routines) before you grow past six bots."
+        }
+      ]
+    }
+  }
+}
