@@ -1,0 +1,69 @@
+{
+  "date_hkt": "2026-11-06",
+  "x": {
+    "pick_count_total": 9,
+    "watch_count": 4,
+    "trendy_count": 5,
+    "window_since": "2026-11-05 08:00 HKT",
+    "sections": {
+      "watch_list": [
+        {
+          "handle": "kristaletz",
+          "short_title": "GTM Team Bots playbook pt 2",
+          "url": "https://x.com/kristaletz/status/2118403026532913650",
+          "summary": "Shared Team Bots (Brand, Data, Account Intel, Quote, Deal, X) with Pages, voice, and proactive GTM workflows you can tag a bot to suggest setups for."
+        },
+        {
+          "handle": "ericzakariasson",
+          "short_title": "Slack feedback loop via Agent SDK",
+          "url": "https://x.com/ericzakariasson/status/2118439897333969344",
+          "summary": "Slack bot that pulls X feedback and fixes it through Cursor Agent SDK, with a follow-up setup prompt you can hand an agent."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "/statechart formal-methods guide",
+          "url": "https://x.com/poteto/status/2118416074601545968",
+          "summary": "Tempered formal-methods guide plus try /statechart (pstack) so agents expose state machines for higher-level review."
+        },
+        {
+          "handle": "mattyp",
+          "short_title": "Idea to live app in Cursor",
+          "url": "https://x.com/mattyp/status/2118462486093725709",
+          "summary": "Describe a tool in Cursor and get a built app with DB, security checks, and a shareable live link."
+        }
+      ],
+      "trendy": [
+        {
+          "handle": "charliejhills",
+          "short_title": "Top 20 free AI team packs",
+          "url": "https://x.com/charliejhills/status/2118340431276855775",
+          "summary": "Curates the 20 best free ready-made Grok Bot team layouts from 700+ GitHub packs for eng, marketing, support, and sales."
+        },
+        {
+          "handle": "eeelistar",
+          "short_title": "Slack setup walkthrough",
+          "url": "https://x.com/eeelistar/status/2118232231210521006",
+          "summary": "Timed video from Slack app and token through the Grok Bot Slack plugin to invite and run a first job."
+        },
+        {
+          "handle": "Mulight",
+          "short_title": "Three ways to cut Grok Bot usage",
+          "url": "https://x.com/Mulight/status/2118191511359676753",
+          "summary": "Swap polling for webhooks, share Private Skills across bots, and push repetitive chains to scripts, with a pasteable audit prompt."
+        },
+        {
+          "handle": "WR4NYGov",
+          "short_title": "Kids Android app via Bot to Build",
+          "url": "https://x.com/WR4NYGov/status/2118294177884811729",
+          "summary": "Built a kids’ numbers Android app in hours by directing Grok Bot to use Grok Build, free and ad-free."
+        },
+        {
+          "handle": "de1lymoon",
+          "short_title": "Plugin marketplace one-command skills",
+          "url": "https://x.com/de1lymoon/status/2118347988028346702",
+          "summary": "Official plugin marketplace bundles skills, slash commands, agents, hooks, and MCP you can install pinned to a commit SHA."
+        }
+      ]
+    }
+  }
+}
