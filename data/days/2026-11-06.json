@@ -65,5 +65,46 @@
         }
       ]
     }
+  },
+  "youtube": {
+    "content_date_hkt": "2026-11-05",
+    "pick_count": 5,
+    "items": [
+      {
+        "channel": "Higgsfield AI",
+        "title": "Pixar Co-Founder: A Camera in Your Pocket Doesn't Make You a Filmmaker",
+        "url": "https://www.youtube.com/watch?v=PcUrr0BkKhY",
+        "video_id": "PcUrr0BkKhY",
+        "summary": "Pixar co-founder Ed Catmull sits down with Higgsfield’s CEO on what AI changes — and what still makes you a filmmaker."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "The Dog in This Surf Ad Doesn't Exist",
+        "url": "https://www.youtube.com/watch?v=SXpjXwNhbA0",
+        "video_id": "SXpjXwNhbA0",
+        "summary": "A Higgsfield surf-ad Short where the surfer’s dog is entirely AI-generated."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "She Made the Diner's New Billboard With GPT Image 2.6",
+        "url": "https://www.youtube.com/watch?v=EuiPGmarCxs",
+        "video_id": "EuiPGmarCxs",
+        "summary": "Short demo of GPT Image 2.6 on Higgsfield for prompt-to-billboard art, GIFs, reusable references, and SVG export."
+      },
+      {
+        "channel": "阿豬 Ah Ju",
+        "title": "AI經濟體已悄悄迫近！Blackrock:穩定幣將迎來爆炸性增長！",
+        "url": "https://www.youtube.com/watch?v=A5yfJCbuJu0",
+        "video_id": "A5yfJCbuJu0",
+        "summary": "Ah Ju covers BlackRock’s take that stablecoins are headed for explosive growth as an AI-driven economy approaches."
+      },
+      {
+        "channel": "Kelly Tsai",
+        "title": "有了 AI 之後，工程團隊到底要怎麼跟 AI 協作才最有效率？｜Kelly Tsai",
+        "url": "https://www.youtube.com/watch?v=15QahShFFh0",
+        "video_id": "15QahShFFh0",
+        "summary": "Kelly argues bare SDD isn’t enough for AI coding teams and pushes BDD-based workflows, plugging her AI×BDD course."
+      }
+    ]
   }
 }
