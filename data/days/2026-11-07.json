@@ -1,5 +1,71 @@
 {
   "date_hkt": "2026-11-07",
+  "x": {
+    "pick_count_total": 9,
+    "watch_count": 4,
+    "trendy_count": 5,
+    "window_since": "2026-11-06 08:00 HKT",
+    "sections": {
+      "watch_list": [
+        {
+          "handle": "poteto",
+          "short_title": "Verification skills before the control agent",
+          "url": "https://x.com/poteto/status/2118531365914521622",
+          "summary": "Create the verification skills first, then have your control agent use them instead of inventing checks mid-run."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "Slack bots with routines instead of Cursor automations",
+          "url": "https://x.com/poteto/status/2118848201323368645",
+          "summary": "Swap Cursor automations for Slack bots that run routines when you want ongoing orchestration in chat."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "Keep skills short as workflow preferences",
+          "url": "https://x.com/poteto/status/2118746525811753061",
+          "summary": "Write skills as brief preference notes; newer models absorb the rest so long manuals age out."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "Invest tokens in determinism, not a software factory",
+          "url": "https://x.com/poteto/status/2118613050462728659",
+          "summary": "Skip factory theater and spend tokens where verification and deterministic steps actually pay off."
+        }
+      ],
+      "trendy": [
+        {
+          "handle": "XCreators",
+          "short_title": "Ultimate Grok Bot guide for creators",
+          "url": "https://x.com/XCreators/status/2118843705327026400",
+          "summary": "Creator playbook for content workflows with Grok Bot."
+        },
+        {
+          "handle": "AnatoliKopadze",
+          "short_title": "Paste-ready AI team designer prompt",
+          "url": "https://x.com/AnatoliKopadze/status/2118721037680488914",
+          "summary": "One paste into Grok Bot designs a full team with jobs, briefs, tools, and schedules."
+        },
+        {
+          "handle": "aswincode",
+          "short_title": "Personal life run by a Grok Bot team",
+          "url": "https://x.com/aswincode/status/2118747986155208971",
+          "summary": "Short writeup of a multi-bot personal-life setup you can copy outside work."
+        },
+        {
+          "handle": "Michael_Fenech_",
+          "short_title": "Audit how you delegate to your bots",
+          "url": "https://x.com/Michael_Fenech_/status/2118663183015805266",
+          "summary": "Improve a large bot team by auditing your own approvals and decisions, not just prompts and routines."
+        },
+        {
+          "handle": "BuzzMalx",
+          "short_title": "X growth bot that finds 5x niche posts",
+          "url": "https://x.com/BuzzMalx/status/2118601288653156497",
+          "summary": "Tag @bot to find outperforming niche posts and draft 2–3 test formats to try."
+        }
+      ]
+    }
+  },
   "youtube": {
     "content_date_hkt": "2026-11-06",
     "pick_count": 4,
