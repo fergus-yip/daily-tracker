@@ -1,0 +1,37 @@
+{
+  "date_hkt": "2026-11-07",
+  "youtube": {
+    "content_date_hkt": "2026-11-06",
+    "pick_count": 4,
+    "items": [
+      {
+        "channel": "Higgsfield AI",
+        "title": "How to Get the Exact Movement You Want From AI Video",
+        "url": "https://www.youtube.com/watch?v=YMRN_9PLSNk",
+        "video_id": "YMRN_9PLSNk",
+        "summary": "Seedance tip from the sportswear commercial: film the motion yourself, have Claude write a movement-only prompt, then add that clip as a video reference in Cinema Studio."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "How to Fix Where AI Puts Your Characters With One Sketch",
+        "url": "https://www.youtube.com/watch?v=vNFro6Ec4kE",
+        "video_id": "vNFro6Ec4kE",
+        "summary": "When coach and keeper landed in the wrong spots, a quick color sketch as a position reference beat longer prompts; Seedance 2.5 then placed them correctly."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "A Kid's Drawing Came to Life and Met the Dog | Gemini Omni 1.2 Flash",
+        "url": "https://www.youtube.com/watch?v=LODH1_y_64I",
+        "video_id": "LODH1_y_64I",
+        "summary": "Gemini Omni 1.2 Flash is live on Higgsfield: 15-second clips, consistent characters, up to 4K with native audio."
+      },
+      {
+        "channel": "Kelly Tsai",
+        "title": "微軟6萬員工突收到離職邀請！是矽谷最新裁員手法嗎？為什麼不直接裁，反而砸錢請人走？｜Kelly Tsai",
+        "url": "https://www.youtube.com/watch?v=gObKKDrFPfQ",
+        "video_id": "gObKKDrFPfQ",
+        "summary": "Breaks down Microsoft’s mass “resignation invitation” to about 60k employees and why some Silicon Valley employers pay people to leave instead of firing them."
+      }
+    ]
+  }
+}
