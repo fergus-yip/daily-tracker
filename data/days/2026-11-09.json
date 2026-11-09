@@ -1,0 +1,57 @@
+{
+  "date_hkt": "2026-11-09",
+  "x": {
+    "pick_count_total": 7,
+    "watch_count": 2,
+    "trendy_count": 5,
+    "window_since": "2026-11-08 08:00 HKT",
+    "sections": {
+      "watch_list": [
+        {
+          "handle": "poteto",
+          "short_title": "Formal-verify state machines, then chart the flows",
+          "url": "https://x.com/poteto/status/2119521036660314339",
+          "summary": "After finding implicit state machines in an app, run /create-formal-verification-skill one skill per subsystem and /statechart on your most important user flows; both skills are in pstack."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "Music explainer video from a clumsy brief",
+          "url": "https://x.com/poteto/status/2119313621188849806",
+          "summary": "Ask Grok Bot to make a video about how a track was made, say you lack the vocabulary, then use /sharpen and /in-your-own-words so it storyboards an animatic before producing the full video."
+        }
+      ],
+      "trendy": [
+        {
+          "handle": "0x_kaize",
+          "short_title": "15 free GitHub upgrades for Grok Bot",
+          "url": "https://x.com/0x_kaize/status/2119451111501308065",
+          "summary": "A curated list of 15 working repos covering templates, extra memory, coding harnesses, phone calls, Tesla controls, and iMessage, with a reminder to read each README before granting access."
+        },
+        {
+          "handle": "XFreeze",
+          "short_title": "Grok Bot found a gym and booked the free trial",
+          "url": "https://x.com/XFreeze/status/2119462950457188643",
+          "summary": "Have Grok Bot find a nearby gym with a free day pass and complete the trial signup; three people each ran their own bot and all three registrations went through."
+        },
+        {
+          "handle": "XFreeze",
+          "short_title": "Grok Build v1.0.79: rewind, Vim, and background jobs",
+          "url": "https://x.com/XFreeze/status/2119296828365853093",
+          "summary": "Try /rewind on long sessions without a full reload, turn on /vim-mode all to edit inside the prompt, and check the new end-of-turn count of running background commands."
+        },
+        {
+          "handle": "mgonto",
+          "short_title": "Claude Proxy: hand coding tasks to Claude from Grok Bot",
+          "url": "https://x.com/mgonto/status/2119441405386915958",
+          "summary": "Install this shared bot so Grok Bot can send specific coding or long-form work to Claude Code while you keep everything else in Grok Bot."
+        },
+        {
+          "handle": "Texas_Twins_Dad",
+          "short_title": "Finish one workflow A to Z, then automate it",
+          "url": "https://x.com/Texas_Twins_Dad/status/2119457973097431447",
+          "summary": "Start with a single end-to-end job, like routing App Store feedback from your bot’s email into a fix, pull request, test, merge, and ship, then automate the repeatable parts."
+        }
+      ]
+    }
+  }
+}
