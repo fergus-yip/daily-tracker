@@ -1,0 +1,51 @@
+{
+  "date_hkt": "2026-11-08",
+  "x": {
+    "pick_count_total": 6,
+    "watch_count": 1,
+    "trendy_count": 5,
+    "window_since": "2026-11-07 08:00 HKT",
+    "sections": {
+      "watch_list": [
+        {
+          "handle": "mattyp",
+          "short_title": "Grok Bot docs facelift",
+          "url": "https://x.com/mattyp/status/2118871619074720147",
+          "summary": "The official docs at https://docs.x.ai/grok-bot got a visual refresh, plus Copy for LLM and View as Markdown so you can paste a page straight into a bot."
+        }
+      ],
+      "trendy": [
+        {
+          "handle": "BrianRoemmele",
+          "short_title": "Laya to cut Grok Bot token spend",
+          "url": "https://x.com/BrianRoemmele/status/2119075279377469591",
+          "summary": "Install Laya, a small local classifier, on the bot's cloud computer so triage, retries, and yes/no gates skip the paid model; keep it in shadow mode for a day before it starts enforcing."
+        },
+        {
+          "handle": "akshay_pachaar",
+          "short_title": "Pages as a live HQ, dashboard, and guides",
+          "url": "https://x.com/akshay_pachaar/status/2119142921400365379",
+          "summary": "Have your bots publish finished work as live Pages instead of leaving it in chat; he shows a 14-bot office HQ, a custom analytics dashboard, and interactive learning guides."
+        },
+        {
+          "handle": "de1lymoon",
+          "short_title": "10 GitHub repos that extend Grok",
+          "url": "https://x.com/de1lymoon/status/2119089131565334542",
+          "summary": "A checked list of ten repos with real install paths, including Grok Build, the Claude Code review plugin, grok-skills, an iMessage skill for Mac, and the awesome-grok-bot and plugins catalogs."
+        },
+        {
+          "handle": "cabenX",
+          "short_title": "Grok Bot and Claude on a shared 24/7 loop",
+          "url": "https://x.com/cabenX/status/2119018801199013902",
+          "summary": "Connect Grok Bot and Claude through webhooks and Notion, and keep a shared project brain on GitHub, so they pass work to each other around the clock without you prompting each step."
+        },
+        {
+          "handle": "Cardoso",
+          "short_title": "Grok Bot driving local ComfyUI video",
+          "url": "https://x.com/Cardoso/status/2119180728147603720",
+          "summary": "Point Grok Bot at a local ComfyUI workflow on your GPU (he used H3ZEROSTUDIO on a 5060 Ti) and describe the scenes; it produced a two-part 20-second clip from one prompt."
+        }
+      ]
+    }
+  }
+}
