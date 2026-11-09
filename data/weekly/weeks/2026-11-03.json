@@ -1,0 +1,28 @@
+{
+  "week_start_hkt": "2026-11-03",
+  "week_end_hkt": "2026-11-09",
+  "scanned_at_hkt": "2026-11-09T08:19:17+08:00",
+  "sources": {
+    "launches": {
+      "source": "launch-video-tracker",
+      "videos": [
+        {
+          "channel": "Hyperice",
+          "title": "Introducing Normatec Elite Heat Legs",
+          "summary": "Hyperice introduces Normatec Elite Heat, combining dynamic air compression with targeted heat to help users warm up, recover, and get ready for what's next. Available now at hyperice.com.",
+          "url": "https://www.youtube.com/watch?v=l09a-5xa3WM",
+          "published_hkt": "2026-11-05",
+          "video_id": "l09a-5xa3WM"
+        },
+        {
+          "channel": "Hyperice",
+          "title": "Introducing Nike Air Zoom Hyperslide",
+          "summary": "Hyperice introduces the Nike Air Zoom Hyperslide, pairing responsive Air Zoom cushioning with Hyperice heat and vibration technology to help feet relax, reset, and recover from the ground up.",
+          "url": "https://www.youtube.com/watch?v=Io1l1Cpc-_M",
+          "published_hkt": "2026-11-03",
+          "video_id": "Io1l1Cpc-_M"
+        }
+      ]
+    }
+  }
+}
