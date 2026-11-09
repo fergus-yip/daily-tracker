@@ -53,5 +53,32 @@
         }
       ]
     }
+  },
+  "youtube": {
+    "content_date_hkt": "2026-11-08",
+    "pick_count": 3,
+    "items": [
+      {
+        "channel": "Higgsfield AI",
+        "title": "Would You Cast This AI Actor?",
+        "url": "https://www.youtube.com/watch?v=pFdWB9tIjkM",
+        "video_id": "pFdWB9tIjkM",
+        "summary": "Casting an AI actor like a real casting director: Claude writes the character prompt, Soul Cinema on Higgsfield generates four options at once, and the creator picks the one who looks like a real person, not a model."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "How to Stop AI From Turning Your Text Into All Caps",
+        "url": "https://www.youtube.com/watch?v=FXiAj8U9Sls",
+        "video_id": "FXiAj8U9Sls",
+        "summary": "AI models slip on on-screen text, so the NERD note was created as its own image asset and every jersey take was checked against an outfit sheet until the back read exactly Nerdy23."
+      },
+      {
+        "channel": "Kelly Tsai",
+        "title": "小時候父母不願意聆聽自己，長大後變得會「過度補償」？｜Kelly Tsai",
+        "url": "https://www.youtube.com/watch?v=wT0S8qeSS-c",
+        "video_id": "wT0S8qeSS-c",
+        "summary": "A short asking whether growing up with parents who wouldn’t really listen can lead people to overcompensate as adults."
+      }
+    ]
   }
 }
