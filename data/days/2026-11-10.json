@@ -40,5 +40,39 @@
       ],
       "trendy": []
     }
+  },
+  "youtube": {
+    "content_date_hkt": "2026-11-09",
+    "pick_count": 4,
+    "items": [
+      {
+        "channel": "Higgsfield AI",
+        "title": "My AI Dinosaur Ran Like a Robot, So I Made It Study an Ostrich",
+        "url": "https://www.youtube.com/watch?v=mAxQehdhifY",
+        "video_id": "mAxQehdhifY",
+        "summary": "The dinosaur's run looked stiff and slow, so he had it study an ostrich's stride and tail balance—using Claude, Seedance 2.5, and Higgsfield Cinema Studio—until the feet push the ground and the body reacts with each step."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "How Two Circles Fixed Where My AI Dinosaur Looks",
+        "url": "https://www.youtube.com/watch?v=-Ner4OUwtyI",
+        "video_id": "-Ner4OUwtyI",
+        "summary": "When the dinosaur kept looking the wrong way, he sketched two circles on the frame—stand here, look here—and with an updated prompt the next take went straight into the edit."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "How I Put Myself Into Someone Else's Footage With AI",
+        "url": "https://www.youtube.com/watch?v=jpRvZR4BXYU",
+        "video_id": "jpRvZR4BXYU",
+        "summary": "He composites himself into VFX artist Erik's forest footage by asking Claude to blur Erik's head and using his own clip as the identity reference, so the face matches, the dinosaur sits correctly, and the background stays soft."
+      },
+      {
+        "channel": "Higgsfield Animation",
+        "title": "Master AI Animation in 3 Steps: Full Beginner Workflow",
+        "url": "https://www.youtube.com/watch?v=qqX2U9uk4Pg",
+        "video_id": "qqX2U9uk4Pg",
+        "summary": "A 47-minute Passport Rush breakdown covering SOUL 2.0 character design, Seedance 2.5 generation, and Blender previs, including failed attempts and how they tighten character consistency, camera movement, and timing."
+      }
+    ]
   }
 }
