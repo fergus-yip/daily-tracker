@@ -1,0 +1,44 @@
+{
+  "date_hkt": "2026-11-10",
+  "x": {
+    "pick_count_total": 5,
+    "watch_count": 5,
+    "trendy_count": 0,
+    "window_since": "2026-11-09 08:00 HKT",
+    "sections": {
+      "watch_list": [
+        {
+          "handle": "poteto",
+          "short_title": "What /create-formal-verification-skill builds",
+          "url": "https://x.com/poteto/status/2119606119559782488",
+          "summary": "Running it creates a skill such as /verify-notifications with a formal spec of the properties that must hold, then model-checks possible states."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "Visually check the model with /statechart",
+          "url": "https://x.com/poteto/status/2119606813767385164",
+          "summary": "Use /statechart to visually confirm the generated model matches what the product should do, since only you know that."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "Deterministic checks save tokens later",
+          "url": "https://x.com/poteto/status/2119607350453776677",
+          "summary": "Formal checks run in code instead of through the agent, so you pay once to create the skill and save tokens over time."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "Verify end-to-end flows like notifications",
+          "url": "https://x.com/poteto/status/2119607908338168214",
+          "summary": "She uses this on end-to-end flows she needs to prove work, including a Grok Bot bug that spammed phone notifications while someone was already on desktop."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "Ask /poteto-help which skills to use",
+          "url": "https://x.com/poteto/status/2119608110709198875",
+          "summary": "If you forget which skills fit a task, try /poteto-help and ask which ones would help."
+        }
+      ],
+      "trendy": []
+    }
+  }
+}
