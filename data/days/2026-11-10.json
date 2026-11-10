@@ -1,8 +1,8 @@
 {
   "date_hkt": "2026-11-10",
   "x": {
-    "pick_count_total": 5,
-    "watch_count": 5,
+    "pick_count_total": 17,
+    "watch_count": 17,
     "trendy_count": 0,
     "window_since": "2026-11-09 08:00 HKT",
     "sections": {
@@ -21,6 +21,12 @@
         },
         {
           "handle": "poteto",
+          "short_title": "Formal verification via /setup-pstack",
+          "url": "https://x.com/poteto/status/2119606923700117568",
+          "summary": "She added it to /setup-pstack, and you can also run it on its own."
+        },
+        {
+          "handle": "poteto",
           "short_title": "Deterministic checks save tokens later",
           "url": "https://x.com/poteto/status/2119607350453776677",
           "summary": "Formal checks run in code instead of through the agent, so you pay once to create the skill and save tokens over time."
@@ -36,6 +42,72 @@
           "short_title": "Ask /poteto-help which skills to use",
           "url": "https://x.com/poteto/status/2119608110709198875",
           "summary": "If you forget which skills fit a task, try /poteto-help and ask which ones would help."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "AIE talk on shipping 11,000 PRs",
+          "url": "https://x.com/poteto/status/2119841446308221152",
+          "summary": "She's speaking at AI Engineer Code Summit this Wednesday at 10:10am PT on how the Grok Bot team shipped 11,000 PRs last month without compromising on code quality."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "Weekly limits reset rolling out",
+          "url": "https://x.com/poteto/status/2119875790485741964",
+          "summary": "She quotes @bot that weekly usage limits have been reset for all Grok Bot users, and says the reset is rolling out."
+        },
+        {
+          "handle": "felixrieseberg",
+          "short_title": "Opus photos-to-Blender 3D",
+          "url": "https://x.com/felixrieseberg/status/2119777031336452518",
+          "summary": "He had Opus turn two photos into 3D Blender scenes by driving Blender through Python and scoring the result by how many pixels matched the photo."
+        },
+        {
+          "handle": "felixrieseberg",
+          "short_title": "Three.js versions of the scenes",
+          "url": "https://x.com/felixrieseberg/status/2119777032103965138",
+          "summary": "The same scenes are viewable in Three.js, with weaker lighting than Blender, at https://claude.ai/artifact/XgM7ai2k4DRyXrUXjLGDng"
+        },
+        {
+          "handle": "felixrieseberg",
+          "short_title": "Intricate interior in Three.js",
+          "url": "https://x.com/felixrieseberg/status/2119829554500083932",
+          "summary": "A follow-up interior scene is also up in Three.js at https://claude.ai/artifact/7NnuK9iVSvVsuwkzNSHht8"
+        },
+        {
+          "handle": "felixrieseberg",
+          "short_title": "Claude Fable and Mythos 5.2",
+          "url": "https://x.com/felixrieseberg/status/2119867837296857361",
+          "summary": "Fable 5.2 beats Opus on big, long tasks such as rewriting a codebase, first-drafting a large artifact, or exploring ambiguous scenarios; he still often prefers Opus 5.5 for everyday work because Fable thinks a little slower."
+        },
+        {
+          "handle": "felixrieseberg",
+          "short_title": "First-draft Fable game demos",
+          "url": "https://x.com/felixrieseberg/status/2119867839033352596",
+          "summary": "He kept the first drafts of games Fable made and is most impressed with the first-person shooter; try them at https://claude.ai/artifact/MXxb36zKgN261ckbGhmNin"
+        },
+        {
+          "handle": "felixrieseberg",
+          "short_title": "Easier Mythos access for defenders",
+          "url": "https://x.com/felixrieseberg/status/2119867843319886255",
+          "summary": "Mythos 5.2 is another step up in cybersecurity, and the Cyber Verification Program now makes access easier for individual defenders."
+        },
+        {
+          "handle": "felixrieseberg",
+          "short_title": "When to reach for Fable",
+          "url": "https://x.com/felixrieseberg/status/2119915785841975515",
+          "summary": "He reaches for Fable when he can't clearly articulate the problem, or can't explain what he needs to figure out to hit the goal."
+        },
+        {
+          "handle": "felixrieseberg",
+          "short_title": "Fable 5.2 one-shot FPS",
+          "url": "https://x.com/felixrieseberg/status/2119925633564463609",
+          "summary": "He one-shot a from-scratch FPS (models, sounds, textures) with Fable 5.2 and no human feedback; about $550 at API pricing over 8 hours, with 2.7M output and 445M input tokens, heavily cached. Play it at https://claude.ai/artifact/BGY1SztrAYcJQHSsnHHGmp"
+        },
+        {
+          "handle": "felixrieseberg",
+          "short_title": "Simple one-shot game prompt",
+          "url": "https://x.com/felixrieseberg/status/2119927483994907024",
+          "summary": "He says prompt engineering is basically over, and the prompt was a plain request to build a small-scope FPS with insanely detailed, photorealistic, AAA-like graphics."
         }
       ],
       "trendy": []
