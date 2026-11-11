@@ -1,0 +1,84 @@
+{
+  "date_hkt": "2026-11-11",
+  "x": {
+    "pick_count_total": 6,
+    "watch_count": 6,
+    "trendy_count": 0,
+    "window_since": "2026-11-10 08:00 HKT",
+    "sections": {
+      "watch_list": [
+        {
+          "handle": "poteto",
+          "short_title": "Cursor multiplayer Projects",
+          "url": "https://x.com/poteto/status/2120296928684781633",
+          "summary": "Lauren amplified Cursor’s rebuild of Projects for multiplayer, so teammates and their agents can work together in one workspace."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "Grok Bot joins Tailscale",
+          "url": "https://x.com/poteto/status/2120291270501490829",
+          "summary": "Grok Bot can now join your personal or company Tailscale tailnet to reach private MCP servers, internal tools, and apps on your network."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "Try Gemini 4 Carbon in Cursor",
+          "url": "https://x.com/poteto/status/2120232138603975020",
+          "summary": "Lauren recommends trying Gemini 4 Carbon, now in Cursor and the top model on CursorBench at 60.4% at high effort."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "Skills stay opt-in by default",
+          "url": "https://x.com/poteto/status/2120064145227981302",
+          "summary": "Her skills use disable-model-invocation: true in the frontmatter so they are not loaded by default; pick them when needed, and /poteto-help has more info."
+        },
+        {
+          "handle": "felixrieseberg",
+          "short_title": "Fable game is all code",
+          "url": "https://x.com/felixrieseberg/status/2120245629725409758",
+          "summary": "In his one-shot Fable game, every texture and model is a shader function rather than an image or 3D asset, and you can inspect the source in the HTML."
+        },
+        {
+          "handle": "felixrieseberg",
+          "short_title": "His Claude.md is empty",
+          "url": "https://x.com/felixrieseberg/status/2119993051938775184",
+          "summary": "Asked how he guides Claude for the one-shot game, Felix said his claude.md is empty."
+        }
+      ],
+      "trendy": []
+    }
+  },
+  "youtube": {
+    "content_date_hkt": "2026-11-10",
+    "pick_count": 4,
+    "items": [
+      {
+        "channel": "Higgsfield AI",
+        "title": "We Turned a Hot Sauce Into a Soap Opera | Higgsfield Drama Ads",
+        "url": "https://www.youtube.com/watch?v=nvjHFQTSQjI",
+        "video_id": "nvjHFQTSQjI",
+        "summary": "Higgsfield launches Drama Ads, a one-click format that turns any product into a soap-opera-style ad with organic placement, editing, captions, and sound, shown here with hot sauce."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "My Friend Acted Out a Dinosaur Run for My AI Shot",
+        "url": "https://www.youtube.com/watch?v=urW6j11CbjE",
+        "video_id": "urW6j11CbjE",
+        "summary": "Still unhappy with a too-smooth AI dinosaur run, the creator has a friend act out a movement reference and then turns what worked into a Claude motion skill for a weightier gait."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "Pro VFX Artist vs 8 Hours of AI: You Decide",
+        "url": "https://www.youtube.com/watch?v=N9oYJrz95-k",
+        "video_id": "N9oYJrz95-k",
+        "summary": "A traditional VFX dinosaur-chase cut is set against an eight-hour AI version; VFX artist Patrick Kalyn still favors the traditional work at this stage and asks viewers to choose."
+      },
+      {
+        "channel": "Kelly Tsai",
+        "title": "AI時代最大的謊言：除了七大科技公司，根本沒人賺到錢！AI到底是不是泡沫？｜Kelly Tsai",
+        "url": "https://www.youtube.com/watch?v=ePXqAxP01to",
+        "video_id": "ePXqAxP01to",
+        "summary": "Kelly Tsai asks whether AI is a bubble, arguing the era's biggest lie is that anyone besides the Magnificent Seven tech companies is actually making money from it."
+      }
+    ]
+  }
+}
