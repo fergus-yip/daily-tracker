@@ -1,0 +1,44 @@
+{
+  "date_hkt": "2026-11-12",
+  "youtube": {
+    "content_date_hkt": "2026-11-11",
+    "pick_count": 5,
+    "items": [
+      {
+        "channel": "Higgsfield AI",
+        "title": "We Asked Claude to Build a Dinosaur Game and It Did This | Fable 5.2",
+        "url": "https://www.youtube.com/watch?v=yDKMTlD17bE",
+        "video_id": "yDKMTlD17bE",
+        "summary": "Higgsfield tests Claude Fable 5.2 by asking it to build a dinosaur game from scratch."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "Claude Built a Flying Machine From Da Vinci's Sketches | Fable 5.2",
+        "url": "https://www.youtube.com/watch?v=u2fX1lNsPq8",
+        "video_id": "u2fX1lNsPq8",
+        "summary": "A second Fable 5.2 build test turning Da Vinci's flying-machine sketches into a working build."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "I Swapped a Wolf for a Human in My AI Scene Without Starting Over",
+        "url": "https://www.youtube.com/watch?v=JCXlhlXmKwI",
+        "video_id": "JCXlhlXmKwI",
+        "summary": "A short workflow on replacing a subject in an existing AI scene without regenerating it."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "The AI Killed My Joke, So I Fixed It With One Plank",
+        "url": "https://www.youtube.com/watch?v=sBF7NexsLyA",
+        "video_id": "sBF7NexsLyA",
+        "summary": "A short about rescuing a failed AI-generated gag with a single prop fix."
+      },
+      {
+        "channel": "Gary Chen",
+        "title": "AI 開始會做夢了？Claude 記憶拆解！睡覺後就越來越好用？",
+        "url": "https://www.youtube.com/watch?v=ZJkfmrbmuFg",
+        "video_id": "ZJkfmrbmuFg",
+        "summary": "Gary breaks down how Claude's memory works and whether sleep-style consolidation makes it more useful."
+      }
+    ]
+  }
+}
