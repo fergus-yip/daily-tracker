@@ -40,5 +40,40 @@
         "summary": "Gary breaks down how Claude's memory works and whether sleep-style consolidation makes it more useful."
       }
     ]
+  },
+  "x": {
+    "pick_count_total": 4,
+    "watch_count": 4,
+    "trendy_count": 0,
+    "window_since": "2026-11-11 08:00 HKT",
+    "sections": {
+      "watch_list": [
+        {
+          "handle": "poteto",
+          "short_title": "Multiplayer Projects, Grok Bot manages projects",
+          "url": "https://x.com/poteto/status/2120313779691168082",
+          "summary": "Projects is now multiplayer, and you can just ask Grok Bot to create and manage projects for you."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "Projects vs Grok Bot for coding",
+          "url": "https://x.com/poteto/status/2120333909674414106",
+          "summary": "You can use both Projects and Grok Bot; Lauren mainly uses Projects for coding work."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "pstack verification trades speed for parallelism",
+          "url": "https://x.com/poteto/status/2120375285724123578",
+          "summary": "pstack is opt-in; a single chat is slower from verification, but less handholding lets you run several large projects in parallel."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "Grok Bot 1.0 quote",
+          "url": "https://x.com/poteto/status/2120659959465783553",
+          "summary": "Lauren quote-posts the Grok Bot 1.0 launch: shareable Bots that collaborate in Slack and Teams and join meetings."
+        }
+      ],
+      "trendy": []
+    }
   }
 }
