@@ -1,0 +1,20 @@
+{
+  "date_hkt": "2026-11-13",
+  "x": {
+    "pick_count_total": 1,
+    "watch_count": 1,
+    "trendy_count": 0,
+    "window_since": "2026-11-12 08:00 HKT",
+    "sections": {
+      "watch_list": [
+        {
+          "handle": "poteto",
+          "short_title": "Connectors make your bot more useful",
+          "url": "https://x.com/i/status/2120967515224609057",
+          "summary": "The more connectors and context your Grok Bot has, the more helpful it is; try asking it to read family messages and update your calendar for important events."
+        }
+      ],
+      "trendy": []
+    }
+  }
+}
