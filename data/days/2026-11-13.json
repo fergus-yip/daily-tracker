@@ -16,5 +16,46 @@
       ],
       "trendy": []
     }
+  },
+  "youtube": {
+    "content_date_hkt": "2026-11-12",
+    "pick_count": 5,
+    "items": [
+      {
+        "channel": "Grok",
+        "title": "How a Series A Startup Runs on Grok Bot",
+        "url": "https://www.youtube.com/watch?v=qCFUktiL0NU",
+        "video_id": "qCFUktiL0NU",
+        "summary": "A customer-style story of how a Series A startup uses Grok Bot day to day."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "Don't Miss the Biggest Higgsfield Discount of the Year | Up to 60% Off",
+        "url": "https://www.youtube.com/watch?v=qPmmsXbuIxA",
+        "video_id": "qPmmsXbuIxA",
+        "summary": "Announcement of Higgsfield's biggest sale of the year, up to 60% off."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "How to Build a Faceless Channel YouTube Won't Demonetize (Claude Fable 5.2)",
+        "url": "https://www.youtube.com/watch?v=YP8D2_j3_Hc",
+        "video_id": "YP8D2_j3_Hc",
+        "summary": "Guide to building a faceless YouTube channel with Claude that stays monetizable."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "I Made the AI Bear Act First and Picked His Voice Last",
+        "url": "https://www.youtube.com/watch?v=xP8GNKtML0s",
+        "video_id": "xP8GNKtML0s",
+        "summary": "Short on animating an AI bear's performance before choosing his voice."
+      },
+      {
+        "channel": "Kelly Tsai",
+        "title": "Claude母公司要上市了！是投資機會還是AI泡沫？為什麼Claude這麼賺錢華爾街還是擔憂？分析Anthropic招股書｜Kelly Tsai",
+        "url": "https://www.youtube.com/watch?v=7mDO-NTwq5c",
+        "video_id": "7mDO-NTwq5c",
+        "summary": "Breaks down Anthropic's IPO filing and asks whether it's an opportunity or AI-bubble risk."
+      }
+    ]
   }
 }
