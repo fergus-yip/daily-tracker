@@ -22,5 +22,46 @@
       ],
       "trendy": []
     }
+  },
+  "youtube": {
+    "content_date_hkt": "2026-11-13",
+    "pick_count": 5,
+    "items": [
+      {
+        "channel": "Grok",
+        "title": "Meet Team Bots: AI teammates your whole team can work with",
+        "url": "https://www.youtube.com/watch?v=FNQkRPR4h2Y",
+        "video_id": "FNQkRPR4h2Y",
+        "summary": "SpaceXSI's Akshat Agrawal and Beatrice Del Negro show how Team Bots work as shared AI teammates, with a live demo of an internal Bot and how an insurance customer rolled out about 85 of them."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "Don't Regenerate the Whole AI Image for One Small Mistake",
+        "url": "https://www.youtube.com/watch?v=fHxNbhwN41M",
+        "video_id": "fHxNbhwN41M",
+        "summary": "A short tip: instead of regenerating a whole AI image, make three local Seedream edits — a readable WC sign, modern screens in place of old monitors, and transferring colors without changing the frame."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "Generate Anything You Imagine | Unlimited Seedance 2.5 for Up to 14 Days",
+        "url": "https://www.youtube.com/watch?v=cTHeTWQJ0tg",
+        "video_id": "cTHeTWQJ0tg",
+        "summary": "A short promo for Higgsfield's limited sale: up to 60% off, unlimited Seedance 2.5 for up to 14 days, unlimited top image models for up to 60 days, and a 3-day unlimited MCP trial that continues as Ultra unless you cancel."
+      },
+      {
+        "channel": "Kelly Tsai",
+        "title": "黃仁勳真的請辭了！婚外情風暴越滾越大，股價重挫、還牽扯中國間諜與美國國安！創辦NVIDIA 33年竟因為一場醜聞下台，美國人怎麼看？｜Kelly Tsai",
+        "url": "https://www.youtube.com/watch?v=i9SKOKYEY1s",
+        "video_id": "i9SKOKYEY1s",
+        "summary": "A 14-minute explainer on NVIDIA founder Jensen Huang stepping down after 33 years amid an affair scandal, a sharp stock drop, and reports involving a Chinese spy and US national security, and how Americans are reacting."
+      },
+      {
+        "channel": "Gary Chen",
+        "title": "【打造你的 AI Agent】EP1. AI Agent 是什麼？從哪裡開始？",
+        "url": "https://www.youtube.com/watch?v=4LUtbEsNA3Y",
+        "video_id": "4LUtbEsNA3Y",
+        "summary": "Members-only first episode of his new AI Agent series: how an Agent differs from a chatbot, why Claude Code/Codex can be a starting point, and how a folder, AGENTS.md, and Skills work together, using an accounting Agent example."
+      }
+    ]
   }
 }
