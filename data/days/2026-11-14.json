@@ -1,0 +1,26 @@
+{
+  "date_hkt": "2026-11-14",
+  "x": {
+    "pick_count_total": 2,
+    "watch_count": 2,
+    "trendy_count": 0,
+    "window_since": "2026-11-13 08:00 HKT",
+    "sections": {
+      "watch_list": [
+        {
+          "handle": "poteto",
+          "short_title": "Bring your bot to meetings",
+          "url": "https://x.com/poteto/status/2121323671587606654",
+          "summary": "Ask Grok Bot to join a meeting so it can gather context itself, or have it attend and take notes if you can't be there."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "Helicopter between projects with /bro and /ketchup",
+          "url": "https://x.com/poteto/status/2121115992353091815",
+          "summary": "Lauren keeps about 30 projects moving by checking in through her bots and using /bro and /ketchup a lot."
+        }
+      ],
+      "trendy": []
+    }
+  }
+}
