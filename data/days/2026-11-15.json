@@ -1,5 +1,34 @@
 {
   "date_hkt": "2026-11-15",
+  "x": {
+    "pick_count_total": 3,
+    "watch_count": 3,
+    "trendy_count": 0,
+    "window_since": "2026-11-14 08:00 HKT",
+    "sections": {
+      "watch_list": [
+        {
+          "handle": "poteto",
+          "short_title": "AIE talk is up",
+          "url": "https://x.com/poteto/status/2121673563489140863",
+          "summary": "Lauren’s AI Engineer talk “All Code Is Slop (Except Mine)” is on YouTube, covering how the Grok Bot team ships quickly without compromising quality (https://youtu.be/O_zcc6Xl12g)."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "Quick fixes considered harmful",
+          "url": "https://x.com/poteto/status/2121646643124809848",
+          "summary": "Asking agents for the smallest or quickest change can spread bandaid patterns; she says agents change the calculus, so sometimes you should have them fix the root cause even if it’s more invasive."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "You can just do things",
+          "url": "https://x.com/poteto/status/2121417335055831368",
+          "summary": "Her tip for following through: don’t ask if you should do the thing — do it, then come back with a demo or something tangible."
+        }
+      ],
+      "trendy": []
+    }
+  },
   "youtube": {
     "content_date_hkt": "2026-11-14",
     "pick_count": 6,
