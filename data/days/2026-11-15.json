@@ -1,0 +1,51 @@
+{
+  "date_hkt": "2026-11-15",
+  "youtube": {
+    "content_date_hkt": "2026-11-14",
+    "pick_count": 6,
+    "items": [
+      {
+        "channel": "Grok",
+        "title": "When Your Customer Is a Superintelligent Agent: How Coinbase uses Grok Bot",
+        "url": "https://www.youtube.com/watch?v=91J3eaBH6no",
+        "video_id": "91J3eaBH6no",
+        "summary": "In this ~50-minute workshop, Coinbase’s Lincoln Murr and SpaceXSI’s Jon Farland explain agentic finance, then demo Grok Bot workflows that watch news, rebalance, and trade through the Coinbase connector with set guardrails."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "How I Get Perfect AI Realism in Every Shot (3 Steps)",
+        "url": "https://www.youtube.com/watch?v=1BzzdY-nK9A",
+        "video_id": "1BzzdY-nK9A",
+        "summary": "A three-step workflow for a consistent 4K AI commercial: lock product and character assets, use a Claude skill to turn a script into Seedance prompts and a shotlist, then iterate bathroom, kitchen, and street scenes into one polished ad."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "Seedance 2.5 4K Just Made AI Creatures Look Ultra Realistic! (Free Claude Skill)",
+        "url": "https://www.youtube.com/watch?v=FRukXPBqlNo",
+        "video_id": "FRukXPBqlNo",
+        "summary": "Adil shows a movie-creature-shop pipeline in Claude with Higgsfield MCP—clay sculpt, face reference, real materials, and a flash-photo trick—then a free skill that builds and animates a realistic creature in Seedance 2.5 4K."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "Why Shoot 3 Camera Angles When AI Can Make Them From One Clip?",
+        "url": "https://www.youtube.com/watch?v=ECS0rouFyqg",
+        "video_id": "ECS0rouFyqg",
+        "summary": "A short demo of Higgsfield generating extra camera angles, moves, and even a new location from a single one-camera clip, with the original footage kept on screen to compare."
+      },
+      {
+        "channel": "Kelly Tsai",
+        "title": "專家說2027年最賺錢的AI生意不是寫程式，而是當網紅！注意力經濟的時代來臨了嗎？｜Kelly Tsai",
+        "url": "https://www.youtube.com/watch?v=jwDrtqtLVxY",
+        "video_id": "jwDrtqtLVxY",
+        "summary": "Kelly unpacks the claim that by 2027 the most profitable AI business may be creating attention as an influencer, not writing code, and asks whether the attention economy has arrived."
+      },
+      {
+        "channel": "Gary Chen",
+        "title": "一支影片搞懂 AI 的底層邏輯，LLM 到底是什麼？",
+        "url": "https://www.youtube.com/watch?v=qtHozNsemsI",
+        "video_id": "qtHozNsemsI",
+        "summary": "Gary condenses Andrej Karpathy’s intro-to-LLMs talk: pretraining and hallucinations, SFT and RLHF, the black-box problem, plus Karpathy’s earlier predictions and security warnings."
+      }
+    ]
+  }
+}
