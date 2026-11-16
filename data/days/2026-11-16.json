@@ -1,0 +1,32 @@
+{
+  "date_hkt": "2026-11-16",
+  "x": {
+    "pick_count_total": 3,
+    "watch_count": 3,
+    "trendy_count": 0,
+    "window_since": "2026-11-15 08:00 HKT",
+    "sections": {
+      "watch_list": [
+        {
+          "handle": "poteto",
+          "short_title": "How well last year’s post aged",
+          "url": "https://x.com/poteto/status/2122067662373269960",
+          "summary": "She rereads last year’s note that senior engineers must build guardrails and still decide what ships even if AIs write most of the code, and asks what you’ll predict a year from now."
+        },
+        {
+          "handle": "felixrieseberg",
+          "short_title": "HTML-in-Canvas in Claude desktop",
+          "url": "https://x.com/felixrieseberg/status/2122036839238492493",
+          "summary": "He turned on HTML-in-Canvas in Claude’s desktop apps so Claude can make strange Flash-era-style sites, and posted demos at https://claude.ai/artifact/7cCNqKnoFSoib9SuNLB3vk"
+        },
+        {
+          "handle": "felixrieseberg",
+          "short_title": "Closer video-to-3D with pixel error",
+          "url": "https://x.com/felixrieseberg/status/2122047047054635379",
+          "summary": "Replying to Ethan Mollick’s Fable and Opus Starship-catch render, he says to measure video-to-render pixel error and drive it under 10 in 255 for a closer match."
+        }
+      ],
+      "trendy": []
+    }
+  }
+}
