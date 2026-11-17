@@ -9,6 +9,7 @@
         "title": "Grok Bot 201",
         "url": "https://www.youtube.com/watch?v=rOVomdnWhjQ",
         "video_id": "rOVomdnWhjQ",
+        "vertical": false,
         "summary": "Workshop on going from one bot to a team with skills and routines that run on their own."
       },
       {
@@ -16,6 +17,7 @@
         "title": "Grok Bot for Marketing: Go from idea to launch with a team of Bots",
         "url": "https://www.youtube.com/watch?v=VSaeKaC2Tck",
         "video_id": "VSaeKaC2Tck",
+        "vertical": false,
         "summary": "Marketing workshop: take a field event from idea to an approved guest list using a team of Bots."
       },
       {
@@ -23,6 +25,7 @@
         "title": "THE DISTANCE | An Eyewear Campaign on the Moon",
         "url": "https://www.youtube.com/watch?v=OHawD92HnN8",
         "video_id": "OHawD92HnN8",
+        "vertical": true,
         "summary": "Fashion eyewear campaign film set on the Moon, made with Higgsfield."
       },
       {
@@ -30,6 +33,7 @@
         "title": "5-Step Workflow: How to Make Viral AI Short Dramas (60M Views)",
         "url": "https://www.youtube.com/watch?v=cBxKZcalwkM",
         "video_id": "cBxKZcalwkM",
+        "vertical": false,
         "summary": "Full five-step workflow for viral AI short dramas, including prompts, skills, and contest links."
       },
       {
@@ -37,6 +41,7 @@
         "title": "找到CP值超高的首爾化妝室！推薦的拍照店家📸變身韓系大姐姐！25歲後的夜生活注定宿醉🫩｜Kelly Tsai",
         "url": "https://www.youtube.com/watch?v=BXJYHfrklYs",
         "video_id": "BXJYHfrklYs",
+        "vertical": false,
         "summary": "Seoul trip vlog covering a high-value makeup studio, photo spots for a Korean look, and night-life hangover notes."
       }
     ]
