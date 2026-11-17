@@ -56,6 +56,7 @@
         "title": "We Turned a Hot Sauce Into a Soap Opera | Higgsfield Drama Ads",
         "url": "https://www.youtube.com/watch?v=nvjHFQTSQjI",
         "video_id": "nvjHFQTSQjI",
+        "vertical": true,
         "summary": "Higgsfield launches Drama Ads, a one-click format that turns any product into a soap-opera-style ad with organic placement, editing, captions, and sound, shown here with hot sauce."
       },
       {
@@ -63,6 +64,7 @@
         "title": "My Friend Acted Out a Dinosaur Run for My AI Shot",
         "url": "https://www.youtube.com/watch?v=urW6j11CbjE",
         "video_id": "urW6j11CbjE",
+        "vertical": true,
         "summary": "Still unhappy with a too-smooth AI dinosaur run, the creator has a friend act out a movement reference and then turns what worked into a Claude motion skill for a weightier gait."
       },
       {
@@ -70,6 +72,7 @@
         "title": "Pro VFX Artist vs 8 Hours of AI: You Decide",
         "url": "https://www.youtube.com/watch?v=N9oYJrz95-k",
         "video_id": "N9oYJrz95-k",
+        "vertical": true,
         "summary": "A traditional VFX dinosaur-chase cut is set against an eight-hour AI version; VFX artist Patrick Kalyn still favors the traditional work at this stage and asks viewers to choose."
       },
       {
@@ -77,6 +80,7 @@
         "title": "AI時代最大的謊言：除了七大科技公司，根本沒人賺到錢！AI到底是不是泡沫？｜Kelly Tsai",
         "url": "https://www.youtube.com/watch?v=ePXqAxP01to",
         "video_id": "ePXqAxP01to",
+        "vertical": false,
         "summary": "Kelly Tsai asks whether AI is a bubble, arguing the era's biggest lie is that anyone besides the Magnificent Seven tech companies is actually making money from it."
       }
     ]

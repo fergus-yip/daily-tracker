@@ -9,6 +9,7 @@
         "title": "Change Everything in Your Video | Seedance 2.5 + Genjutsu",
         "url": "https://www.youtube.com/watch?v=b6wVWdnN97M",
         "video_id": "b6wVWdnN97M",
+        "vertical": true,
         "summary": "Seedance 2.5 plus Genjutsu restyle an existing clip—camera, lighting, props, outfits, even location—without a reshoot."
       },
       {
@@ -16,6 +17,7 @@
         "title": "One More Minute | Animated Horror Short Film For Halloween | Higgsfield Originals (2026)",
         "url": "https://www.youtube.com/watch?v=8icJ67IsXnc",
         "video_id": "8icJ67IsXnc",
+        "vertical": false,
         "summary": "A ~6-minute AI stop-motion Halloween horror short, with prompts and assets open-sourced so you can recreate the look."
       },
       {
@@ -23,6 +25,7 @@
         "title": "\u5f35\u4fee\u4fee\u505c\u66f4\u4e94\u500b\u6708\u53bb\u54ea\u4e86\uff1f\u66fe\u7d93\u88f8\u8fad\u806f\u767c\u79d1\u53bb\u74b0\u904a\u4e16\u754c\u3001\u53c8\u7d93\u6b77\u5275\u696d\u5931\u6557\u6b78\u96f6\uff0c\u73fe\u5728\u6c7a\u5b9aall in AI\uff1f\uff5cWhat's Next? EP18 ft. \u5f35\u4fee\u4fee\uff5cKelly Tsai",
         "url": "https://www.youtube.com/watch?v=vi_sgjpQ5fg",
         "video_id": "vi_sgjpQ5fg",
+        "vertical": false,
         "summary": "What's Next EP18 with \u5f35\u4fee\u4fee on leaving MediaTek, travel and a failed startup, then going all-in on AI agents."
       }
     ]
