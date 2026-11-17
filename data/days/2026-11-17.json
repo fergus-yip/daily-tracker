@@ -1,5 +1,46 @@
 {
   "date_hkt": "2026-11-17",
+  "x": {
+    "pick_count_total": 5,
+    "watch_count": 5,
+    "trendy_count": 0,
+    "window_since": "2026-11-16 08:00 HKT",
+    "sections": {
+      "watch_list": [
+        {
+          "handle": "poteto",
+          "short_title": "Formal methods and /statechart",
+          "url": "https://x.com/poteto/status/2122176289440502016",
+          "summary": "She didn’t have time in the AIE talk, so she points to her earlier thread: formal methods only prove the code matches the spec under assumptions, /statechart helps you check the agent got your intent, and you still layer types, tests, and formal methods together."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "Nuance tends to lead to slop",
+          "url": "https://x.com/poteto/status/2122365192059428997",
+          "summary": "She boosted Matt Pocock’s takeaway from her AIE talk: nuance leads to slop, so design APIs and automated checks that take nuance out of agents’ decisions."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "Grok Bots can handle QuickBooks and Xero",
+          "url": "https://x.com/poteto/status/2122368248385859699",
+          "summary": "Replying to a QuickBooks example, Lauren confirmed that Grok Bots can handle QuickBooks, and Xero too."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "What's new in Grok Bot 1.0",
+          "url": "https://x.com/poteto/status/2122368339326783543",
+          "summary": "She amplified a recap video of Grok Bot 1.0 covering team bots, joining meetings, taking initiative, learning, and being smarter and faster."
+        },
+        {
+          "handle": "felixrieseberg",
+          "short_title": "HTML-in-Canvas: wish for mobile and other browsers",
+          "url": "https://x.com/felixrieseberg/status/2122259618231390437",
+          "summary": "After trying HTML-in-Canvas, Felix says the best APIs add a lot of power without many new concepts — easy for him and for LLMs — and his top wish is cross-browser and mobile support."
+        }
+      ],
+      "trendy": []
+    }
+  },
   "youtube": {
     "content_date_hkt": "2026-11-16",
     "pick_count": 1,
