@@ -312,15 +312,61 @@
     return m ? m[1] : "";
   }
 
+  function itemIsVertical(item) {
+    return item && item.vertical === true;
+  }
+
+  function itemVerticalUnknown(item) {
+    return !item || (item.vertical !== true && item.vertical !== false);
+  }
+
+  function ytThumbHtml(item) {
+    const vid = ytVideoId(item);
+    if (!vid) return { vid: "", html: "", vertical: false };
+    const safe = esc(vid);
+    if (itemIsVertical(item)) {
+      return {
+        vid,
+        vertical: true,
+        html: `<img class="card-thumb" src="https://i.ytimg.com/vi/${safe}/oar2.jpg" alt="" loading="lazy" decoding="async" width="1080" height="1920" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/${safe}/hqdefault.jpg'" />`,
+      };
+    }
+    const probeAttr = itemVerticalUnknown(item) ? ` data-probe-vertical="${safe}"` : "";
+    return {
+      vid,
+      vertical: false,
+      html: `<img class="card-thumb"${probeAttr} src="https://i.ytimg.com/vi/${safe}/hq720.jpg" alt="" loading="lazy" decoding="async" width="1280" height="720" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/${safe}/hqdefault.jpg'" />`,
+    };
+  }
+
+  function probeUntaggedVerticalThumbs() {
+    main.querySelectorAll("img[data-probe-vertical]").forEach((img) => {
+      const vid = img.getAttribute("data-probe-vertical");
+      if (!vid) return;
+      const probe = new Image();
+      probe.onload = () => {
+        img.removeAttribute("data-probe-vertical");
+        if (!(probe.naturalHeight > probe.naturalWidth)) return;
+        const card = img.closest(".card");
+        if (card) card.classList.add("is-vertical");
+        img.width = 1080;
+        img.height = 1920;
+        img.src = `https://i.ytimg.com/vi/${vid}/oar2.jpg`;
+      };
+      probe.onerror = () => {
+        img.removeAttribute("data-probe-vertical");
+      };
+      probe.src = `https://i.ytimg.com/vi/${vid}/oar2.jpg`;
+    });
+  }
+
   function ytCard(item, date, opts = {}) {
     const dateSpan = opts.omitDate ? "" : `<span>${esc(formatShortDate(date))}</span>`;
-    const vid = ytVideoId(item);
-    const thumb = vid
-      ? `<img class="card-thumb" src="https://i.ytimg.com/vi/${esc(vid)}/hq720.jpg" alt="" loading="lazy" decoding="async" width="1280" height="720" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/${esc(vid)}/hqdefault.jpg'" />`
-      : "";
+    const thumb = ytThumbHtml(item);
+    const verticalClass = thumb.vertical ? " is-vertical" : "";
     return `
-      <a class="card source-yt${vid ? " has-thumb" : ""}" href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">
-        ${thumb}
+      <a class="card source-yt${thumb.vid ? " has-thumb" : ""}${verticalClass}" href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">
+        ${thumb.html}
         <div class="card-body">
           <h3 class="card-title">${esc(item.title)}</h3>
           <p class="card-summary">${esc(item.summary || "")}</p>
@@ -336,13 +382,11 @@
   function launchCard(item, opts = {}) {
     const dateIso = item.published_hkt || opts.weekStart || "";
     const dateSpan = opts.omitDate ? "" : (dateIso ? `<span>${esc(formatShortDate(dateIso))}</span>` : "");
-    const vid = ytVideoId(item);
-    const thumb = vid
-      ? `<img class="card-thumb" src="https://i.ytimg.com/vi/${esc(vid)}/hq720.jpg" alt="" loading="lazy" decoding="async" width="1280" height="720" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/${esc(vid)}/hqdefault.jpg'" />`
-      : "";
+    const thumb = ytThumbHtml(item);
+    const verticalClass = thumb.vertical ? " is-vertical" : "";
     return `
-      <a class="card source-launch${vid ? " has-thumb" : ""}" href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">
-        ${thumb}
+      <a class="card source-launch${thumb.vid ? " has-thumb" : ""}${verticalClass}" href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">
+        ${thumb.html}
         <div class="card-body">
           <h3 class="card-title">${esc(item.title)}</h3>
           <p class="card-summary">${esc(item.summary || "")}</p>
@@ -512,6 +556,22 @@
       <div class="day-list">${rows || emptyBlock("No days retained yet.")}</div>`;
   }
 
+  function contentDays() {
+    return (state.index?.days || []).filter((date) => {
+      const day = state.days.get(date);
+      return day && dayHasContent(day);
+    });
+  }
+
+  function adjacentContentDays(date) {
+    const days = contentDays();
+    const i = days.indexOf(date);
+    return {
+      older: i >= 0 && i < days.length - 1 ? days[i + 1] : null,
+      newer: i > 0 ? days[i - 1] : null,
+    };
+  }
+
   function renderDayDetail(date) {
     const day = state.days.get(date);
     if (!day) return emptyBlock(`Missing data for ${date}.`);
@@ -530,9 +590,21 @@
       xPillLabel = `${xCount} picks`;
     }
 
+    const { older, newer } = adjacentContentDays(date);
+    const olderBtn = older
+      ? `<button type="button" class="day-nav-btn" data-goto-day="${esc(older)}" aria-label="Previous day, ${esc(formatShortDate(older))}">← ${esc(formatShortDate(older))}</button>`
+      : `<span class="day-nav-btn is-spacer" aria-hidden="true"></span>`;
+    const newerBtn = newer
+      ? `<button type="button" class="day-nav-btn" data-goto-day="${esc(newer)}" aria-label="Next day, ${esc(formatShortDate(newer))}">${esc(formatShortDate(newer))} →</button>`
+      : `<span class="day-nav-btn is-spacer" aria-hidden="true"></span>`;
+
     let html = `<button class="back-link" type="button" data-action="back-days">← All days</button>
-      <div class="section-head">
-        <h2>${esc(formatDateLabel(date))}</h2>
+      <div class="section-head day-detail-head">
+        <div class="day-nav">
+          ${olderBtn}
+          <h2>${esc(formatDateLabel(date))}</h2>
+          ${newerBtn}
+        </div>
       </div>
       <div class="today-grid">`;
 
@@ -576,6 +648,7 @@
           meta: item.channel,
           url: item.url,
           video_id: item.video_id,
+          vertical: item.vertical,
           hay: `${item.title} ${item.summary} ${item.channel}`.toLowerCase(),
         });
       }
@@ -632,7 +705,7 @@
 
     html += `<div class="card-list">${hits.map((r) => {
       if (r.kind === "youtube") {
-        return ytCard({ title: r.title, summary: r.summary, channel: r.meta, url: r.url, video_id: r.video_id }, r.date);
+        return ytCard({ title: r.title, summary: r.summary, channel: r.meta, url: r.url, video_id: r.video_id, vertical: r.vertical }, r.date);
       }
       return xCard(
         { short_title: r.title, summary: r.summary, handle: r.meta.replace(/^@/, ""), url: r.url },
@@ -793,6 +866,7 @@
           url: item.url,
           video_id: item.video_id,
           published_hkt: item.published_hkt,
+          vertical: item.vertical,
           hay: `${item.title} ${item.summary} ${item.channel}`.toLowerCase(),
         });
       }
@@ -824,7 +898,7 @@
 
     html += `<div class="card-list dense-grid">${hits.map((r) =>
       launchCard(
-        { title: r.title, summary: r.summary, channel: r.channel, url: r.url, video_id: r.video_id, published_hkt: r.published_hkt },
+        { title: r.title, summary: r.summary, channel: r.channel, url: r.url, video_id: r.video_id, published_hkt: r.published_hkt, vertical: r.vertical },
         { weekStart: r.weekStart }
       )
     ).join("")}</div>`;
@@ -885,6 +959,7 @@
     }
     main.innerHTML = html;
     openTrendyOnDesktop();
+    probeUntaggedVerticalThumbs();
   }
 
   document.querySelector(".cadence").addEventListener("click", (e) => {

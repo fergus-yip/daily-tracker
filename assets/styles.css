@@ -319,6 +319,16 @@ h1 {
     grid-template-columns: 120px minmax(0, 1fr);
   }
 }
+.card.source-yt.has-thumb.is-vertical,
+.card.source-launch.has-thumb.is-vertical {
+  grid-template-columns: 96px minmax(0, 1fr);
+}
+@media (max-width: 479px) {
+  .card.source-yt.has-thumb.is-vertical,
+  .card.source-launch.has-thumb.is-vertical {
+    grid-template-columns: 80px minmax(0, 1fr);
+  }
+}
 .card-thumb {
   width: 100%;
   aspect-ratio: 16 / 9;
@@ -329,6 +339,9 @@ h1 {
   background: #0a0a0a;
   display: block;
   transition: transform 0.2s ease;
+}
+.card.has-thumb.is-vertical .card-thumb {
+  aspect-ratio: 9 / 16;
 }
 .card:hover .card-thumb {
   transform: scale(1.02);
@@ -455,6 +468,73 @@ h1 {
   padding: 0;
 }
 .back-link:hover { text-decoration: underline; }
+
+.day-detail-head {
+  width: 100%;
+}
+.day-nav {
+  display: grid;
+  grid-template-columns: minmax(6.5rem, auto) minmax(0, 1fr) minmax(6.5rem, auto);
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+  width: 100%;
+}
+.day-nav h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 1.2rem;
+  letter-spacing: -0.035em;
+  min-width: 0;
+}
+.day-nav-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0.35rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg-elev);
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 0.88rem;
+  white-space: nowrap;
+}
+.day-nav-btn:first-child { justify-self: start; }
+.day-nav-btn:last-child { justify-self: end; }
+.day-nav-btn:hover:not(.is-spacer):not(:disabled) {
+  border-color: var(--border-hover);
+  color: var(--text);
+  background: var(--bg-card-hover);
+}
+.day-nav-btn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+.day-nav-btn.is-spacer {
+  visibility: hidden;
+  pointer-events: none;
+  border-color: transparent;
+  background: transparent;
+}
+.day-nav-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  color: var(--faint);
+}
+@media (max-width: 479px) {
+  .day-nav {
+    grid-template-columns: minmax(4.75rem, auto) minmax(0, 1fr) minmax(4.75rem, auto);
+    gap: 0.35rem 0.4rem;
+  }
+  .day-nav-btn {
+    padding: 0.3rem 0.55rem;
+    font-size: 0.8rem;
+  }
+  .day-nav h2 {
+    font-size: 1.05rem;
+  }
+}
 
 .group-label {
   margin: 0.65rem 0 0.75rem;
@@ -640,4 +720,16 @@ h1 {
 .card-list.launch-grid .card-thumb {
   width: 100%;
   aspect-ratio: 16 / 9;
+}
+.card-list.dense-grid .card.source-yt.has-thumb.is-vertical,
+.card-list.launch-grid .card.source-yt.has-thumb.is-vertical,
+.card-list.dense-grid .card.source-launch.has-thumb.is-vertical,
+.card-list.launch-grid .card.source-launch.has-thumb.is-vertical {
+  grid-template-columns: 80px minmax(0, 1fr);
+  align-items: start;
+}
+.card-list.dense-grid .card.has-thumb.is-vertical .card-thumb,
+.card-list.launch-grid .card.has-thumb.is-vertical .card-thumb {
+  width: 100%;
+  aspect-ratio: 9 / 16;
 }
