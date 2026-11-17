@@ -12,7 +12,8 @@
           "summary": "Google introduces Pixel Tag in the November '26 Pixel Drop, a tracker that helps you find missing items — including your phone. Part of the official Pixel Drop launch.",
           "url": "https://www.youtube.com/watch?v=RUHvOb9ruBc",
           "published_hkt": "2026-11-12",
-          "video_id": "RUHvOb9ruBc"
+          "video_id": "RUHvOb9ruBc",
+          "vertical": true
         },
         {
           "channel": "Made by Google",
@@ -20,7 +21,8 @@
           "summary": "Google's November '26 Pixel Drop campaign film introduces Rambler on Pixel 10 and Pixel 11 with Gemini Intelligence, turning natural speech into a clear message by cleaning up fillers and edits.",
           "url": "https://www.youtube.com/watch?v=rUqLlMVJE3w",
           "published_hkt": "2026-11-11",
-          "video_id": "rUqLlMVJE3w"
+          "video_id": "rUqLlMVJE3w",
+          "vertical": false
         },
         {
           "channel": "Apple",
@@ -28,7 +30,8 @@
           "summary": "Apple premieres its 2026 holiday film “The Dreamer,” directed by Melina Matsoukas — a story about a parent's gift that helps a young artist rediscover his creativity, featuring MacBook Neo.",
           "url": "https://www.youtube.com/watch?v=Sp54mxnWjUM",
           "published_hkt": "2026-11-12",
-          "video_id": "Sp54mxnWjUM"
+          "video_id": "Sp54mxnWjUM",
+          "vertical": false
         },
         {
           "channel": "Withings",
@@ -36,7 +39,8 @@
           "summary": "Withings introduces Body Pro 3, a segmental body-composition health station for digital health programs, with per-segment fat and muscle mass, program trajectory prediction, a hypertension notification pending FDA clearance, and cellular connectivity with no app setup for members.",
           "url": "https://www.youtube.com/watch?v=_SdzpmJ5UxI",
           "published_hkt": "2026-11-12",
-          "video_id": "_SdzpmJ5UxI"
+          "video_id": "_SdzpmJ5UxI",
+          "vertical": false
         },
         {
           "channel": "YA-MAN",
@@ -44,7 +48,8 @@
           "summary": "YA-MAN introduces Deep Lift DUO, its first multifunctional facial beauty device combining Warm Lift and Cool Lift in one device, so users can switch between warming and cooling care.",
           "url": "https://www.youtube.com/watch?v=7DQ08RICVDM",
           "published_hkt": "2026-11-15",
-          "video_id": "7DQ08RICVDM"
+          "video_id": "7DQ08RICVDM",
+          "vertical": true
         }
       ]
     }

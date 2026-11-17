@@ -12,7 +12,8 @@
           "summary": "Introduces Google Fitbit Edge, a health and fitness wearable with Gemini-powered personal coaching, AFib-oriented heart monitoring, up to one-week battery, and pre-orders from $179.99.",
           "url": "https://www.youtube.com/watch?v=LZvXW6NFaJQ",
           "published_hkt": "2026-10-13",
-          "video_id": "LZvXW6NFaJQ"
+          "video_id": "LZvXW6NFaJQ",
+          "vertical": false
         },
         {
           "channel": "Apple",
@@ -20,7 +21,8 @@
           "summary": "Launches Apple HomeView, a 7-inch smart display with multi-user recognition, Siri AI, Spatial Audio speakers, FaceTime, and HomeKit/Matter smart-home control.",
           "url": "https://www.youtube.com/watch?v=QeQAXuQpGEA",
           "published_hkt": "2026-10-13",
-          "video_id": "QeQAXuQpGEA"
+          "video_id": "QeQAXuQpGEA",
+          "vertical": false
         },
         {
           "channel": "Apple",
@@ -28,7 +30,8 @@
           "summary": "Official campaign film for Apple HomeView, highlighting Spatial Audio, smart-home control, FaceTime, Siri AI, and personalized multi-user experiences at home.",
           "url": "https://www.youtube.com/watch?v=hkrYiZ_g9tw",
           "published_hkt": "2026-10-13",
-          "video_id": "hkrYiZ_g9tw"
+          "video_id": "hkrYiZ_g9tw",
+          "vertical": false
         },
         {
           "channel": "Apple",
@@ -36,7 +39,8 @@
           "summary": "Unveils the new Apple TV 4K with Dolby Vision/HDR10+, Siri AI with far-field mics, Find My for the Siri Remote, and HomePod surround-sound home-theater pairing.",
           "url": "https://www.youtube.com/watch?v=bNdmGYamiWM",
           "published_hkt": "2026-10-13",
-          "video_id": "bNdmGYamiWM"
+          "video_id": "bNdmGYamiWM",
+          "vertical": false
         },
         {
           "channel": "Apple",
@@ -44,7 +48,8 @@
           "summary": "Introduces HomePod mini 2 with richer room-filling sound, Siri AI for hands-free smart-home help, multiroom audio, and five color options.",
           "url": "https://www.youtube.com/watch?v=xLL4UnrLNWs",
           "published_hkt": "2026-10-13",
-          "video_id": "xLL4UnrLNWs"
+          "video_id": "xLL4UnrLNWs",
+          "vertical": false
         }
       ]
     }

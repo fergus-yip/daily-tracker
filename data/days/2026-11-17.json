@@ -50,6 +50,7 @@
         "title": "新手必看！一次搞懂 CLI、MCP、Skill 怎麼用！工程師都改用 CLI？ MCP已經過時了？這些AI工具該如何選？｜Kelly Tsai",
         "url": "https://www.youtube.com/watch?v=Lwq9P3S1wMQ",
         "video_id": "Lwq9P3S1wMQ",
+        "vertical": false,
         "summary": "A 15-minute beginner guide to CLI, MCP, and Skills: what each is for, whether engineers are shifting to the command line, and how to choose among these AI tools."
       }
     ]
