@@ -9,6 +9,7 @@
         "title": "Grok Bot for Enterprise Teams: Put AI teammates to work across every department",
         "url": "https://www.youtube.com/watch?v=jcKcAfJtTlk",
         "video_id": "jcKcAfJtTlk",
+        "vertical": false,
         "summary": "SpaceXSI workshop on assigning real departmental work to Grok Bots, from research and support to Cursor code fixes and sales prep (~55 min)."
       },
       {
@@ -16,6 +17,7 @@
         "title": "I Spent 72 Hours Making This AI Commercial With Seedance 2.5 (Every Prompt I Used)",
         "url": "https://www.youtube.com/watch?v=ktGkJfxNN9M",
         "video_id": "ktGkJfxNN9M",
+        "vertical": false,
         "summary": "Full breakdown of a cinematic sportswear commercial built with Claude + Higgsfield Cinema Studio / Seedance 2.5, with every prompt and asset linked (~28 min)."
       },
       {
@@ -23,6 +25,7 @@
         "title": "Make a Mobile Game From One Prompt | Higgsfield Playable",
         "url": "https://www.youtube.com/watch?v=d8dI5TRjIW8",
         "video_id": "d8dI5TRjIW8",
+        "vertical": true,
         "summary": "Short intro to Higgsfield Playable: turn a gameplay idea or prompt into a playable mobile game / playable ad in one click."
       },
       {
@@ -30,6 +33,7 @@
         "title": "Turn a Viral Ad Into a Real Mobile Game | Higgsfield Playable",
         "url": "https://www.youtube.com/watch?v=bP1Cx3XEKS4",
         "video_id": "bP1Cx3XEKS4",
+        "vertical": true,
         "summary": "Companion Playable demo: drop a viral ad, screenshot, or prompt and get a real mobile game with viral mechanics."
       },
       {
@@ -37,6 +41,7 @@
         "title": "3 ways creators monetize AI short dramas",
         "url": "https://www.youtube.com/watch?v=27yt0lijSEU",
         "video_id": "27yt0lijSEU",
+        "vertical": true,
         "summary": "Tip Short: client dramas, in-story brand integrations, and paid next-episode access after a few free ones."
       }
     ]
