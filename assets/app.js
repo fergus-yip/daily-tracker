@@ -516,31 +516,49 @@
     const day = state.days.get(date);
     if (!day) return emptyBlock(`Missing data for ${date}.`);
     const omitDate = date === getTodayHkt();
+    const ytList = ytItems(day);
+    const xList = xAll(day);
+    const watch = xWatch(day);
+    const trendy = xTrendy(day);
+    const yCount = day.youtube?.pick_count ?? ytList.length;
+
+    let xPillLabel;
+    if (watch.length && trendy.length) {
+      xPillLabel = `${watch.length} watch · ${trendy.length} trendy`;
+    } else {
+      const xCount = day.x?.pick_count_total ?? xList.length;
+      xPillLabel = `${xCount} picks`;
+    }
 
     let html = `<button class="back-link" type="button" data-action="back-days">← All days</button>
       <div class="section-head">
         <h2>${esc(formatDateLabel(date))}</h2>
       </div>
-      <div class="day-detail">`;
+      <div class="today-grid">`;
 
-    if (ytItems(day).length) {
-      html += `<section class="panel">
-        <div class="section-head"><h2>YouTube</h2><span class="pill yt">${day.youtube.pick_count} picks</span></div>`;
-      html += `<div class="card-list">${ytItems(day).map((i) => ytCard(i, date, { omitDate })).join("")}</div></section>`;
+    html += `<section class="panel">
+      <div class="section-head">
+        <h2>YouTube</h2>
+        <span class="pill yt">${yCount} picks</span>
+      </div>`;
+    if (ytList.length) {
+      html += `<div class="card-list">${ytList.map((i) => ytCard(i, date, { omitDate })).join("")}</div>`;
+    } else {
+      html += emptyBlock("No YouTube picks for this day.");
     }
+    html += `</section>`;
 
-    if (xAll(day).length) {
-      html += `<section class="panel">
-        <div class="section-head"><h2>X</h2><span class="pill x">${day.x.pick_count_total} picks</span></div>`;
+    html += `<section class="panel">
+      <div class="section-head">
+        <h2>X</h2>
+        <span class="pill x">${esc(xPillLabel)}</span>
+      </div>`;
+    if (xList.length) {
       html += renderXGroups(day, date, { omitSection: true, omitDate });
-      html += `</section>`;
+    } else {
+      html += emptyBlock("No X picks for this day.");
     }
-
-    if (!dayHasContent(day)) {
-      html += emptyBlock("Quiet day — no picks recorded.");
-    }
-
-    html += `</div>`;
+    html += `</section></div>`;
     return html;
   }
 

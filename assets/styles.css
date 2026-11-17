@@ -309,13 +309,19 @@ h1 {
 }
 .card.source-yt.has-thumb {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 140px minmax(0, 1fr);
+  align-items: start;
   gap: 0.75rem;
   padding: 0.65rem 0.65rem 0.9rem;
 }
+@media (max-width: 479px) {
+  .card.source-yt.has-thumb {
+    grid-template-columns: 120px minmax(0, 1fr);
+  }
+}
 .card-thumb {
   width: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 16 / 9;
   height: auto;
   object-fit: cover;
   object-position: center;
@@ -449,11 +455,6 @@ h1 {
   padding: 0;
 }
 .back-link:hover { text-decoration: underline; }
-
-.day-detail {
-  display: grid;
-  gap: 1.5rem;
-}
 
 .group-label {
   margin: 0.65rem 0 0.75rem;
@@ -627,4 +628,16 @@ h1 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 0.75rem;
   }
+}
+
+.card-list.dense-grid .card.source-yt.has-thumb,
+.card-list.launch-grid .card.source-yt.has-thumb,
+.card-list.dense-grid .card.source-launch.has-thumb,
+.card-list.launch-grid .card.source-launch.has-thumb {
+  grid-template-columns: 1fr;
+}
+.card-list.dense-grid .card-thumb,
+.card-list.launch-grid .card-thumb {
+  width: 100%;
+  aspect-ratio: 16 / 9;
 }
