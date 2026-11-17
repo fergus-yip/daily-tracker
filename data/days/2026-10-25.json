@@ -9,6 +9,7 @@
         "title": "The Complete AI Filmmaking Masterclass Everyone’s Missing (Full Tutorial)",
         "url": "https://www.youtube.com/watch?v=wFbgrPmVXb0",
         "video_id": "wFbgrPmVXb0",
+        "vertical": false,
         "summary": "Full tutorial on making a cinematic AI short film with Claude, Seedance 2.5, and Higgsfield Cinema Studio, from character design through final edit."
       },
       {
@@ -16,6 +17,7 @@
         "title": "Why studio ads get scrolled past and UGC doesn't",
         "url": "https://www.youtube.com/watch?v=qN17_grXMpc",
         "video_id": "qN17_grXMpc",
+        "vertical": true,
         "summary": "Tip Short arguing UGC-style AI ads hold attention better than glossy studio ads when clearing unsold inventory."
       },
       {
@@ -23,6 +25,7 @@
         "title": "白話解釋API到底是什麼？用AI前一定要搞懂！為什麼API key外洩這麼嚴重？應該怎麼保護？｜Kelly Tsai",
         "url": "https://www.youtube.com/watch?v=PAhpa2wsbeM",
         "video_id": "PAhpa2wsbeM",
+        "vertical": false,
         "summary": "Plain-language explainer on what an API is, why API key leaks are serious, and how to protect keys before using AI tools."
       }
     ]
