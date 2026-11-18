@@ -1,0 +1,84 @@
+{
+  "date_hkt": "2026-11-18",
+  "x": {
+    "pick_count_total": 4,
+    "watch_count": 4,
+    "trendy_count": 0,
+    "window_since": "2026-11-17 08:00 HKT",
+    "sections": {
+      "watch_list": [
+        {
+          "handle": "poteto",
+          "short_title": "Onboard Bot like a new hire",
+          "url": "https://x.com/poteto/status/2122774297840398639",
+          "summary": "Give Bot ambitious work (save money, find clients, run workflows end to end) by talking for about 10 minutes as if you’re onboarding a new hire, then ask it to restate the brief, connect the tools you mention, and save a skill."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "Dr Eggbot for usage",
+          "url": "https://x.com/poteto/status/2122780927466287345",
+          "summary": "While the team works on usage limits, try Dr Eggbot (https://x.ai/bot/_jOdbfkB16zxu7MRcmReE) and ask it to help optimize your usage."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "Accounting team write-up",
+          "url": "https://x.com/poteto/status/2122782304531812494",
+          "summary": "Five Grok Bots at SpaceXSI now run order-to-cash accounting like teammates, involving a person only when judgment is needed; write-up at https://x.ai/news/grok-bot-accounting."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "Google Search Console connector",
+          "url": "https://x.com/poteto/status/2122785061619843538",
+          "summary": "Grok Bot now has a Google Search Console connector."
+        }
+      ],
+      "trendy": []
+    }
+  },
+  "youtube": {
+    "content_date_hkt": "2026-11-17",
+    "pick_count": 5,
+    "items": [
+      {
+        "channel": "Grok",
+        "title": "Grok Bot 101",
+        "url": "https://www.youtube.com/watch?v=CODaDnHwe2M",
+        "video_id": "CODaDnHwe2M",
+        "vertical": false,
+        "summary": "A 57-minute SpaceXSI workshop where Chloe Troy and Cliff Panos show how to treat Grok Bot as a teammate, then live-build a Flylo airline Bot that writes a launch plan and spins up design, outreach, and support Bots."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "Drop a Script, Get a Whole Short Drama Season | Fable 5.2",
+        "url": "https://www.youtube.com/watch?v=vFXWLI5Ks7g",
+        "video_id": "vFXWLI5Ks7g",
+        "vertical": true,
+        "summary": "Higgsfield launches Short Drama Studio on Fable 5.2: drop in a script and get a full short-drama season with a consistent cast in 9:16, 16:9, or 4:3, also available through Higgsfield MCP in Claude and ChatGPT."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "Don't Miss the $1,000,000 Higgsfield Talent Contest",
+        "url": "https://www.youtube.com/watch?v=7cJc-WLXV2w",
+        "video_id": "7cJc-WLXV2w",
+        "vertical": true,
+        "summary": "A short promo for Higgsfield’s $1,000,000 talent contest: submit a 3–7 minute film of any genre by Nov 26, build it in public on the platform, and standout projects can earn up to 100K credits."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "Why This AI Creature Looks Like a Movie Shot",
+        "url": "https://www.youtube.com/watch?v=fFYIn6rG3GM",
+        "video_id": "fFYIn6rG3GM",
+        "vertical": true,
+        "summary": "A 41-second tip on making an AI creature look filmed rather than generated: start with a plain flash photo against a grey backdrop and a hard shadow, then animate it with Seedance 2.5 in 4K."
+      },
+      {
+        "channel": "Kelly Tsai",
+        "title": "會50種語言的人都是怎麼學外語的？原來以前的語言學習方法都錯了！現在AI翻譯這麼強，人還需要自己學會語言嗎？｜What's Next? EP20 ft. Terry 謝智翔｜Kelly Tsai",
+        "url": "https://www.youtube.com/watch?v=d-OxVReFIL4",
+        "video_id": "d-OxVReFIL4",
+        "vertical": false,
+        "summary": "In What’s Next EP20 (29:56), Kelly talks with polyglot Terry 謝智翔 about how people who speak many languages actually learn, why older study methods fall short, and whether humans still need to learn languages now that AI translation is so strong."
+      }
+    ]
+  }
+}
