@@ -1,0 +1,32 @@
+{
+  "date_hkt": "2026-11-19",
+  "x": {
+    "pick_count_total": 3,
+    "watch_count": 3,
+    "trendy_count": 0,
+    "window_since": "2026-11-18 08:00 HKT",
+    "sections": {
+      "watch_list": [
+        {
+          "handle": "poteto",
+          "short_title": "Automate Anything with Grok Bot",
+          "url": "https://x.com/poteto/status/2123159537016533493",
+          "summary": "Lauren’s write-up on automating with Grok Bot: start with the real goal (not the process), voice-dump how you do the work, teach implicit decisions, let the bot gather its own feedback, then put it on a routine so you’re not the bottleneck."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "Dr Eggbot v2 template",
+          "url": "https://x.com/poteto/status/2123159763626430464",
+          "summary": "A new Dr Eggbot v2 bot template adds skills for automating work and life; reinstall it (it’s different from the old one) and ask the old Eggbot to transfer anything you want to keep."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "Book flights, hotels, and cars",
+          "url": "https://x.com/poteto/status/2123133226281500882",
+          "summary": "Lauren amplified that Grok Bot can now book flights, hotels, and rental cars and look for the best deal."
+        }
+      ],
+      "trendy": []
+    }
+  }
+}
