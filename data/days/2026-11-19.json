@@ -28,5 +28,51 @@
       ],
       "trendy": []
     }
+  },
+  "youtube": {
+    "content_date_hkt": "2026-11-18",
+    "pick_count": 5,
+    "items": [
+      {
+        "channel": "Higgsfield AI",
+        "title": "I Didn't Leave My Room for Any of These Shots",
+        "url": "https://www.youtube.com/watch?v=6e7ly85bZB8",
+        "video_id": "6e7ly85bZB8",
+        "vertical": true,
+        "summary": "A 37-second Genjutsu short: record one simple shot at home, then reimagine the location, outfit, and movement without leaving the room."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "How I Pick the Best AI Take Before Going 4K",
+        "url": "https://www.youtube.com/watch?v=6TZn1dSR3dg",
+        "video_id": "6TZn1dSR3dg",
+        "vertical": true,
+        "summary": "A 44-second workflow short: Claude drafts the shot in 480p through Higgsfield MCP, and only the take you pick gets finalized in Seedance 2.5 4K with the same camera, timing, and sound."
+      },
+      {
+        "channel": "Higgsfield Animation",
+        "title": "Zima Blue Director Robert Valley: “Ignoring AI Won’t Make It Go Away”",
+        "url": "https://www.youtube.com/watch?v=wkzPdB1yuWk",
+        "video_id": "wkzPdB1yuWk",
+        "vertical": false,
+        "summary": "A two-hour conversation with the Zima Blue and Love, Death & Robots director on why craft still matters, when he’d let AI into an animation workflow, and why he’d rather keep his crew than just make films faster."
+      },
+      {
+        "channel": "Kelly Tsai",
+        "title": "會50種語言，究竟是怎麼學的？！！｜Kelly Tsai",
+        "url": "https://www.youtube.com/watch?v=aSbeUob16uY",
+        "video_id": "aSbeUob16uY",
+        "vertical": true,
+        "summary": "A one-minute course short with Terry 謝智翔 and 火種計畫 on building a reusable multilingual learning system instead of grinding vocabulary and grammar."
+      },
+      {
+        "channel": "Gary Chen",
+        "title": "用 AI 寫程式你得懂的 CI/CD？新手一支影片看懂",
+        "url": "https://www.youtube.com/watch?v=aCvEYczBVSY",
+        "video_id": "aCvEYczBVSY",
+        "vertical": false,
+        "summary": "A 14-minute beginner walkthrough of CI/CD on Gary’s budgeting app, covering branch, PR, lint/typecheck/test/build, merge, and deploy, plus GitHub Actions and later gates like Playwright and LLM-as-judge."
+      }
+    ]
   }
 }
