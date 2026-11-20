@@ -1,0 +1,72 @@
+{
+  "date_hkt": "2026-11-20",
+  "x": {
+    "pick_count_total": 2,
+    "watch_count": 2,
+    "trendy_count": 0,
+    "window_since": "2026-11-19 08:00 HKT",
+    "sections": {
+      "watch_list": [
+        {
+          "handle": "poteto",
+          "short_title": "/correct skill",
+          "url": "https://x.com/poteto/status/2123208699309347294",
+          "summary": "Lauren points to a /correct skill that has your agent reflect on repeated mistakes and then write the deterministic checks for you."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "Dr Eggbot in the community directory",
+          "url": "https://x.com/poteto/status/2123288922448965851",
+          "summary": "Lauren submitted Dr Eggbot v2 to the new Grok Bot community directory at grok-bot.directory, where you can browse and install community bots."
+        }
+      ],
+      "trendy": []
+    }
+  },
+  "youtube": {
+    "content_date_hkt": "2026-11-19",
+    "pick_count": 5,
+    "items": [
+      {
+        "channel": "Grok",
+        "title": "Grok Bot 201",
+        "url": "https://www.youtube.com/watch?v=aEK0bvZDNFg",
+        "video_id": "aEK0bvZDNFg",
+        "vertical": false,
+        "summary": "A 58-minute SpaceXSI workshop where Ria Goveas and Audrey Leung show how to design a Bot thoughtfully and chain Bots into a workflow, including a live Notion-to-message handoff, Team Bot sharing, and approval rules."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "Why the War Rhino Looks Like It Survived a Battle",
+        "url": "https://www.youtube.com/watch?v=iPZlaTa4UWo",
+        "video_id": "iPZlaTa4UWo",
+        "vertical": true,
+        "summary": "A 39-second comparison of a single AI model versus a full creature pipeline: Soul alone makes the War Rhino look like rubber and plastic, while the pipeline version shows battle wear—an arrow in its back, mud in the fur, and a torn red flag on the horn."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "Why Your Eyes Can't Tell AI From a Film Set",
+        "url": "https://www.youtube.com/watch?v=JLEZSpDj4rA",
+        "video_id": "JLEZSpDj4rA",
+        "vertical": true,
+        "summary": "A 38-second quiz of six creature photos—costume on a film set or AI—then a reveal of a movie-creature-shop pipeline: clay for the shape, Soul for the materials, and a plain flash photo in a real room."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "I Made an AI Alien You Could Actually Dissect",
+        "url": "https://www.youtube.com/watch?v=08RrfcoLKsg",
+        "video_id": "08RrfcoLKsg",
+        "vertical": true,
+        "summary": "A 49-second 4K creature short: an alien built like a body, not a rubber suit, with visible ribs and bone plates from a clay sculpt, Soul 2 materials, a flash-photo reference sheet, and Seedance 2.5."
+      },
+      {
+        "channel": "Kelly Tsai",
+        "title": "AI Agent要跑在哪？AI寫完網站該怎麼部署？從零教你如何讓AI工具正式上線！｜Kelly Tsai",
+        "url": "https://www.youtube.com/watch?v=ed3Qcvg5_zI",
+        "video_id": "ed3Qcvg5_zI",
+        "vertical": false,
+        "summary": "Kelly walks through, from scratch, where an AI agent should run and how to deploy an AI-built website so the tool can actually go live."
+      }
+    ]
+  }
+}
