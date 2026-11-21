@@ -1,5 +1,40 @@
 {
   "date_hkt": "2026-11-21",
+  "x": {
+    "pick_count_total": 4,
+    "watch_count": 4,
+    "trendy_count": 0,
+    "window_since": "2026-11-20 08:00 HKT",
+    "sections": {
+      "watch_list": [
+        {
+          "handle": "poteto",
+          "short_title": "pstack v0.15.46",
+          "url": "https://x.com/poteto/status/2123824683862855898",
+          "summary": "Skills are much shorter after a pruning pass, Gemini 4 Neon is added as a panel reviewer, and the update auto-applies for Grok Bot and Cursor users; run /setup-pstack again if you want to change model routing."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "QuickBooks connector",
+          "url": "https://x.com/poteto/status/2123840558800289816",
+          "summary": "Lauren amplified that Grok Bot now connects to Intuit QuickBooks, so you can ask about cash flow, profit, or who still owes you, and have it draft invoices, estimates, and payment reminders for you to approve."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "Home network: Wi-Fi and Tailscale",
+          "url": "https://x.com/poteto/status/2123851577891176702",
+          "summary": "Lauren amplified that Grok Bot can help optimize your Wi-Fi and, with Tailscale, reach a media server on your home network."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "/no-comments skill",
+          "url": "https://x.com/poteto/status/2123898792487576021",
+          "summary": "Lauren suggests trying pstack’s /no-comments skill, or asking your agent to turn it into a lint rule, to strip tautological, stale, and excuse comments and keep real decision records."
+        }
+      ],
+      "trendy": []
+    }
+  },
   "youtube": {
     "content_date_hkt": "2026-11-20",
     "pick_count": 4,
