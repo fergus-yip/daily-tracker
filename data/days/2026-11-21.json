@@ -1,0 +1,41 @@
+{
+  "date_hkt": "2026-11-21",
+  "youtube": {
+    "content_date_hkt": "2026-11-20",
+    "pick_count": 4,
+    "items": [
+      {
+        "channel": "Grok",
+        "title": "SpaceXSI for Students",
+        "url": "https://www.youtube.com/watch?v=mykpZ18bkGk",
+        "video_id": "mykpZ18bkGk",
+        "vertical": false,
+        "summary": "A 43-minute SpaceXSI workshop where Ria Goveas and Sangini Mehta show students how to plan a portfolio in Cursor and keep it going with Cloud Agents, then hire and chain Grok Bots—from email triage to calendar deadlines, plus a student crew for recruiting, Canvas, and errands."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "How to Fix Your AI Images Without Starting Over | Kling Image 4.0",
+        "url": "https://www.youtube.com/watch?v=ZcAgCL79D9c",
+        "video_id": "ZcAgCL79D9c",
+        "vertical": true,
+        "summary": "A 24-second Kling Image 4.0 short: generate an image, select an object, and describe the edit—swap a prop or change its color while the rest of the scene stays intact."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "Introducing Higgsfield MCP 2.0 for Claude",
+        "url": "https://www.youtube.com/watch?v=kWiL-rGekoc",
+        "video_id": "kWiL-rGekoc",
+        "vertical": true,
+        "summary": "An 85-second introduction to Higgsfield MCP 2.0 for Claude: the creative studio inside Claude and Fable 5.2, with pro-level tool integrations, multi-agent workflows, built-in quality control, and a three-day free trial of unlimited generations."
+      },
+      {
+        "channel": "Kelly Tsai",
+        "title": "身為矽谷工程師，最受不了每次開新對話都要重複交代背景❗️｜Kelly Tsai",
+        "url": "https://www.youtube.com/watch?v=NNViH9i8j7k",
+        "video_id": "NNViH9i8j7k",
+        "vertical": true,
+        "summary": "A 70-second course short for 《複製 AI 高手的工作系統》, on packing your work logic into a reusable skill pack so you don’t have to re-explain background every time you start a new AI chat."
+      }
+    ]
+  }
+}
