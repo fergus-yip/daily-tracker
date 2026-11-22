@@ -1,0 +1,41 @@
+{
+  "date_hkt": "2026-11-22",
+  "youtube": {
+    "content_date_hkt": "2026-11-21",
+    "pick_count": 4,
+    "items": [
+      {
+        "channel": "Higgsfield AI",
+        "title": "Emotions We Carry | Higgsfield",
+        "url": "https://www.youtube.com/watch?v=jJhfBevWZdE",
+        "video_id": "jJhfBevWZdE",
+        "vertical": true,
+        "summary": "A short AI-made mood film about staying inside moments of joy, warmth, and belonging so those feelings stay with you after they pass."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "Introducing Higgsfield GPU Harness in Claude & ChatGPT",
+        "url": "https://www.youtube.com/watch?v=UAwuVrrd4Xo",
+        "video_id": "UAwuVrrd4Xo",
+        "vertical": true,
+        "summary": "Higgsfield launches GPU Harness, letting you rent on-demand GPUs inside Claude and ChatGPT to render, run open-weight models, and train LoRAs from any device."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "I Surprised Iman Gadzhi With A $20,000 Luxury AD For His Brand",
+        "url": "https://www.youtube.com/watch?v=oqtXc0yI1S8",
+        "video_id": "oqtXc0yI1S8",
+        "vertical": false,
+        "summary": "In under 72 hours, he builds a multi-location luxury commercial for Iman Gadzhi’s HILLS eyewear with Higgsfield and Claude—no traditional editor—and Iman says a real-agency campaign like that has cost him about $15–25K."
+      },
+      {
+        "channel": "Kelly Tsai",
+        "title": "懂產業不等於會投資？用一套系統把產業紅利轉成真正資產！｜What's Next? EP21 ft. 美股航海王｜Kelly Tsai",
+        "url": "https://www.youtube.com/watch?v=Oy8dBRlWmbE",
+        "video_id": "Oy8dBRlWmbE",
+        "vertical": false,
+        "summary": "In What’s Next EP21, Kelly talks with full-time US-stock investor 美股航海王 about a risk-management system for turning industry knowledge into lasting assets instead of giving gains back in a crash."
+      }
+    ]
+  }
+}
