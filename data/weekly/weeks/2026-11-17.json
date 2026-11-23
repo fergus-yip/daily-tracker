@@ -1,0 +1,30 @@
+{
+  "week_start_hkt": "2026-11-17",
+  "week_end_hkt": "2026-11-23",
+  "scanned_at_hkt": "2026-11-23T08:13:07+08:00",
+  "sources": {
+    "launches": {
+      "source": "launch-video-tracker",
+      "videos": [
+        {
+          "channel": "Microsoft",
+          "title": "Microsoft Ignite: Opening Keynote 2026",
+          "summary": "Microsoft Chairman and CEO Satya Nadella delivers the Microsoft Ignite 2026 opening keynote, announcing Copilot Workspaces, Autopilot, Microsoft IQ, new MAI models, Agent 365, and Microsoft Perception, plus Azure infrastructure and HorizonDB updates.",
+          "url": "https://www.youtube.com/watch?v=ZR4v1c4CClc",
+          "published_hkt": "2026-11-18",
+          "video_id": "ZR4v1c4CClc",
+          "vertical": false
+        },
+        {
+          "channel": "Microsoft",
+          "title": "Introducing Copilot Workspaces | Microsoft Ignite 2026",
+          "summary": "At Ignite 2026, Microsoft introduces Copilot Workspaces, a shared place for teams and agents to build and review projects, with Autopilot taking on recurring work — framing the next chapter of Copilot as multiplayer and built for people and agents.",
+          "url": "https://www.youtube.com/watch?v=Jwp2aZDSVss",
+          "published_hkt": "2026-11-18",
+          "video_id": "Jwp2aZDSVss",
+          "vertical": false
+        }
+      ]
+    }
+  }
+}
