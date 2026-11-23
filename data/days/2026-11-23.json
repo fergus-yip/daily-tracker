@@ -1,0 +1,34 @@
+{
+  "date_hkt": "2026-11-23",
+  "x": {
+    "pick_count_total": 1,
+    "watch_count": 1,
+    "trendy_count": 0,
+    "window_since": "2026-11-22 08:00 HKT",
+    "sections": {
+      "watch_list": [
+        {
+          "handle": "poteto",
+          "short_title": "Codebase gardening with pstack",
+          "url": "https://x.com/poteto/status/2124525336994177412",
+          "summary": "Lauren says it’s a good day to garden your codebase, quoting a pstack prompt that runs /poteto-mode, makes repeated mistakes impossible, strips leftover comments, and adds formal models where concurrency bites."
+        }
+      ],
+      "trendy": []
+    }
+  },
+  "youtube": {
+    "content_date_hkt": "2026-11-22",
+    "pick_count": 1,
+    "items": [
+      {
+        "channel": "Higgsfield AI",
+        "title": "5 Days Left: $1,000,000 Higgsfield Talent Contest | Meet Judge Jama Jurabaev",
+        "url": "https://www.youtube.com/watch?v=Dj5685Hm840",
+        "video_id": "Dj5685Hm840",
+        "vertical": true,
+        "summary": "Higgsfield’s 51-second reminder that five days remain to enter the $1,000,000 Talent Contest, introducing judge Jama Jurabaev (The Mandalorian, Ready Player One, Jurassic World: Fallen Kingdom)."
+      }
+    ]
+  }
+}
