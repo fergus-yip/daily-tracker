@@ -52,5 +52,51 @@
       ],
       "trendy": []
     }
+  },
+  "youtube": {
+    "content_date_hkt": "2026-11-24",
+    "pick_count": 5,
+    "items": [
+      {
+        "channel": "Higgsfield AI",
+        "title": "Rent NVIDIA GPUs From a Chat | Higgsfield GPU Harness",
+        "url": "https://www.youtube.com/watch?v=QGVYZqfjUtA",
+        "video_id": "QGVYZqfjUtA",
+        "vertical": true,
+        "summary": "Connect Higgsfield to Claude, type /gpu, and GPU Harness rents the right NVIDIA GPU from chat — including hardware like the B300 you couldn’t just buy — so you can train a LoRA or have Claude build and render a Blender scene in the cloud."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "How To Make AI Animation That Doesn't Look Generic (Full Breakdown)",
+        "url": "https://www.youtube.com/watch?v=mu_8D93Dkik",
+        "video_id": "mu_8D93Dkik",
+        "vertical": false,
+        "summary": "Kixwood breaks down one scene from their upcoming short Below the Surface: design characters in SOUL 2.0, paint over them by hand, build the shot in Seedance 2.5, then replace stiff AI voices with ElevenLabs before the 1080p render."
+      },
+      {
+        "channel": "Kelly Tsai",
+        "title": "黃仁勳回任，這世界真是太瘋了｜Kelly Tsai",
+        "url": "https://www.youtube.com/watch?v=04kqv7heafw",
+        "video_id": "04kqv7heafw",
+        "vertical": true,
+        "summary": "Kelly reacts to news that Jensen Huang is back in the NVIDIA post, after the earlier resignation-scandal coverage."
+      },
+      {
+        "channel": "Kelly Tsai",
+        "title": "黃仁勳帶來的股價不確定性，該怎麼看待？｜Kelly Tsai",
+        "url": "https://www.youtube.com/watch?v=ytdKlQlAWJY",
+        "video_id": "ytdKlQlAWJY",
+        "vertical": true,
+        "summary": "A course short (recorded 10 Nov) on how to view NVIDIA-related stock uncertainty, arguing a risk-management system matters more than predicting the headlines, and pointing to a session with guest 美股航海王."
+      },
+      {
+        "channel": "Gary Chen",
+        "title": "Meta Muse 新手教學，社群功能最強的 AI Agent",
+        "url": "https://www.youtube.com/watch?v=UrFrDJ-G6h8",
+        "video_id": "UrFrDJ-G6h8",
+        "vertical": false,
+        "summary": "A beginner walkthrough of Meta’s free Muse agent: VPN signup, invite-code tokens, an interface tour, connecting Instagram, Threads, and Facebook for saves and auto-replies, plus how it compares with Grok Bot and Claude Code."
+      }
+    ]
   }
 }
