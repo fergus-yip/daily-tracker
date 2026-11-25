@@ -1,0 +1,56 @@
+{
+  "date_hkt": "2026-11-25",
+  "x": {
+    "pick_count_total": 7,
+    "watch_count": 7,
+    "trendy_count": 0,
+    "window_since": "2026-11-24 08:00 HKT",
+    "sections": {
+      "watch_list": [
+        {
+          "handle": "poteto",
+          "short_title": "New /reframe skill in pstack",
+          "url": "https://x.com/poteto/status/2125029185379008573",
+          "summary": "Lauren posted a new /reframe skill in pstack for when you know what you want but can’t quite say it, and says it works well with /sharpen."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "Add to chat from a bot reply",
+          "url": "https://x.com/poteto/status/2125317052089188511",
+          "summary": "She confirmed Grok Bot’s “Add to chat” feature, copied from Cursor: select any part of a bot reply, then press Ctrl+L or hover to add it back into the chat."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "Daily-driving Gemini Neon in Cursor",
+          "url": "https://x.com/poteto/status/2125340394938593344",
+          "summary": "Lauren says she’s now daily-driving Gemini Neon in Cursor and calls it a good model."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "Neon as orchestrator and executor",
+          "url": "https://x.com/poteto/status/2125344778892292255",
+          "summary": "Asked whether she uses Neon as orchestrator or executor, she said she’s using it for both, with Opus as the reviewer."
+        },
+        {
+          "handle": "felixrieseberg",
+          "short_title": "Build and share Mac and Windows apps with Claude",
+          "url": "https://x.com/felixrieseberg/status/2125310111149416682",
+          "summary": "Felix announced you can now build and share Mac and Windows apps with Claude, no coding required; they can use OS APIs, connectors, and Claude, and he posted demos at https://claude.ai/artifact/9j53nCVcrSdZyCHtxUZkWJ."
+        },
+        {
+          "handle": "felixrieseberg",
+          "short_title": "Native desktop apps he’s already building",
+          "url": "https://x.com/felixrieseberg/status/2125310113078812902",
+          "summary": "He’s been using it to make his own terminals, file managers, video editors, comms tools, and desktop pets, including native features like menu-bar items, transparent windows, and notifications; update Claude for macOS and Windows to try it."
+        },
+        {
+          "handle": "felixrieseberg",
+          "short_title": "Start with a desktop pet",
+          "url": "https://x.com/felixrieseberg/status/2125341947179290938",
+          "summary": "To try the little-apps feature, he suggests asking Claude to “Build me a desktop pet as an artifact app,” and shared a Nori Desktop Shark demo at https://claude.ai/artifact/75cGBx19aZZXjWdbqUhmy1."
+        }
+      ],
+      "trendy": []
+    }
+  }
+}
