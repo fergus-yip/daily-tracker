@@ -46,5 +46,19 @@
       ],
       "trendy": []
     }
+  },
+  "youtube": {
+    "content_date_hkt": "2026-11-25",
+    "pick_count": 1,
+    "items": [
+      {
+        "channel": "Kelly Tsai",
+        "title": "越跌越買，真的行得通嗎？｜Kelly Tsai",
+        "url": "https://www.youtube.com/watch?v=9iuGABGo2fY",
+        "video_id": "9iuGABGo2fY",
+        "vertical": true,
+        "summary": "a 1:24 course short (18:00 HKT) with 美股航海王 asking whether buying the dip really works, focused on risk management when markets drop."
+      }
+    ]
   }
 }
