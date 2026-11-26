@@ -1,0 +1,50 @@
+{
+  "date_hkt": "2026-11-26",
+  "x": {
+    "pick_count_total": 6,
+    "watch_count": 6,
+    "trendy_count": 0,
+    "window_since": "2026-11-25 08:00 HKT",
+    "sections": {
+      "watch_list": [
+        {
+          "handle": "poteto",
+          "short_title": "Tell Grok Bot to watch a video",
+          "url": "https://x.com/poteto/status/2125513590543368566",
+          "summary": "Lauren retweeted a short tip to tell Grok Bot to watch a video, pointing at her earlier guide on building a high-quality bot team."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "Cursor isn’t going anywhere",
+          "url": "https://x.com/poteto/status/2125647237690843206",
+          "summary": "Replying to a claim that the team had ditched Cursor for Grok Bot, she said they love working on Grok Bot but Cursor isn’t going anywhere, and lots of improvements are coming to both."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "Start Grok Bot from the iPhone Action button",
+          "url": "https://x.com/poteto/status/2125649319093326060",
+          "summary": "She amplified a how-to: set the iPhone Action button to a Grok Bot shortcut, then hold it down to start a voice call with your bot."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "Inbound email to Grok Bot is fixed",
+          "url": "https://x.com/poteto/status/2125651854877225455",
+          "summary": "After a report that mail sent in to Grok Bot addresses at mail.grokbot.com never arrived because of a missing MX record, Lauren said the inbound-email issue has been fixed."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "Unblock the human-review bottleneck",
+          "url": "https://x.com/poteto/status/2125657724126138682",
+          "summary": "Quoting Will Larson’s write-up on shipping 100 PRs in a week (https://lethain.com/passing-100-prs-in-a-week/), she says the work is to keep finding the step where human review still gates you, then let the agent or code drive it."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "Holiday shopping with Grok Bot",
+          "url": "https://x.com/poteto/status/2125729358698741853",
+          "summary": "In a holiday note from the Grok Bot team, Lauren quoted that Bot knows the Black Friday deals: send it your list and let it handle your holiday shopping."
+        }
+      ],
+      "trendy": []
+    }
+  }
+}
