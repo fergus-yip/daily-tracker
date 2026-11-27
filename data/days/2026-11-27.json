@@ -16,5 +16,43 @@
       ],
       "trendy": []
     }
+  },
+  "youtube": {
+    "content_date_hkt": "2026-11-26",
+    "pick_count": 4,
+    "items": [
+      {
+        "channel": "Higgsfield AI",
+        "title": "This Is The Cheapest AI Video Model I've Ever Tested ($0.08/Second)",
+        "url": "https://www.youtube.com/watch?v=S5fMIf3RQ2U",
+        "video_id": "S5fMIf3RQ2U",
+        "vertical": false,
+        "summary": "A nearly 12-minute hands-on test (02:11 HKT) of MAGI-2 on Higgsfield: up to 30 seconds of 1080p AI video with native sound at $0.08/second, from anime fights and Blender previs to product ads and microdramas."
+      },
+      {
+        "channel": "Kelly Tsai",
+        "title": "讀財報、做回測、AI策略選股，真的有用嗎？｜Kelly Tsai",
+        "url": "https://www.youtube.com/watch?v=8W1mWqhqQqc",
+        "video_id": "8W1mWqhqQqc",
+        "vertical": true,
+        "summary": "A 56-second course short (18:30 HKT, recorded 10 Nov) asking whether reading financials, backtesting, and AI stock-picking strategies actually work, pointing to risk-management ideas with guest 美股航海王."
+      },
+      {
+        "channel": "Kelly Tsai",
+        "title": "黃仁勳回任NVIDIA的幕後推手竟是川普！美國政府現在連公司CEO都能決定？｜Kelly Tsai",
+        "url": "https://www.youtube.com/watch?v=jzRItbLkNlM",
+        "video_id": "jzRItbLkNlM",
+        "vertical": false,
+        "summary": "A 10:41 news explainer (20:00 HKT) on claims that Trump was the force behind Jensen Huang’s return as NVIDIA CEO, and whether the US government can now effectively decide who runs a company."
+      },
+      {
+        "channel": "Gary Chen",
+        "title": "Claude Artifacts 重磅更新，Anthropic 再次重拳出擊 SaaS",
+        "url": "https://www.youtube.com/watch?v=tE-ahWIDFIs",
+        "video_id": "tE-ahWIDFIs",
+        "vertical": false,
+        "summary": "An 11:28 walkthrough (21:00 HKT) of Claude Artifacts’ new Install as app feature, which turns a Claude-made tool into a desktop app, why that hits at SaaS, and three downsides to know first."
+      }
+    ]
   }
 }
