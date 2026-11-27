@@ -1,0 +1,20 @@
+{
+  "date_hkt": "2026-11-27",
+  "x": {
+    "pick_count_total": 1,
+    "watch_count": 1,
+    "trendy_count": 0,
+    "window_since": "2026-11-26 08:00 HKT",
+    "sections": {
+      "watch_list": [
+        {
+          "handle": "felixrieseberg",
+          "short_title": "Leaf blower game with Claude",
+          "url": "https://x.com/felixrieseberg/status/2126008112033534392",
+          "summary": "Felix says one of his favorite ways to use AI is asking kids what game they’d like and having them dictate it into Claude; today they made a leaf blower game you can play in the browser or as an app (https://claude.ai/artifact/W45hzJe83bsMDFq8iJCp3y)."
+        }
+      ],
+      "trendy": []
+    }
+  }
+}
