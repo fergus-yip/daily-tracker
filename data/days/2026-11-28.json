@@ -1,0 +1,32 @@
+{
+  "date_hkt": "2026-11-28",
+  "x": {
+    "pick_count_total": 3,
+    "watch_count": 3,
+    "trendy_count": 0,
+    "window_since": "2026-11-27 08:00 HKT",
+    "sections": {
+      "watch_list": [
+        {
+          "handle": "poteto",
+          "short_title": "When agents may update skills",
+          "url": "https://x.com/poteto/status/2126374995098288438",
+          "summary": "Asked whether agents should modify skills, Lauren says it depends: stale updates are fine, otherwise she has the agent run an eval first."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "Gavin Baker's Grok Bot use cases",
+          "url": "https://x.com/poteto/status/2126380197440344356",
+          "summary": "Quoting a16z, she highlights Gavin Baker building a podcast summarizer, Substack and X summarizers, and an X sentiment tracker in seconds with Grok Bot, work that took him hours in Claude Code."
+        },
+        {
+          "handle": "poteto",
+          "short_title": "Human approval on core and infra PRs",
+          "url": "https://x.com/poteto/status/2126387506036040180",
+          "summary": "On when a flood of PRs still needs review: more core packages and infra have agentic codeowners, so those still require human approval before merging."
+        }
+      ],
+      "trendy": []
+    }
+  }
+}
