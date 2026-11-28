@@ -28,5 +28,43 @@
       ],
       "trendy": []
     }
+  },
+  "youtube": {
+    "content_date_hkt": "2026-11-27",
+    "pick_count": 4,
+    "items": [
+      {
+        "channel": "Higgsfield AI",
+        "title": "Higgsfield Black Friday Is LIVE — Up to 75% OFF",
+        "url": "https://www.youtube.com/watch?v=FxUbzd_DNTw",
+        "video_id": "FxUbzd_DNTw",
+        "vertical": true,
+        "summary": "A promo short (09:35 HKT) announcing Higgsfield’s Black Friday sale: up to 75% off plans, a 20,000-credit Secret Plan at $258/month, and a 3-day MCP trial (the Secret Plan was flagged as 24 hours only)."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "This Quality for $0.08 a Second? Blender Boxes to a Car Chase | Higgsfield MAGI-2",
+        "url": "https://www.youtube.com/watch?v=E2MMW7BHYxQ",
+        "video_id": "E2MMW7BHYxQ",
+        "vertical": true,
+        "summary": "A 33-second short (16:00 HKT) of MAGI-2 turning a rough Blender previs of boxy cars into finished wet-street night car-chase shots at $0.08/second, keeping the same camera angles, moves, and cuts."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "How To Make VIRAL Animated Shorts Using Claude Code (Full Workflow)",
+        "url": "https://www.youtube.com/watch?v=GrFez9F0TF4",
+        "video_id": "GrFez9F0TF4",
+        "vertical": false,
+        "summary": "A 10:49 walkthrough (17:55 HKT) of making faceless YouTube Shorts with Claude Code and Higgsfield MCP, across three styles (2D stickmen in a 3D world, 8-bit, and full 3D), plus scripting, monetization, and cost."
+      },
+      {
+        "channel": "Higgsfield AI",
+        "title": "This Cheap AI Model Turned One Photo Into a K-Drama for $2.40 | Higgsfield MAGI-2",
+        "url": "https://www.youtube.com/watch?v=4Km5UtY701Y",
+        "video_id": "4Km5UtY701Y",
+        "vertical": true,
+        "summary": "A 36-second short (21:00 HKT) of MAGI-2 turning one photo into a vertical K-drama breakup scene with dialogue, matching lips, and a music cut-out, in a single $2.40 generation."
+      }
+    ]
   }
 }
